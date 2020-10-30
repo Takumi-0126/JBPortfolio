@@ -449,8 +449,9 @@ section {
     url(../img/myface/introduction.jpg) no-repeat top/cover;
 
   @include sp {
-    height: 60vh;
+    height: 51vh;
     padding: 0;
+    background-position: right;
   }
 }
 
@@ -495,7 +496,7 @@ section {
 /*career*/
 .career {
   @include sp {
-    height: 230vh;
+    height: 200vh;
   }
 
   &__cont {
@@ -1195,12 +1196,21 @@ section {
   &-content {
     display: flex;
     justify-content: space-evenly;
+
+    @include sp {
+      display: block;
+    }
   }
 
   &__txt {
     font-size: 1.2rem;
     width: 70%;
     text-align: left;
+
+    @include sp {
+      font-size: 1rem;
+      width: 100%;
+    }
   }
 
   &__txt > ul > li {

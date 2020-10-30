@@ -1500,12 +1500,6 @@ section {
           justify-content: space-evenly;
 }
 
-@media (max-width: 480px) {
-  .modal-content {
-    display: block;
-  }
-}
-
 .modal__txt {
   font-size: 1.2rem;
   width: 70%;

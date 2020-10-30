@@ -1196,10 +1196,6 @@ section {
   &-content {
     display: flex;
     justify-content: space-evenly;
-
-    @include sp {
-      display: block;
-    }
   }
 
   &__txt {

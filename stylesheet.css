@@ -693,8 +693,9 @@ section {
 
 @media (max-width: 480px) {
   .introduction {
-    height: 60vh;
+    height: 51vh;
     padding: 0;
+    background-position: right;
   }
 }
 
@@ -745,7 +746,7 @@ section {
 /*career*/
 @media (max-width: 480px) {
   .career {
-    height: 230vh;
+    height: 200vh;
   }
 }
 
@@ -1395,8 +1396,22 @@ section {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .modal__window-item {
+    height: 88vh;
+    overflow: auto;
+    padding: 0 5px;
+  }
+}
+
 .modal__window-item h2 {
   font-size: 2.5rem;
+}
+
+@media (max-width: 480px) {
+  .modal__window-item h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .modal__scroll-down {
@@ -1499,12 +1514,6 @@ section {
           justify-content: space-evenly;
 }
 
-@media (max-width: 480px) {
-  .modal-content {
-    display: block;
-  }
-}
-
 .modal__txt {
   font-size: 1.2rem;
   width: 70%;
@@ -1513,7 +1522,7 @@ section {
 
 @media (max-width: 480px) {
   .modal__txt {
-    font-size: 1rem;
+    font-size: 0.7rem;
     width: 100%;
   }
 }
@@ -1527,6 +1536,12 @@ section {
   font-weight: bold;
   border-bottom: 2px solid #111;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .modal__txt > ul > li > h3 {
+    font-size: 0.8rem;
+  }
 }
 
 .modal__window-img img {

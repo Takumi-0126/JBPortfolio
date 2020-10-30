@@ -449,8 +449,9 @@ section {
     url(../img/myface/introduction.jpg) no-repeat top/cover;
 
   @include sp {
-    height: 60vh;
+    height: 51vh;
     padding: 0;
+    background-position: right;
   }
 }
 
@@ -495,7 +496,7 @@ section {
 /*career*/
 .career {
   @include sp {
-    height: 230vh;
+    height: 200vh;
   }
 
   &__cont {
@@ -1135,10 +1136,20 @@ section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     overflow: hidden;
+
+    @include sp {
+      height: 88vh;
+      overflow: auto;
+      padding: 0 5px;
+    }
   }
 
   &__window-item h2 {
     font-size: 2.5rem;
+
+    @include sp {
+      font-size: 1.5rem;
+    }
   }
 
   &__scroll-down {
@@ -1195,10 +1206,6 @@ section {
   &-content {
     display: flex;
     justify-content: space-evenly;
-
-    @include sp {
-      display: block;
-    }
   }
 
   &__txt {
@@ -1207,7 +1214,7 @@ section {
     text-align: left;
 
     @include sp {
-      font-size: 1rem;
+      font-size: 0.7rem;
       width: 100%;
     }
   }
@@ -1221,6 +1228,12 @@ section {
     font-weight: bold;
     border-bottom: 2px solid #111;
     cursor: pointer;
+  }
+
+  &__txt > ul > li > h3 {
+    @include sp {
+      font-size: 0.8rem;
+    }
   }
 
   &__window-img img {

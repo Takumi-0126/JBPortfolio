@@ -85,13 +85,11 @@ video {
 
 body {
   /* プロジェクトによって変動 */
-  min-width: 1000px;
   color: #000;
   line-height: 1.6;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   width: 100%;
-  font-smoothing: antialiased;
   font-variant-numeric: tabular-nums;
   /* safari hover対策 */
   -webkit-font-smoothing: antialiased;

@@ -20,73 +20,61 @@
     />
     <link
       rel="shortcut icon"
-      href="/favicon.ico"
+      href="favicon.ico"
       type="image/vnd.microsoft.icon"
     />
   </head>
   <body>
+    <!--ここからヘッダー-->
     <header class="header" id="top">
       <div class="header__inner">
-        <div class="details">
-          <div class="details__l">
-            <p class="details__ttl">福井 琢生の転職活動用サイト</p>
-          </div>
+        <h1 class="header__ttl">福井 琢生の転職活動用サイト</h1>
+        <!--ナビゲーション-->
+        <nav class="nav">
+          <ul class="nav__lists">
+            <li class="nav__list"><a href="#introduction"> 挨拶 </a></li>
+            <li class="nav__list"><a href="#career"> 経歴 </a></li>
+            <li class="nav__list"><a href="#skill"> 実績 </a></li>
+            <li class="nav__list"><a href="#subskill"> 特技 </a></li>
+            <li class="nav__list"><a href="#question"> 質問 </a></li>
+            <li class="nav__list"><a href="#form"> 面接する </a></li>
+          </ul>
+        </nav>
+        <!--hamburgerボタンー-->
+        <div class="hamburger-btn">
+          <span class="hamburger-btn__parts -top"></span>
+          <span class="hamburger-btn__parts -middle"></span>
+          <span class="hamburger-btn__parts -bottom"></span>
         </div>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <button>
-                <a href="#introduction"> 挨拶 </a>
-              </button>
+        <!--hamburgerメニュー-->
+        <nav class="hamburger">
+          <ul class="hamburger__lists">
+            <li class="hamburger__list">
+              <a class="hamburger__link" href="#introduction"> 挨拶</a>
             </li>
-            <li class="header__nav-item">
-              <button>
-                <a href="#career"> 経歴 </a>
-              </button>
+            <li class="hamburger__list">
+              <a class="hamburger__link" href="#career"> 経歴 </a>
             </li>
-            <li class="header__nav-item">
-              <button>
-                <a href="#skill"> 実績 </a>
-              </button>
+            <li class="hamburger__list">
+              <a class="hamburger__link" href="#skill"> 実績 </a>
             </li>
-            <li class="header__nav-item">
-              <button>
-                <a href="#subskill"> 特技 </a>
-              </button>
+            <li class="hamburger__list">
+              <a class="hamburger__link" href="#question"> 質問</a>
             </li>
-            <li class="header__nav-item">
-              <button>
-                <a href="#question"> 質問 </a>
-              </button>
+            <li class="hamburger__list">
+              <a class="hamburger__link" href="#form"> 面接する</a>
             </li>
-            <li class="header__nav-item">
-              <button>
-                <a href="#form"> 面接する </a>
-              </button>
+            <li class="hamburger__list">
+              <a class="hamburger__link" href="#form">
+                <i class="fab fa-twitter"></i
+              ></a>
             </li>
           </ul>
         </nav>
+        <!--//ここまでナビゲーション-->
       </div>
     </header>
-    <!-- ハンバーガーメニュー -->
-    <header class="header__sp">
-      <nav id="nav">
-        <ul>
-          <li><a href="#introduction">挨拶</a></li>
-          <li><a href="#career">経歴</a></li>
-          <li><a href="#skill">実績</a></li>
-          <li><a href="#subskill">特技</a></li>
-          <li><a href="#question">質問</a></li>
-          <li><a href="#form">面接する</a></li>
-        </ul>
-      </nav>
-      <div id="hamburger">
-        <span class="inner_line" id="line1"></span>
-        <span class="inner_line" id="line2"></span>
-        <span class="inner_line" id="line3"></span>
-      </div>
-    </header>
-    <!-- ハンバーガーメニュー終わり -->
+    <!--//ここまでヘッダー-->
 
     <div class="mv">
       <div class="mv__inner">
@@ -445,9 +433,9 @@
           <div class="skill__blog-txt">
             <p>【たくみウェブログ】運営</p>
             <p>ビジネスとインタビュー記事メイン</p>
-            <span>
+            <p class="skill__blog-txt_sp">
               SEO検索順位で最高2位を記録しており、SEO記事も書けます。
-            </span>
+            </p>
             <p class="skill__blog-txt_web">
               1番PV数が多い
               <a
@@ -572,6 +560,7 @@
       <small>©️2020-Takumi Fukui</small>
     </footer>
     <div id="js-scroll-fadein" class="js__scroll-fadein arrow"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

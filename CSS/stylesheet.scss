@@ -449,7 +449,7 @@ section {
     url(../img/myface/introduction.jpg) no-repeat top/cover;
 
   @include sp {
-    height: 51vh;
+    height: 57vh;
     padding: 0;
     background-position: right;
   }
@@ -480,8 +480,8 @@ section {
 
   &-txt {
     font-size: 1.125rem;
-    line-height: 3;
-    padding: 0 1.125em;
+    line-height: 2.5;
+    padding: 1em 2em;
     font-weight: bold;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
@@ -1231,7 +1231,9 @@ section {
   }
 
   &__txt > ul > li > h3 {
-    font-size: 0.8rem;
+    @include sp {
+      font-size: 0.8rem;
+    }
   }
 
   &__window-img img {
@@ -1368,9 +1370,12 @@ section {
 .subskill {
   &__cont {
     display: flex;
+    width: 1000px;
+    margin: 0 auto;
 
     @include sp {
       display: block;
+      width: 100%;
     }
   }
 
@@ -1379,7 +1384,7 @@ section {
     max-width: 500px;
     position: relative;
     top: 15%;
-    left: 19%;
+    left: 15%;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #ccc;
 
@@ -1395,7 +1400,7 @@ section {
   &__txt-list {
     position: absolute;
     right: 12%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 15px 15px 15px 120px;
     z-index: -1;
     border-radius: 5px;
@@ -1423,6 +1428,7 @@ section {
   &__txt-item span {
     font-weight: bold;
     color: #1b95e0;
+    font-size: 2rem;
   }
 }
 

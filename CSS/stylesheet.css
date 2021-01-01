@@ -221,6 +221,7 @@ button {
 
 .header__ttl {
   font-size: 1rem;
+  color: #0f4c83;
 }
 
 .nav {
@@ -420,7 +421,7 @@ button {
 .mv {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #0f4c83), to(#fff));
   background: linear-gradient(to bottom, #0f4c83 95%, #fff);
-  height: 507px;
+  height: 80vh;
 }
 
 @media (max-width: 480px) {
@@ -437,9 +438,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: relative;
   height: 600px;
 }
@@ -483,8 +483,6 @@ button {
   left: 16%;
   content: "";
   right: 0;
-  -webkit-animation: slidein 1.5s forwards;
-          animation: slidein 1.5s forwards;
 }
 
 @media (max-width: 480px) {
@@ -494,14 +492,25 @@ button {
   }
 }
 
+.mv__r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10em;
+}
+
 .mv__txt {
-  font-size: 4rem;
+  font-size: 5rem;
   content: "";
-  right: 2.1em;
-  width: 35%;
   -webkit-animation: slidein 2s ease forwards;
           animation: slidein 2s ease forwards;
-  position: absolute;
   opacity: 0;
   color: #fff;
 }
@@ -521,16 +530,12 @@ button {
 }
 
 .mv__txt02 {
-  line-height: 4;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
 }
 
 .mv__txt03 {
-  top: 1.5em;
-  right: 5.5em;
   font-size: 1.4rem;
-  line-height: 16;
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
@@ -567,12 +572,6 @@ button {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-}
-
-.mv__movie iframe {
-  position: absolute;
-  top: 38%;
-  right: 17%;
 }
 
 @media (max-width: 480px) {
@@ -637,6 +636,7 @@ section {
   vertical-align: middle;
   text-align-last: left;
   padding-bottom: 50px;
+  color: #0f4c83;
 }
 
 @media (max-width: 480px) {
@@ -663,7 +663,7 @@ section {
 .sect__ttl-sub::after {
   width: 100px;
   height: 1px;
-  background: #000;
+  background: #0f4c83;
   position: absolute;
   content: "";
   top: 50%;
@@ -679,43 +679,28 @@ section {
   }
 }
 
-.sect__ttl-intro {
-  color: #000;
-}
-
 /*Introducion*/
 .introduction {
-  height: 80vh;
   padding: 50px 0;
-  position: relative;
-  background: radial-gradient(ellipse at center center, rgba(255, 255, 255, 0) 70%, white 100%), url(../img/myface/introduction.jpg) no-repeat top/cover;
 }
 
 @media (max-width: 480px) {
   .introduction {
-    height: 57vh;
     padding: 0;
-    background-position: 90%;
   }
 }
 
 .intro__cont {
-  width: 100%;
-  max-width: 700px;
-  position: absolute;
-  top: 12em;
-}
-
-@media (max-width: 480px) {
-  .intro__cont {
-    top: 5em;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .intro__cont-txt_main {
   font-size: 2.5rem;
   font-weight: bold;
-  padding: 20px 0 20px 25px;
+  padding: 20px 0px 0px 25px;
+  color: #0f4c83;
 }
 
 @media (max-width: 480px) {
@@ -780,6 +765,7 @@ section {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
+  color: #3594cb;
 }
 
 .career__cont-img {
@@ -1075,6 +1061,10 @@ section {
   }
 }
 
+.skill__txt {
+  color: #3594cb;
+}
+
 .skill__txt-pro01 {
   padding-left: 118px;
   padding-bottom: 20px;
@@ -1161,6 +1151,7 @@ section {
   top: 10%;
   right: 18%;
   font-size: 2rem;
+  color: #3594cb;
 }
 
 @media (max-width: 480px) {
@@ -1277,7 +1268,7 @@ section {
 
 .skill__blog-txt_sp a {
   font-weight: bold;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #3594cb;
 }
 
 .skill__blog-txt_sp a:hover {
@@ -1299,7 +1290,7 @@ section {
 
 .skill__blog-txt_web a {
   font-weight: bold;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #3594cb;
 }
 
 .skill__blog-txt_web a:hover {
@@ -1328,7 +1319,7 @@ section {
 
 .skill__blog-btn::after {
   content: "";
-  background: url(../img/skill/blog.png);
+  background: url(../img/skill/blog.jpg);
   width: 100%;
   max-width: 10px;
 }
@@ -1338,6 +1329,7 @@ section {
 }
 
 #programming::before {
+  opacity: 0.7;
   background-image: url(../img/skill/mainimg/programming.jpg);
   -webkit-clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
           clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
@@ -1361,6 +1353,7 @@ section {
 
 #marketing::before {
   left: 0;
+  opacity: 0.7;
   background-image: url(../img/skill/mainimg/marketing.jpg);
   -webkit-clip-path: polygon(0 0, 30% 0, 82% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
           clip-path: polygon(0 0, 30% 0, 82% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
@@ -1383,6 +1376,7 @@ section {
 }
 
 #blog::before {
+  opacity: 0.7;
   background-image: url(../img/skill/mainimg/blog.jpg);
   -webkit-clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
           clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);

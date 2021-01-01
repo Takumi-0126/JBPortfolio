@@ -45,6 +45,7 @@ $sp: 480px; // スマホ
 
   &__ttl {
     font-size: 1rem;
+    color: #0f4c83;
   }
 }
 
@@ -234,7 +235,7 @@ $sp: 480px; // スマホ
 
 .mv {
   background: linear-gradient(to bottom, #0f4c83 95%, #fff);
-  height: 507px;
+  height: 80vh;
 
   @include sp {
     height: 34vh;
@@ -246,7 +247,7 @@ $sp: 480px; // スマホ
     padding-top: 15px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: relative;
     height: 600px;
 
@@ -283,7 +284,7 @@ $sp: 480px; // スマホ
     left: 16%;
     content: "";
     right: 0;
-    animation: slidein 1.5s forwards;
+    // animation: slidein 1.5s forwards;
 
     @include sp {
       width: 50%;
@@ -291,13 +292,18 @@ $sp: 480px; // スマホ
     }
   }
 
+  &__r {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10em;
+  }
+
   &__txt {
-    font-size: 4rem;
+    font-size: 5rem;
     content: "";
-    right: 2.1em;
-    width: 35%;
+    // align-items: center;
     animation: slidein 2s ease forwards;
-    position: absolute;
     opacity: 0;
     color: #fff;
 
@@ -314,15 +320,11 @@ $sp: 480px; // スマホ
   }
 
   &__txt02 {
-    line-height: 4;
     animation-delay: 2.5s;
   }
 
   &__txt03 {
-    top: 1.5em;
-    right: 5.5em;
     font-size: 1.4rem;
-    line-height: 16;
     animation-delay: 4s;
 
     @include sp {
@@ -344,10 +346,6 @@ $sp: 480px; // スマホ
   }
 
   &__movie iframe {
-    position: absolute;
-    top: 38%;
-    right: 17%;
-
     @include sp {
       width: 42vw;
       height: 13vh;
@@ -394,6 +392,7 @@ section {
       vertical-align: middle;
       text-align-last: left;
       padding-bottom: 50px;
+      color: #0f4c83;
 
       @include sp {
         padding: 0;
@@ -416,7 +415,7 @@ section {
     &-sub::after {
       width: 100px;
       height: 1px;
-      background: #000;
+      background: #0f4c83;
       position: absolute;
       content: "";
       top: 50%;
@@ -429,46 +428,27 @@ section {
       }
     }
     /*見出し横線ここまで*/
-
-    &-intro {
-      color: #000;
-    }
   }
 }
 
 /*Introducion*/
 .introduction {
-  height: 80vh;
   padding: 50px 0;
-  position: relative;
-  background: radial-gradient(
-      ellipse at center center,
-      rgba(255, 255, 255, 0) 70%,
-      rgba(255, 255, 255, 1) 100%
-    ),
-    url(../img/myface/introduction.jpg) no-repeat top/cover;
-
   @include sp {
-    height: 57vh;
     padding: 0;
-    background-position: 90%;
   }
 }
 
 .intro__cont {
-  width: 100%;
-  max-width: 700px;
-  position: absolute;
-  top: 12em;
-
+  display: flex;
   @include sp {
-    top: 5em;
   }
 
   &-txt_main {
     font-size: 2.5rem;
     font-weight: bold;
-    padding: 20px 0 20px 25px;
+    padding: 20px 0px 0px 25px;
+    color: #0f4c83;
 
     @include sp {
       font-size: 1.3rem;
@@ -518,6 +498,7 @@ section {
       letter-spacing: 0.3em;
       writing-mode: vertical-rl;
       text-orientation: upright;
+      color: #3594cb;
     }
 
     &-img {
@@ -807,6 +788,10 @@ section {
     }
   }
 
+  &__txt {
+    color: #3594cb;
+  }
+
   &__txt-pro01 {
     padding-left: 118px;
     padding-bottom: 20px;
@@ -884,6 +869,7 @@ section {
     top: 10%;
     right: 18%;
     font-size: 2rem;
+    color: #3594cb;
 
     @include sp {
       font-size: 1rem;
@@ -985,7 +971,7 @@ section {
 
   &__blog-txt_sp a {
     font-weight: bold;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3594cb;
   }
 
   &__blog-txt_sp a:hover {
@@ -1005,7 +991,7 @@ section {
 
   &__blog-txt_web a {
     font-weight: bold;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3594cb;
   }
 
   &__blog-txt_web a:hover {
@@ -1032,7 +1018,7 @@ section {
 
   &__blog-btn::after {
     content: "";
-    background: url(../img/skill/blog.png);
+    background: url(../img/skill/blog.jpg);
     width: 100%;
     max-width: 10px;
   }
@@ -1042,6 +1028,7 @@ section {
   position: relative;
 
   &::before {
+    opacity: 0.7;
     background-image: url(../img/skill/mainimg/programming.jpg);
     clip-path: polygon(
       18% 0%,
@@ -1077,6 +1064,7 @@ section {
 
   &::before {
     left: 0;
+    opacity: 0.7;
     background-image: url(../img/skill/mainimg/marketing.jpg);
     clip-path: polygon(
       0 0,
@@ -1111,6 +1099,7 @@ section {
   position: relative;
 
   &::before {
+    opacity: 0.7;
     background-image: url(../img/skill/mainimg/blog.jpg);
     clip-path: polygon(
       18% 0%,

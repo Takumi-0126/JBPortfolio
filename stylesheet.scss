@@ -45,6 +45,7 @@ $sp: 480px; // スマホ
 
   &__ttl {
     font-size: 1rem;
+    color: #0f4c83;
   }
 }
 
@@ -234,7 +235,7 @@ $sp: 480px; // スマホ
 
 .mv {
   background: linear-gradient(to bottom, #0f4c83 95%, #fff);
-  height: 507px;
+  height: 80vh;
 
   @include sp {
     height: 34vh;
@@ -246,7 +247,7 @@ $sp: 480px; // スマホ
     padding-top: 15px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: relative;
     height: 600px;
 
@@ -283,7 +284,7 @@ $sp: 480px; // スマホ
     left: 16%;
     content: "";
     right: 0;
-    animation: slidein 1.5s forwards;
+    // animation: slidein 1.5s forwards;
 
     @include sp {
       width: 50%;
@@ -291,13 +292,18 @@ $sp: 480px; // スマホ
     }
   }
 
+  &__r {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10em;
+  }
+
   &__txt {
-    font-size: 4rem;
+    font-size: 5rem;
     content: "";
-    right: 2.1em;
-    width: 35%;
+    // align-items: center;
     animation: slidein 2s ease forwards;
-    position: absolute;
     opacity: 0;
     color: #fff;
 
@@ -314,46 +320,7 @@ $sp: 480px; // スマホ
   }
 
   &__txt02 {
-    line-height: 4;
     animation-delay: 2.5s;
-  }
-
-  &__txt03 {
-    top: 1.5em;
-    right: 5.5em;
-    font-size: 1.4rem;
-    line-height: 16;
-    animation-delay: 4s;
-
-    @include sp {
-      right: 1.5em;
-      top: 8px;
-      font-size: 0.7rem;
-    }
-  }
-
-  @keyframes slidein {
-    0% {
-      opacity: 0;
-      transform: translateX(64px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  &__movie iframe {
-    position: absolute;
-    top: 38%;
-    right: 17%;
-
-    @include sp {
-      width: 42vw;
-      height: 13vh;
-      top: 105px;
-      right: 5%;
-    }
   }
 }
 
@@ -382,7 +349,7 @@ section {
     justify-content: center;
     align-items: center;
     font-size: 4rem;
-    font-weight: normal;
+    font-weight: bold;
 
     @include sp {
       font-size: 1.5rem;
@@ -394,6 +361,7 @@ section {
       vertical-align: middle;
       text-align-last: left;
       padding-bottom: 50px;
+      color: #0f4c83;
 
       @include sp {
         padding: 0;
@@ -404,6 +372,7 @@ section {
 
     &-sub {
       font-size: 1.5rem;
+      font-weight: bold;
       line-height: 4.5;
       padding-left: 130px;
       position: relative;
@@ -416,7 +385,7 @@ section {
     &-sub::after {
       width: 100px;
       height: 1px;
-      background: #000;
+      background: #0f4c83;
       position: absolute;
       content: "";
       top: 50%;
@@ -429,46 +398,29 @@ section {
       }
     }
     /*見出し横線ここまで*/
-
-    &-intro {
-      color: #000;
-    }
   }
 }
 
 /*Introducion*/
 .introduction {
-  height: 80vh;
   padding: 50px 0;
-  position: relative;
-  background: radial-gradient(
-      ellipse at center center,
-      rgba(255, 255, 255, 0) 70%,
-      rgba(255, 255, 255, 1) 100%
-    ),
-    url(../img/myface/introduction.jpg) no-repeat top/cover;
-
   @include sp {
-    height: 51vh;
     padding: 0;
-    background-position: right;
   }
 }
 
 .intro__cont {
-  width: 100%;
-  max-width: 700px;
-  position: absolute;
-  top: 12em;
-
+  display: flex;
   @include sp {
-    top: 5em;
+    flex-direction: column-reverse;
   }
 
   &-txt_main {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    padding: 20px 0 20px 25px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #0f4c83;
 
     @include sp {
       font-size: 1.3rem;
@@ -478,17 +430,53 @@ section {
     }
   }
 
-  &-txt {
+  &-txt_sub {
     font-size: 1.125rem;
-    line-height: 3;
-    padding: 0 1.125em;
+    line-height: 2.5;
+    padding: 1em 2em;
     font-weight: bold;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
 
     @include sp {
       font-size: 1rem;
+      margin: 0 0.5em;
       line-height: 2;
+    }
+  }
+
+  &-mv_txt {
+    font-size: 1.4rem;
+    font-weight: bold;
+    animation-delay: 4s;
+    color: #0f4c83;
+    text-align: center;
+    letter-spacing: 0.5em;
+
+    @include sp {
+      right: 1.5em;
+      top: 8px;
+      font-size: 0.7rem;
+    }
+  }
+
+  @keyframes slidein {
+    0% {
+      opacity: 0;
+      transform: translateX(64px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &__movie iframe {
+    @include sp {
+      width: 42vw;
+      height: 13vh;
+      top: 105px;
+      right: 5%;
     }
   }
 }
@@ -517,6 +505,7 @@ section {
       letter-spacing: 0.3em;
       writing-mode: vertical-rl;
       text-orientation: upright;
+      color: #3594cb;
     }
 
     &-img {
@@ -768,6 +757,7 @@ section {
       top: 25%;
       left: 6%;
       padding: 10px;
+      border-radius: 5px;
     }
   }
 
@@ -805,20 +795,38 @@ section {
     }
   }
 
+  &__txt {
+    color: #3594cb;
+  }
+
   &__txt-pro01 {
     padding-left: 118px;
+    padding-bottom: 20px;
     font-weight: bold;
 
     @include sp {
       padding-left: 0;
+      padding-bottom: 10px;
     }
   }
 
   &__txt-pro02 {
-    padding-left: 130px;
+    font-size: 1.5rem;
+    padding-left: 170px;
 
     @include sp {
       padding-left: 0px;
+      font-size: 1rem;
+    }
+  }
+
+  &__txt-pro03 {
+    font-size: 1.5rem;
+    padding-left: 70px;
+
+    @include sp {
+      font-size: 1rem;
+      padding-left: 0;
     }
   }
 
@@ -868,6 +876,7 @@ section {
     top: 10%;
     right: 18%;
     font-size: 2rem;
+    color: #3594cb;
 
     @include sp {
       font-size: 1rem;
@@ -943,8 +952,10 @@ section {
 
     @include sp {
       background: #ffffff;
+      border-radius: 5px;
       font-size: 1rem;
       left: 0;
+      padding: 0.5em;
       margin: 10px;
       z-index: 2;
     }
@@ -959,14 +970,8 @@ section {
     }
   }
 
-  &__blog-txt_sp {
-    @include sp {
-      display: none;
-    }
-  }
-
   &__blog-txt_web {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-top: 10px;
 
     @include sp {
@@ -977,7 +982,7 @@ section {
 
   &__blog-txt_web a {
     font-weight: bold;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3594cb;
   }
 
   &__blog-txt_web a:hover {
@@ -988,7 +993,7 @@ section {
   &__blog-btn {
     background: #20a1f1;
     color: #fff;
-    border: 1px solid #a1bdce;
+    border: 1px solid #20a1f1;
     border-radius: 5px;
     font-size: 1.3rem;
     position: absolute;
@@ -998,12 +1003,13 @@ section {
     @include sp {
       font-size: 1.5rem;
       left: 18%;
+      bottom: 8%;
     }
   }
 
   &__blog-btn::after {
     content: "";
-    background: url(../img/skill/blog.png);
+    background: url(../img/skill/blog.jpg);
     width: 100%;
     max-width: 10px;
   }
@@ -1013,6 +1019,7 @@ section {
   position: relative;
 
   &::before {
+    opacity: 0.7;
     background-image: url(../img/skill/mainimg/programming.jpg);
     clip-path: polygon(
       18% 0%,
@@ -1048,6 +1055,7 @@ section {
 
   &::before {
     left: 0;
+    opacity: 0.7;
     background-image: url(../img/skill/mainimg/marketing.jpg);
     clip-path: polygon(
       0 0,
@@ -1073,7 +1081,7 @@ section {
   }
 
   &::after {
-    background: #f4f4f4;
+    background: #fff;
     z-index: -999;
   }
 }
@@ -1082,6 +1090,7 @@ section {
   position: relative;
 
   &::before {
+    opacity: 0.7;
     background-image: url(../img/skill/mainimg/blog.jpg);
     clip-path: polygon(
       18% 0%,
@@ -1369,19 +1378,18 @@ section {
 /*subskill*/
 .subskill {
   &__cont {
-    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 
     @include sp {
-      display: block;
+      width: 100%;
     }
   }
 
   &__img-wrapper img {
     width: 100%;
-    max-width: 500px;
-    position: relative;
-    top: 15%;
-    left: 19%;
+    max-width: 600px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #ccc;
 
@@ -1395,24 +1403,9 @@ section {
   }
 
   &__txt-list {
-    position: absolute;
-    right: 12%;
-    font-size: 2rem;
-    padding: 15px 15px 15px 120px;
-    z-index: -1;
-    border-radius: 5px;
-    background-size: 20px 20px;
-    background-image: linear-gradient(
-      -45deg,
-      #fff 25%,
-      #f4f4f4 25%,
-      #f4f4f4 50%,
-      #fff 50%,
-      #fff 75%,
-      #f4f4f4 75%,
-      #f4f4f4
-    );
-
+    font-size: 1.5rem;
+    background: #1b95e0;
+    color: #fff;
     @include sp {
       font-size: 1.3rem;
       padding: 15px 0 0 0;
@@ -1424,7 +1417,8 @@ section {
 
   &__txt-item span {
     font-weight: bold;
-    color: #1b95e0;
+    color: #fff;
+    font-size: 2rem;
   }
 }
 
@@ -1498,14 +1492,14 @@ section {
   }
 
   &__cp-qa dt::before {
-    padding: 0.05em 0.14em;
-    content: "\f128";
+    padding: 0.05em 0.22em;
+    content: "Q";
     background: #8bd157;
   }
 
   &__cp-qa dd::before {
-    padding: 0.08em 0.15em;
-    content: "\f12a";
+    padding: 0.08em 0.27em;
+    content: "A";
     background: #23a1f0;
   }
 

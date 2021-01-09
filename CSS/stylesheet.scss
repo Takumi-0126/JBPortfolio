@@ -412,6 +412,7 @@ section {
 .intro__cont {
   display: flex;
   @include sp {
+    flex-direction: column-reverse;
   }
 
   &-txt_main {

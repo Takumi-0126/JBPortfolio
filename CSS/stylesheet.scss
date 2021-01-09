@@ -471,12 +471,9 @@ section {
     }
   }
 
-  &__movie iframe {
+  &__mv iframe {
     @include sp {
-      width: 42vw;
-      height: 13vh;
-      top: 105px;
-      right: 5%;
+      max-width: 100%;
     }
   }
 }

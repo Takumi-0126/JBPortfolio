@@ -252,7 +252,7 @@ $sp: 480px; // スマホ
     height: 600px;
 
     @include sp {
-      height: unset;
+      height: 100%;
     }
   }
 
@@ -424,8 +424,7 @@ section {
 
     @include sp {
       font-size: 1.3rem;
-      padding: 0 3px;
-      color: #ffffff;
+      padding: 10px 3px;
       text-align: center;
     }
   }
@@ -456,7 +455,7 @@ section {
     @include sp {
       right: 1.5em;
       top: 8px;
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
   }
 
@@ -972,8 +971,9 @@ section {
     padding-top: 10px;
 
     @include sp {
-      text-align: left;
+      text-align: center;
       padding: 5px;
+      font-size: 1rem;
     }
   }
 
@@ -1391,11 +1391,6 @@ section {
     box-shadow: 5px 5px 10px #ccc;
 
     @include sp {
-      top: 0;
-      left: 0;
-      position: unset;
-      margin: 0 10px;
-      max-width: 350px;
     }
   }
 
@@ -1404,7 +1399,7 @@ section {
     background: #1b95e0;
     color: #fff;
     @include sp {
-      font-size: 1.3rem;
+      font-size: 1rem;
       padding: 15px 0 0 0;
       text-align: center;
       position: unset;
@@ -1416,6 +1411,9 @@ section {
     font-weight: bold;
     color: #fff;
     font-size: 2rem;
+    @include sp {
+      font-size: 1.5rem;
+    }
   }
 }
 

@@ -1724,9 +1724,9 @@ section {
 /*モーダルココまで*/
 /*subskill*/
 .subskill__cont {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
+  font-size: 1.5rem;
+  background: #1b95e0;
+  color: #fff;
 }
 
 @media (max-width: 480px) {
@@ -1735,22 +1735,15 @@ section {
   }
 }
 
-.subskill__img-wrapper img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 5px;
-  -webkit-box-shadow: 5px 5px 10px #ccc;
-          box-shadow: 5px 5px 10px #ccc;
-}
-
-.subskill__txt-list {
-  font-size: 1.5rem;
-  background: #1b95e0;
-  color: #fff;
+.subskill__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 @media (max-width: 480px) {
-  .subskill__txt-list {
+  .subskill__list {
     font-size: 1rem;
     padding: 15px 0 0 0;
     text-align: center;
@@ -1759,16 +1752,25 @@ section {
   }
 }
 
-.subskill__txt-item span {
+.subskill__item {
+  text-align: center;
+}
+
+.subskill__item span {
   font-weight: bold;
   color: #fff;
   font-size: 2rem;
 }
 
 @media (max-width: 480px) {
-  .subskill__txt-item span {
+  .subskill__item span {
     font-size: 1.5rem;
   }
+}
+
+.subskill__item img {
+  width: 100%;
+  max-width: 150px;
 }
 
 /*Q&A*/

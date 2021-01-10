@@ -482,7 +482,7 @@ section {
 /*career*/
 .career {
   @include sp {
-    height: 200vh;
+    height: 230vh;
   }
 
   &__cont {
@@ -679,6 +679,7 @@ section {
 
     & > li .cbp_tmicon {
       position: relative;
+      opacity: 0;
       float: right;
       left: auto;
       margin: -55px 5px 0 0px;
@@ -1016,7 +1017,8 @@ section {
 
 #programming {
   position: relative;
-
+  @include sp {
+  }
   &::before {
     opacity: 0.7;
     background-image: url(../img/skill/mainimg/programming.jpg);

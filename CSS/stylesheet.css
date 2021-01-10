@@ -745,7 +745,7 @@ section {
 /*career*/
 @media (max-width: 480px) {
   .career {
-    height: 200vh;
+    height: 230vh;
   }
 }
 
@@ -951,6 +951,7 @@ section {
   }
   .cbp_tmtimeline > li .cbp_tmicon {
     position: relative;
+    opacity: 0;
     float: right;
     left: auto;
     margin: -55px 5px 0 0px;

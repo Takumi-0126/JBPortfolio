@@ -686,7 +686,7 @@ section {
     }
   }
 }
-/*タイムラインここまで*/
+/*timeline*/
 
 /*skill*/
 .skill {
@@ -1375,6 +1375,14 @@ section {
   text-align: center;
 }
 /*モーダルココまで*/
+
+/*works*/
+.works {
+  &__slick-item img {
+    width: 100%;
+    max-width: 150px;
+  }
+}
 
 /*subskill*/
 .subskill {

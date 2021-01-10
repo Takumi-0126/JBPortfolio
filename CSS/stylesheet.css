@@ -958,7 +958,7 @@ section {
   }
 }
 
-/*タイムラインここまで*/
+/*timeline*/
 /*skill*/
 .skill {
   /*共通パート*/
@@ -1725,6 +1725,12 @@ section {
 }
 
 /*モーダルココまで*/
+/*works*/
+.works__slick-item img {
+  width: 100%;
+  max-width: 150px;
+}
+
 /*subskill*/
 .subskill__cont {
   font-size: 1.5rem;

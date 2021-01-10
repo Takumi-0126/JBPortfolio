@@ -427,6 +427,7 @@ button {
 @media (max-width: 480px) {
   .mv {
     height: 34vh;
+    margin-bottom: 30px;
   }
 }
 
@@ -609,6 +610,7 @@ section {
 @media (max-width: 480px) {
   .sect__ttl-sub {
     padding-left: 10px;
+    line-height: 2.5;
   }
 }
 

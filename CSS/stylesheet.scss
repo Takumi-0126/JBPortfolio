@@ -239,6 +239,7 @@ $sp: 480px; // スマホ
 
   @include sp {
     height: 34vh;
+    margin-bottom: 30px;
   }
 
   &__inner {
@@ -379,6 +380,7 @@ section {
 
       @include sp {
         padding-left: 10px;
+        line-height: 2.5;
       }
     }
     /*見出し横線ここから*/

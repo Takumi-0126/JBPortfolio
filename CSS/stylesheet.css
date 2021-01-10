@@ -1610,7 +1610,7 @@ section {
 .modal__btn:hover {
   background: #fff;
   color: #20a1f1;
-  border: 1px solid #ccc;
+  border: 1px solid #20a1f1;
   cursor: pointer;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -1740,15 +1740,16 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  padding: 30px 0;
 }
 
 @media (max-width: 480px) {
   .subskill__list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     font-size: 1rem;
     padding: 15px 0 0 0;
     text-align: center;
-    position: unset;
-    right: 0;
   }
 }
 
@@ -1776,13 +1777,6 @@ section {
 /*Q&A*/
 .question {
   background: #f4f4f4;
-  margin-top: 100px;
-}
-
-@media (max-width: 480px) {
-  .question {
-    margin-top: 0;
-  }
 }
 
 .question__cp-qa *,

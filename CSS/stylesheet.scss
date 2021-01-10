@@ -1284,7 +1284,7 @@ section {
   &__btn:hover {
     background: #fff;
     color: #20a1f1;
-    border: 1px solid #ccc;
+    border: 1px solid #20a1f1;
     cursor: pointer;
     transition: 0.3s ease;
   }
@@ -1387,13 +1387,13 @@ section {
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 30px 0;
 
     @include sp {
+      grid-template-columns: 1fr;
       font-size: 1rem;
       padding: 15px 0 0 0;
       text-align: center;
-      position: unset;
-      right: 0;
     }
   }
 
@@ -1418,11 +1418,6 @@ section {
 /*Q&A*/
 .question {
   background: #f4f4f4;
-  margin-top: 100px;
-
-  @include sp {
-    margin-top: 0;
-  }
 
   &__cp-qa *,
   &__cp-qa *:after,

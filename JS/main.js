@@ -12,8 +12,6 @@ function modalClose() {
   document.getElementById("modalArea").className = "modalBg modalBgClose";
 }
 
-/*Slick*/
-$(".works__slick").slick();
 
 /*Accordion*/
 const accSingleTriggers = document.querySelectorAll(".js-acc-single-trigger");

@@ -1725,6 +1725,21 @@ section {
 
 /*モーダルココまで*/
 /*works*/
+.works__slick-item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.works__slick-item_txt {
+  width: 50%;
+}
+
 .works__slick-item img {
   width: 100%;
   max-width: 150px;

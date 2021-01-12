@@ -1376,6 +1376,17 @@ section {
 
 /*works*/
 .works {
+  &__slick-item {
+    display: flex !important;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__slick-item_txt {
+    width: 50%;
+  }
+
   &__slick-item img {
     width: 100%;
     max-width: 150px;

@@ -1134,6 +1134,36 @@ section {
   left: 18%;
 }
 
+.skill__pro-btn {
+  background: #20a1f1;
+  color: #fff;
+  border: 1px solid #20a1f1;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  bottom: 15%;
+  left: 20%;
+  position: absolute;
+}
+
+@media (max-width: 480px) {
+  .skill__pro-btn {
+    font-size: 1.5rem;
+    left: 27%;
+    z-index: 2;
+    bottom: 8%;
+  }
+}
+
+.skill__pro-btn:hover {
+  background: #fff;
+  color: #20a1f1;
+  border: 1px solid #20a1f1;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
 @media (max-width: 480px) {
   .skill__item-market {
     height: 320px;
@@ -1586,36 +1616,6 @@ section {
 .modal__window-img img:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-}
-
-.modal__btn {
-  background: #20a1f1;
-  color: #fff;
-  border: 1px solid #20a1f1;
-  border-radius: 5px;
-  font-size: 1.3rem;
-  padding: 5px 10px;
-  bottom: 15%;
-  left: 20%;
-  position: absolute;
-}
-
-@media (max-width: 480px) {
-  .modal__btn {
-    font-size: 1.5rem;
-    left: 27%;
-    z-index: 2;
-    bottom: 8%;
-  }
-}
-
-.modal__btn:hover {
-  background: #fff;
-  color: #20a1f1;
-  border: 1px solid #20a1f1;
-  cursor: pointer;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
 }
 
 .modal__btn-close {

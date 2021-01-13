@@ -256,173 +256,10 @@
             </li>
           </ul>
           <!-- モーダルここから。開くボタン -->
-          <input
-            class="modal__btn"
-            type="button"
-            value="制作物を見る"
-            onclick="modalOpen()"
-          />
-          <!-- モーダルウインドウのエリア -->
-          <div id="modalArea" class="modal__nodisp">
-            <div class="modal__window">
-              <!-- ここがウインドウとなります -->
-              <div class="modal__window-wrapper">
-                <div class="modal__window-container">
-                  <div class="modal__window-slide">
-                    <div class="modal__window-item modal__window-item-pro">
-                      <h2>【LP制作】</h2>
-                      <div class="modal-content">
-                        <div class="modal__txt">
-                          <ul class="modal__list">
-                            <li>
-                              <h3>【制作概要/ポートフォリオ】</h3>
-                              <p>
-                                転職活動用に制作したポートフォリオ兼自己紹介サイトです。
-                              </p>
-                            </li>
-                            <li>
-                              <h3>【制作期間/2週間】</h3>
-                              <p>デザイン4日間/コーディング10日間</p>
-                            </li>
-                            <li>
-                              <h3>【担当範囲/デザイン・コーディング】</h3>
-                              <p>
-                                自己紹介及び転職活動にアピールできる内容をピックアップ。
-                              </p>
-                            </li>
-                            <li>
-                              <h3>【制作ポイント】</h3>
-                              <p>
-                                今回のポートフォリオは、現在はフリーライターの菊池良さんが学生時代に制作された「<span
-                                  ><a href="http://www.sokusenryoku.me/"
-                                    >逆就活サイト</a
-                                  ></span
-                                >」を見て強烈な衝撃を受け、「自分もこのようなサイトを作ってアピールしたい！」と思ったのがきっかけです。取り組む前にSNS経由で菊池さんにDMを送り、模倣させて頂いていいかお伺いしたところ、快諾して頂きました。
-                                菊池さんの場合は、とてもコミカルな仕上がりになっています。しかし私の場合は自分のスキル(プログラミング・マーケティング・ブログ)をアピールしたかったので、自分の個性を出しつつ真面目な仕上がりを心がけました。また、使用している写真は全てこのポートフォリオ用にプロカメラマンに依頼しています。
-                              </p>
-                            </li>
-                          </ul>
-                        </div>
-                        <a
-                          href=""
-                          class="modal__window-img modal__window-img_01"
-                          target="_blank"
-                        >
-                          <img src="./img/works/LP.jpg" alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="modal__window-item modal__window-item-pro">
-                      <h2>【HP制作】</h2>
 
-                      <div class="modal-content">
-                        <div class="modal__txt">
-                          <ul>
-                            <li>
-                              <h3>【クライアント/中野Company株式会社】</h3>
-                            </li>
-                            <li>
-                              <h3>【制作概要/HP制作】</h3>
-                              <p>
-                                中野Company株式会社(飲食業メイン)のHPを新規制作
-                              </p>
-                            </li>
-                            <li>
-                              <h3>【制作期間/3週間】</h3>
-                              <p>打ち合わせ1日+制作実装3週間</p>
-                            </li>
-                            <li>
-                              <h3>【担当範囲/コーディング・WordPress構築】</h3>
-                              <p>
-                                デザイナーの指示書をもとに、全ページコーディング＋WordPress化(テーマ無し)
-                              </p>
-                            </li>
-                            <li>
-                              <h3>【課題・意識点】</h3>
-                              <p>
-                                リリースまで時間がかなり限られた中でのコーディング部分を任されました。そのため、最初に大きくクライアント・デザイナーと打ち合わせをした後は、デザイナーと連絡を密に取り確認&改善を繰り返し、迅速な対応を心がけました。
-                                また、クライアントにも進捗報告を定期的に行い、リリース当日までにすべき部分とアップデート対応とする部分を明確に分けました。その結果、リリース日前日に動作確認をして納品することができました。
-                              </p>
-                            </li>
-                            <li>
-                              <h3>【KPI】</h3>
-                              <p>ブランド認知度拡大</p>
-                            </li>
-                            <li>
-                              <h3>【KPI達成率】</h3>
-                              <p>取引先との窓口になっているとのこと。</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <a
-                          class="modal__window-img"
-                          href="https://nakano-company.co.jp/"
-                          target="_blank"
-                        >
-                          <img
-                            class="modal__window-img_02"
-                            src="./img/works/nakano-company-co-jp.jpg"
-                            alt=""
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="modal__window-item modal__window-item-pro">
-                      <h2>【ECサイト制作】</h2>
-                      <div class="modal-content">
-                        <div class="modal__txt">
-                          <ul class="modal__list">
-                            <li class="modal__item">
-                              <h3>
-                                【制作概要/プログラミング学習サイトの架空ECサイト】
-                              </h3>
-                              <p>
-                                プログラミング学習サイト「忍者code」の架空ECサイト
-                              </p>
-                            </li>
-                            <li class="modal__item">
-                              <h3>【制作期間/３週間】</h3>
-                              <p>制作実装3週間</p>
-                            </li>
-                            <li class="modal__item">
-                              <h3>【担当範囲/コーディング】</h3>
-                              <p>
-                                教材を参考に、HTML・CSS・JavaScriptでコーディングしてあります。
-                              </p>
-                            </li>
-                            <li class="modal__item">
-                              <h3>【制作ポイント】</h3>
-                              <p>
-                                ECサイトに必要な検索機能や金額合計方法、購入画面の実装方法を学習しました。実装するにあたって理解できない部分を復習、製作者に質問してJavaScriptの原理を理解できるよう意識しました。
-                              </p>
-                            </li>
-                          </ul>
-                        </div>
-                        <a
-                          class="modal__window-img modal__window-img_03"
-                          href="https://takumi-0126.github.io/ecsite__example/"
-                          target="_blank"
-                        >
-                          <img
-                            src="./img/works/takumi-0126-github-io-ecsite-example.jpg"
-                            alt=""
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <p>
-                <input
-                  class="modal__btn-close"
-                  type="button"
-                  value="×"
-                  onclick="modalClose()"
-                />
-              </p>
-            </div>
-          </div>
+          <button class="skill__pro-btn">
+            <a href="#works">制作物を見る</a>
+          </button>
         </div>
         <div id="marketing" class="skill__item skill__item-market">
           <h2 class="skill__name skill__name-market" data-title="Marketnig">
@@ -478,7 +315,7 @@
       </div>
     </section>
 
-    <section class="works">
+    <section id="works" class="works">
       <ul class="works__slick">
         <li class="works__slick-item">
           <ul class="works__slick-item_txt">
@@ -504,16 +341,79 @@
               </p>
             </li>
           </ul>
-          <img src="./img/works/LP.jpg" alt="" />
+          <a href="" class="" target="_blank">
+            <img src="./img/works/LP.jpg" alt="" />
+          </a>
         </li>
         <li class="works__slick-item">
-          <img src="./img/works/nakano-company-co-jp.jpg" alt="" />
+          <ul>
+            <li>
+              <h3>【クライアント/中野Company株式会社】</h3>
+            </li>
+            <li>
+              <h3>【制作概要/HP制作】</h3>
+              <p>中野Company株式会社(飲食業メイン)のHPを新規制作</p>
+            </li>
+            <li>
+              <h3>【制作期間/3週間】</h3>
+              <p>打ち合わせ1日+制作実装3週間</p>
+            </li>
+            <li>
+              <h3>【担当範囲/コーディング・WordPress構築】</h3>
+              <p>
+                デザイナーの指示書をもとに、全ページコーディング＋WordPress化(テーマ無し)
+              </p>
+            </li>
+            <li>
+              <h3>【課題・意識点】</h3>
+              <p>
+                リリースまで時間がかなり限られた中でのコーディング部分を任されました。そのため、最初に大きくクライアント・デザイナーと打ち合わせをした後は、デザイナーと連絡を密に取り確認&改善を繰り返し、迅速な対応を心がけました。
+                また、クライアントにも進捗報告を定期的に行い、リリース当日までにすべき部分とアップデート対応とする部分を明確に分けました。その結果、リリース日前日に動作確認をして納品することができました。
+              </p>
+            </li>
+            <li>
+              <h3>【KPI】</h3>
+              <p>ブランド認知度拡大</p>
+            </li>
+            <li>
+              <h3>【KPI達成率】</h3>
+              <p>取引先との窓口になっているとのこと。</p>
+            </li>
+          </ul>
+          <a class="" href="https://nakano-company.co.jp/" target="_blank">
+            <img class="" src="./img/works/nakano-company-co-jp.jpg" alt="" />
+          </a>
         </li>
         <li class="works__slick-item">
-          <img
-            src="./img/works/takumi-0126-github-io-ecsite-example.jpg"
-            alt=""
-          />
+          <ul class="">
+            <li class="">
+              <h3>【制作概要/プログラミング学習サイトの架空ECサイト】</h3>
+              <p>プログラミング学習サイト「忍者code」の架空ECサイト</p>
+            </li>
+            <li class="">
+              <h3>【制作期間/３週間】</h3>
+              <p>制作実装3週間</p>
+            </li>
+            <li class="">
+              <h3>【担当範囲/コーディング】</h3>
+              <p>
+                教材を参考に、HTML・CSS・JavaScriptでコーディングしてあります。
+              </p>
+            </li>
+            <li class="">
+              <h3>【制作ポイント】</h3>
+              <p>
+                ECサイトに必要な検索機能や金額合計方法、購入画面の実装方法を学習しました。実装するにあたって理解できない部分を復習、製作者に質問してJavaScriptの原理を理解できるよう意識しました。
+              </p>
+            </li>
+          </ul>
+          <a
+            class=""
+            href="https://takumi-0126.github.io/ecsite__example/"
+            target="_blank"
+          >
+            <img src="./img/works/ecsite-example.jpg" alt="" />
+          </a>
         </li>
       </ul>
     </section>

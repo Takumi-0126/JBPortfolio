@@ -845,6 +845,33 @@ section {
     left: 18%;
   }
 
+  &__pro-btn {
+    background: #20a1f1;
+    color: #fff;
+    border: 1px solid #20a1f1;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    bottom: 15%;
+    left: 20%;
+    position: absolute;
+
+    @include sp {
+      font-size: 1.5rem;
+      left: 27%;
+      z-index: 2;
+      bottom: 8%;
+    }
+  }
+
+  &__pro-btn:hover {
+    background: #fff;
+    color: #20a1f1;
+    border: 1px solid #20a1f1;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
   /*Marketing part*/
   &__item-market {
     @include sp {
@@ -1262,33 +1289,6 @@ section {
   &__window-img img:hover {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-  }
-
-  &__btn {
-    background: #20a1f1;
-    color: #fff;
-    border: 1px solid #20a1f1;
-    border-radius: 5px;
-    font-size: 1.3rem;
-    padding: 5px 10px;
-    bottom: 15%;
-    left: 20%;
-    position: absolute;
-
-    @include sp {
-      font-size: 1.5rem;
-      left: 27%;
-      z-index: 2;
-      bottom: 8%;
-    }
-  }
-
-  &__btn:hover {
-    background: #fff;
-    color: #20a1f1;
-    border: 1px solid #20a1f1;
-    cursor: pointer;
-    transition: 0.3s ease;
   }
 
   &__btn-close {

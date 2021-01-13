@@ -480,7 +480,7 @@ section {
 /*career*/
 .career {
   @include sp {
-    height: 230vh;
+    height: 260vh;
   }
 
   &__cont {
@@ -752,7 +752,7 @@ section {
       z-index: 2;
       background: #fff;
       top: 25%;
-      left: 6%;
+      left: 0%;
       padding: 10px;
       border-radius: 5px;
     }

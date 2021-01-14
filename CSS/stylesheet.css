@@ -972,7 +972,7 @@ section {
 
 @media (max-width: 480px) {
   .skill__item {
-    height: 240px;
+    height: 260px;
     padding-bottom: 7px;
     background: linear-gradient(-45deg, transparent 25%, #aaa 25%, #aaa 50%, transparent 50%, transparent 75%, #aaa 75%) left bottom/7px 7px repeat-X;
   }
@@ -993,7 +993,7 @@ section {
 
 @media (max-width: 480px) {
   .skill__item::before {
-    height: 240px;
+    height: 260px;
     width: 100%;
   }
 }
@@ -1235,7 +1235,7 @@ section {
 
 @media (max-width: 480px) {
   .skill__market-item_expert {
-    max-width: 130px;
+    max-width: 100px;
     top: 53%;
     left: 11%;
   }
@@ -1250,7 +1250,7 @@ section {
 
 @media (max-width: 480px) {
   .skill__market-item_analytics {
-    max-width: 300px;
+    max-width: 250px;
     top: 30%;
     right: 10%;
   }
@@ -1265,7 +1265,7 @@ section {
 
 @media (max-width: 480px) {
   .skill__market-item_riskmanagement {
-    max-width: 124px;
+    max-width: 10px;
     top: 53%;
     right: 10%;
   }

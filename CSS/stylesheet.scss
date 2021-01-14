@@ -693,7 +693,7 @@ section {
     height: 320px;
 
     @include sp {
-      height: 240px;
+      height: 260px;
       padding-bottom: 7px;
       background: linear-gradient(
           -45deg,
@@ -721,7 +721,7 @@ section {
     z-index: 2;
 
     @include sp {
-      height: 240px;
+      height: 260px;
       width: 100%;
     }
   }
@@ -933,7 +933,7 @@ section {
     right: 35%;
 
     @include sp {
-      max-width: 130px;
+      max-width: 100px;
       top: 53%;
       left: 11%;
     }
@@ -946,7 +946,7 @@ section {
     right: 15%;
 
     @include sp {
-      max-width: 300px;
+      max-width: 250px;
       top: 30%;
       right: 10%;
     }
@@ -959,7 +959,7 @@ section {
     right: 3%;
 
     @include sp {
-      max-width: 124px;
+      max-width: 10px;
       top: 53%;
       right: 10%;
     }

@@ -1265,7 +1265,7 @@ section {
 
 @media (max-width: 480px) {
   .skill__market-item_riskmanagement {
-    max-width: 10px;
+    max-width: 100px;
     top: 53%;
     right: 10%;
   }

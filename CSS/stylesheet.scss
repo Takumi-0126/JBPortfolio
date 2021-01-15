@@ -480,7 +480,7 @@ section {
 /*career*/
 .career {
   @include sp {
-    height: 260vh;
+    height: 230vh;
   }
 
   &__cont {
@@ -516,15 +516,12 @@ section {
 .cbp_tmtimeline {
   width: 100%;
   max-width: 600px;
-  max-height: 790px;
   margin: 0 50px 0 0;
   padding: 0;
   list-style: none;
   position: relative;
 
   @include sp {
-    max-width: unset;
-    max-height: unset;
     margin: 0 50px;
   }
 
@@ -574,7 +571,7 @@ section {
   & > li:nth-child(odd) .cbp_tmtime span:last-child {
     color: #6cbfee;
     font-weight: bold;
-    margin-right: 50px;
+    margin-right: 55px;
   }
 
   /* Right content */
@@ -747,6 +744,7 @@ section {
     left: 3%;
 
     @include sp {
+      width: 100vw;
       font-size: 1rem;
       text-align: center;
       z-index: 2;
@@ -785,7 +783,6 @@ section {
   &__name-blog {
     top: 25%;
     right: 17%;
-
     @include sp {
       top: 0;
       right: 41%;
@@ -809,7 +806,7 @@ section {
 
   &__txt-pro02 {
     font-size: 1.5rem;
-    padding-left: 170px;
+    padding-left: 160px;
 
     @include sp {
       padding-left: 0px;
@@ -819,7 +816,16 @@ section {
 
   &__txt-pro03 {
     font-size: 1.5rem;
-    padding-left: 70px;
+    padding-left: 230px;
+    @include sp {
+      font-size: 1rem;
+      padding-left: 0;
+    }
+  }
+
+  &__txt-pro04 {
+    font-size: 1.5rem;
+    padding-left: 100px;
 
     @include sp {
       font-size: 1rem;
@@ -851,9 +857,9 @@ section {
     border: 1px solid #20a1f1;
     border-radius: 5px;
     font-size: 1.3rem;
-    padding: 5px 10px;
+    padding: 10px;
     bottom: 15%;
-    left: 20%;
+    left: 19%;
     position: absolute;
 
     @include sp {
@@ -980,7 +986,6 @@ section {
       font-size: 1rem;
       left: 0;
       padding: 0.5em;
-      margin: 10px;
       z-index: 2;
     }
   }
@@ -1385,11 +1390,16 @@ section {
 
   &__slick-item_txt {
     width: 50%;
+    padding-right: 20px;
+  }
+
+  &__slick-item_txt li {
+    padding: 10px 0;
   }
 
   &__slick-item img {
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;
   }
 }
 
@@ -1413,7 +1423,7 @@ section {
     @include sp {
       grid-template-columns: 1fr;
       font-size: 1rem;
-      padding: 15px 0 0 0;
+      padding: 15px 0;
       text-align: center;
     }
   }

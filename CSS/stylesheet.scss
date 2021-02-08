@@ -1382,7 +1382,7 @@ section {
 /*works*/
 .works {
   &__item {
-    justify-content: center;
+    position: relative;
     width: 100%;
     margin: 0 auto;
   }
@@ -1398,7 +1398,23 @@ section {
 
   &__item img {
     width: 50vw;
+    margin: 0 auto;
     cursor: pointer;
+  }
+
+  &__mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  &__mask:hover {
+    opacity: 1;
   }
 }
 

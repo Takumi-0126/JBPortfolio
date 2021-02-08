@@ -1381,23 +1381,23 @@ section {
 
 /*works*/
 .works {
-  &__slick-item {
+  &__item {
     display: flex !important;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
   }
 
-  &__slick-item_txt {
+  &__item_txt {
     width: 50%;
     padding-right: 20px;
   }
 
-  &__slick-item_txt li {
+  &__item_txt li {
     padding: 10px 0;
   }
 
-  &__slick-item img {
+  &__item img {
     width: 50vw;
     cursor: pointer;
   }

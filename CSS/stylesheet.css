@@ -1734,7 +1734,7 @@ section {
 
 /*モーダルココまで*/
 /*works*/
-.works__slick-item {
+.works__item {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -1745,16 +1745,16 @@ section {
   margin: 0 auto;
 }
 
-.works__slick-item_txt {
+.works__item_txt {
   width: 50%;
   padding-right: 20px;
 }
 
-.works__slick-item_txt li {
+.works__item_txt li {
   padding: 10px 0;
 }
 
-.works__slick-item img {
+.works__item img {
   width: 50vw;
   cursor: pointer;
 }

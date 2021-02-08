@@ -1755,8 +1755,7 @@ section {
 }
 
 .works__slick-item img {
-  width: 100%;
-  max-width: 200px;
+  width: 50vw;
 }
 
 /*subskill*/

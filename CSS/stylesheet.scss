@@ -1383,8 +1383,9 @@ section {
 .works {
   &__item {
     position: relative;
-    width: 100%;
+    width: 50vw;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   &__item_txt {

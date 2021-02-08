@@ -1736,8 +1736,9 @@ section {
 /*works*/
 .works__item {
   position: relative;
-  width: 100%;
+  width: 50vw;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .works__item_txt {

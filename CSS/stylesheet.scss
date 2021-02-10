@@ -498,7 +498,7 @@ section {
 
     &-l_txt {
       font-size: 1.2rem;
-      letter-spacing: 0.5em;
+      letter-spacing: 0.8em;
       writing-mode: vertical-rl;
       text-orientation: upright;
       color: #3594cb;
@@ -506,7 +506,7 @@ section {
 
     &-img {
       width: 100%;
-      max-width: 215px;
+      max-width: 300px;
       object-fit: cover;
     }
   }
@@ -1410,12 +1410,36 @@ section {
     top: 0;
     left: 25%;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
   &__mask:hover {
     opacity: 1;
+  }
+
+  &__caption {
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__caption-ttl {
+    font-size: 5rem;
+    @include sp {
+      font-size: 2rem;
+    }
+  }
+
+  &__caption-txt {
+    font-size: 2rem;
+    @include sp {
+      font-size: 0.8rem;
+    }
   }
 }
 

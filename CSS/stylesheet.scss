@@ -31,13 +31,19 @@ $sp: 480px; // スマホ
 //*------------------*
 .header {
   width: 100%;
-  position: relative;
+  margin: 0 auto;
+  padding: 1% 2vw;
+  box-sizing: border-box;
+
+  &__link {
+    width: 90%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+  }
 
   &__inner {
-    width: 100%;
-    margin: 0 auto;
-    padding: 1% 2vw;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,11 +76,9 @@ $sp: 480px; // スマホ
     cursor: pointer;
   }
 
-  &__list a::before,
-  &__list a::after {
+  &__list a::before {
     font-size: 20px;
     line-height: 3em;
-    margin-left: 10px;
     font-weight: 600;
     border-bottom: solid 2px #46a4da;
     bottom: 0;
@@ -87,16 +91,11 @@ $sp: 480px; // スマホ
   }
 
   &__list a::before {
-    left: 24%;
+    left: 0%;
   }
 
-  &__list a::after {
-    right: 50%;
-  }
-
-  &__list a:hover::before,
-  &__list a:hover::after {
-    width: 50%;
+  &__list a:hover::before {
+    width: 100%;
   }
 }
 

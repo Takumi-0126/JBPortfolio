@@ -199,15 +199,25 @@ button {
 
 .header {
   width: 100%;
-  position: relative;
-}
-
-.header__inner {
-  width: 100%;
   margin: 0 auto;
   padding: 1% 2vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.header__link {
+  width: 90%;
+  position: fixed;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,11 +259,9 @@ button {
   cursor: pointer;
 }
 
-.nav__list a::before,
-.nav__list a::after {
+.nav__list a::before {
   font-size: 20px;
   line-height: 3em;
-  margin-left: 10px;
   font-weight: 600;
   border-bottom: solid 2px #46a4da;
   bottom: 0;
@@ -266,16 +274,11 @@ button {
 }
 
 .nav__list a::before {
-  left: 24%;
+  left: 0%;
 }
 
-.nav__list a::after {
-  right: 50%;
-}
-
-.nav__list a:hover::before,
-.nav__list a:hover::after {
-  width: 50%;
+.nav__list a:hover::before {
+  width: 100%;
 }
 
 .hamburger-btn {

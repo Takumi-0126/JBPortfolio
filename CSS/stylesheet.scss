@@ -333,8 +333,7 @@ section {
 
 .sect {
   &__inner {
-    width: 100%;
-    max-width: 1280px;
+    width: clamp(320px, 75vw, 1024px);
     margin: 0 auto;
 
     @include sp {
@@ -1399,7 +1398,6 @@ section {
   &__item img {
     width: 50vw;
     margin: 0 auto;
-    cursor: pointer;
   }
 
   &__mask {
@@ -1781,5 +1779,39 @@ i.fa-envelope {
 
   &:after {
     top: 21px;
+  }
+}
+
+.article {
+  &__ttl {
+    font-size: 3rem;
+  }
+
+  &__inner {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  &__heading {
+    img {
+      width: 75vw;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__table {
+    margin: 0 auto 50px;
+    text-align: left;
+    font-weight: bold;
+    border-collapse: collapse;
+  }
+
+  &__table tr,
+  &__table td {
+    border: 1px solid black;
+  }
+
+  &__table td {
+    padding: 10px;
   }
 }

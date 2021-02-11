@@ -1727,6 +1727,60 @@ i.fa-envelope {
   text-align: center;
 }
 
+.article {
+  &__ttl {
+    font-size: 3rem;
+  }
+
+  &__inner {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  &__heading {
+    img {
+      width: 75vw;
+      margin-bottom: 50px;
+    }
+  }
+  &__container {
+    width: 50vw;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &__txt-main {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__container p {
+    line-height: 2em;
+  }
+
+  &__table {
+    margin: 0 auto 50px;
+    text-align: left;
+    font-weight: bold;
+    border-collapse: collapse;
+  }
+
+  &__table tr,
+  &__table td {
+    border: 1px solid black;
+  }
+
+  &__table td {
+    padding: 10px;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+  }
+}
+
 /*TOP*/
 .js__scroll-fadein {
   transition: opacity 1s;
@@ -1779,39 +1833,5 @@ i.fa-envelope {
 
   &:after {
     top: 21px;
-  }
-}
-
-.article {
-  &__ttl {
-    font-size: 3rem;
-  }
-
-  &__inner {
-    padding: 60px 0;
-    text-align: center;
-  }
-
-  &__heading {
-    img {
-      width: 75vw;
-      margin-bottom: 50px;
-    }
-  }
-
-  &__table {
-    margin: 0 auto 50px;
-    text-align: left;
-    font-weight: bold;
-    border-collapse: collapse;
-  }
-
-  &__table tr,
-  &__table td {
-    border: 1px solid black;
-  }
-
-  &__table td {
-    padding: 10px;
   }
 }

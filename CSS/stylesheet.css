@@ -439,14 +439,14 @@ button {
       -ms-user-select: none;
           user-select: none;
   border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-animation: slidein 1.5s forwards;
           animation: slidein 1.5s forwards;
   display: inline-block;
   height: 25px;
   padding: 1px 8px 1px 6px;
   margin-top: 25px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   position: absolute;
   bottom: 20%;
   left: 30%;
@@ -1113,8 +1113,12 @@ section {
 }
 
 .skill__btn:hover {
-  background: #ffffff;
   color: #20a1f1;
+  background: #ffffff;
+  border: 1px solid #20a1f1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .skill__btn-pro {
@@ -1131,6 +1135,8 @@ section {
       -ms-user-select: none;
           user-select: none;
   border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-animation: slidein 1.5s forwards;
           animation: slidein 1.5s forwards;
   font-size: 1.3rem;
@@ -1150,12 +1156,12 @@ section {
 }
 
 .skill__pro-btn:hover {
-  background: #fff;
   color: #20a1f1;
+  background: #ffffff;
   border: 1px solid #20a1f1;
-  cursor: pointer;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {
@@ -1329,6 +1335,8 @@ section {
       -ms-user-select: none;
           user-select: none;
   border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-animation: slidein 1.5s forwards;
           animation: slidein 1.5s forwards;
   font-size: 1.3rem;
@@ -2101,6 +2109,8 @@ i.fa-envelope {
       -ms-user-select: none;
           user-select: none;
   border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-animation: slidein 1.5s forwards;
           animation: slidein 1.5s forwards;
   font-size: 1.3rem;

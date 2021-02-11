@@ -33,7 +33,16 @@ $sp: 480px; // スマホ
   cursor: pointer;
   user-select: none;
   border-radius: 3px;
+  box-sizing: border-box;
   animation: slidein 1.5s forwards;
+}
+
+@mixin btn-hover {
+  color: #20a1f1;
+  background: #ffffff;
+  border: 1px solid #20a1f1;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 //*------------------*
@@ -270,7 +279,6 @@ $sp: 480px; // スマホ
     height: 25px;
     padding: 1px 8px 1px 6px;
     margin-top: 25px;
-    box-sizing: border-box;
     position: absolute;
     bottom: 20%;
     left: 30%;
@@ -842,8 +850,7 @@ section {
   }
 
   &__btn:hover {
-    background: #ffffff;
-    color: #20a1f1;
+    @include btn-hover();
   }
 
   &__btn-pro {
@@ -867,11 +874,7 @@ section {
   }
 
   &__pro-btn:hover {
-    background: #fff;
-    color: #20a1f1;
-    border: 1px solid #20a1f1;
-    cursor: pointer;
-    transition: 0.3s ease;
+    @include btn-hover();
   }
 
   /*Marketing part*/

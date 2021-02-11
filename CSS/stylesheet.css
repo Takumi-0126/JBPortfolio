@@ -392,31 +392,6 @@ button {
           transform: translateX(0);
 }
 
-.details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.details__l {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.details__img {
-  width: 60px;
-}
-
-.details__ttl {
-  font-size: 20px;
-  line-height: 3em;
-  margin-left: 10px;
-  font-weight: 600;
-}
-
 .fa-twitter:before {
   padding: 0 3px;
 }
@@ -455,26 +430,26 @@ button {
 }
 
 .mv__twitter-btn {
-  display: inline-block;
-  height: 25px;
-  padding: 1px 8px 1px 6px;
-  margin-top: 25px;
-  font-weight: 500;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  color: #fff;
   background-color: #1b95e0;
-  border-radius: 3px;
+  font-weight: 500;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  color: #fff;
+  border-radius: 3px;
+  -webkit-animation: slidein 1.5s forwards;
+          animation: slidein 1.5s forwards;
+  display: inline-block;
+  height: 25px;
+  padding: 1px 8px 1px 6px;
+  margin-top: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   bottom: 20%;
   left: 30%;
-  -webkit-animation: slidein 1.5s forwards;
-          animation: slidein 1.5s forwards;
 }
 
 .mv__twitter-follow-btn a {
@@ -1147,10 +1122,17 @@ section {
 }
 
 .skill__pro-btn {
-  background: #20a1f1;
   color: #fff;
-  border: 1px solid #20a1f1;
-  border-radius: 5px;
+  background-color: #1b95e0;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 3px;
+  -webkit-animation: slidein 1.5s forwards;
+          animation: slidein 1.5s forwards;
   font-size: 1.3rem;
   padding: 10px;
   bottom: 15%;
@@ -1338,10 +1320,17 @@ section {
 }
 
 .skill__blog-btn {
-  background: #20a1f1;
   color: #fff;
-  border: 1px solid #20a1f1;
-  border-radius: 5px;
+  background-color: #1b95e0;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 3px;
+  -webkit-animation: slidein 1.5s forwards;
+          animation: slidein 1.5s forwards;
   font-size: 1.3rem;
   position: absolute;
   bottom: 10%;
@@ -2103,23 +2092,23 @@ i.fa-envelope {
 }
 
 .twitter__follow-btn a {
-  font-size: 1.3rem;
+  color: #fff;
+  background-color: #1b95e0;
   font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 3px;
+  -webkit-animation: slidein 1.5s forwards;
+          animation: slidein 1.5s forwards;
+  font-size: 1.3rem;
   display: inline-block;
   line-height: 2;
   height: auto;
   padding: 1px 8px 1px 6px;
   margin: 0 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #fff;
-  background-color: #1b95e0;
-  border-radius: 3px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  cursor: pointer;
 }
 
 @media (max-width: 480px) {

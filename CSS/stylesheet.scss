@@ -26,6 +26,16 @@ $sp: 480px; // スマホ
   }
 }
 
+@mixin btn {
+  color: #fff;
+  background-color: #1b95e0;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+  animation: slidein 1.5s forwards;
+}
+
 //*------------------*
 //*  header
 //*------------------*
@@ -208,25 +218,25 @@ $sp: 480px; // スマホ
 
 //------------//ここまでhamburgerメニュー------------------>
 
-.details {
-  display: flex;
-  justify-content: space-around;
+// .details {
+//   display: flex;
+//   justify-content: space-around;
 
-  &__l {
-    display: flex;
-  }
+//   &__l {
+//     display: flex;
+//   }
 
-  &__img {
-    width: 60px;
-  }
+//   &__img {
+//     width: 60px;
+//   }
 
-  &__ttl {
-    font-size: 20px;
-    line-height: 3em;
-    margin-left: 10px;
-    font-weight: 600;
-  }
-}
+//   &__ttl {
+//     font-size: 20px;
+//     line-height: 3em;
+//     margin-left: 10px;
+//     font-weight: 600;
+//   }
+// }
 
 .fa-twitter:before {
   padding: 0 3px;
@@ -235,7 +245,6 @@ $sp: 480px; // スマホ
 .mv {
   background: linear-gradient(to bottom, #0f4c83 95%, #fff);
   height: 80vh;
-
   @include sp {
     height: 34vh;
     margin-bottom: 30px;
@@ -250,28 +259,21 @@ $sp: 480px; // スマホ
     justify-content: space-around;
     position: relative;
     height: 600px;
-
     @include sp {
       height: 100%;
     }
   }
 
   &__twitter-btn {
+    @include btn;
     display: inline-block;
     height: 25px;
     padding: 1px 8px 1px 6px;
     margin-top: 25px;
-    font-weight: 500;
     box-sizing: border-box;
-    background-color: #1b95e0;
-    border-radius: 3px;
-    cursor: pointer;
-    user-select: none;
-    color: #fff;
     position: absolute;
     bottom: 20%;
     left: 30%;
-    animation: slidein 1.5s forwards;
   }
 
   &__twitter-follow-btn a {
@@ -283,7 +285,6 @@ $sp: 480px; // スマホ
     width: 35%;
     left: 16%;
     right: 0;
-
     @include sp {
       width: 50%;
       left: 2%;
@@ -850,10 +851,7 @@ section {
   }
 
   &__pro-btn {
-    background: #20a1f1;
-    color: #fff;
-    border: 1px solid #20a1f1;
-    border-radius: 5px;
+    @include btn;
     font-size: 1.3rem;
     padding: 10px;
     bottom: 15%;
@@ -1019,10 +1017,7 @@ section {
   }
 
   &__blog-btn {
-    background: #20a1f1;
-    color: #fff;
-    border: 1px solid #20a1f1;
-    border-radius: 5px;
+    @include btn;
     font-size: 1.3rem;
     position: absolute;
     bottom: 10%;
@@ -1702,20 +1697,13 @@ i.fa-envelope {
   text-align: center;
 
   & a {
+    @include btn;
     font-size: 1.3rem;
-    font-weight: 500;
     display: inline-block;
     line-height: 2;
     height: auto;
     padding: 1px 8px 1px 6px;
     margin: 0 20px;
-    box-sizing: border-box;
-    color: #fff;
-    background-color: #1b95e0;
-    border-radius: 3px;
-    user-select: none;
-    cursor: pointer;
-
     @include sp {
       display: none;
     }

@@ -1739,6 +1739,12 @@ i.fa-envelope {
     text-align: left;
   }
 
+  &__space {
+    height: 1px;
+    background: black;
+    margin-bottom: 50px;
+  }
+
   &__txt-main {
     font-size: 1.5rem;
     text-align: center;
@@ -1766,14 +1772,36 @@ i.fa-envelope {
   }
 
   &__item {
-    margin-bottom: 50px;
+    width: 40vw;
+    margin: 0 auto 50px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  &__item img {
+    width: 40vw;
   }
 
   &__button {
     @include btn;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 50px;
+    letter-spacing: 0.1em;
+  }
+
+  &__button:hover {
+    @include btn-hover;
+  }
+
+  &__button-txt_hover {
+    display: none;
+  }
+
+  &__button-txt_normal:hover {
+    display: none;
+  }
+  &__button-txt_hover:hover {
+    display: inline;
   }
 }
 

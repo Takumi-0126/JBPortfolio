@@ -2148,6 +2148,12 @@ i.fa-envelope {
   text-align: left;
 }
 
+.article__space {
+  height: 1px;
+  background: black;
+  margin-bottom: 50px;
+}
+
 .article__txt-main {
   font-size: 1.5rem;
   text-align: center;
@@ -2175,7 +2181,14 @@ i.fa-envelope {
 }
 
 .article__item {
-  margin-bottom: 50px;
+  width: 40vw;
+  margin: 0 auto 50px;
+  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.article__item img {
+  width: 40vw;
 }
 
 .article__button {
@@ -2192,8 +2205,30 @@ i.fa-envelope {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 50px;
+  letter-spacing: 0.1em;
+}
+
+.article__button:hover {
+  color: #20a1f1;
+  background: #ffffff;
+  border: 1px solid #20a1f1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.article__button-txt_hover {
+  display: none;
+}
+
+.article__button-txt_normal:hover {
+  display: none;
+}
+
+.article__button-txt_hover:hover {
+  display: inline;
 }
 
 /*TOP*/

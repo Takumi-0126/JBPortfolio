@@ -432,6 +432,7 @@ button {
 .mv__twitter-btn {
   color: #fff;
   background-color: #1b95e0;
+  font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
   -webkit-user-select: none;
@@ -441,8 +442,6 @@ button {
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-animation: slidein 1.5s forwards;
-          animation: slidein 1.5s forwards;
   display: inline-block;
   height: 25px;
   padding: 1px 8px 1px 6px;
@@ -450,6 +449,8 @@ button {
   position: absolute;
   bottom: 20%;
   left: 30%;
+  -webkit-animation: slidein 1.5s forwards;
+          animation: slidein 1.5s forwards;
 }
 
 .mv__twitter-follow-btn a {
@@ -1128,6 +1129,7 @@ section {
 .skill__pro-btn {
   color: #fff;
   background-color: #1b95e0;
+  font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
   -webkit-user-select: none;
@@ -1137,9 +1139,6 @@ section {
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-animation: slidein 1.5s forwards;
-          animation: slidein 1.5s forwards;
-  font-size: 1.3rem;
   padding: 10px;
   bottom: 15%;
   left: 19%;
@@ -1328,6 +1327,7 @@ section {
 .skill__blog-btn {
   color: #fff;
   background-color: #1b95e0;
+  font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
   -webkit-user-select: none;
@@ -1337,9 +1337,6 @@ section {
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-animation: slidein 1.5s forwards;
-          animation: slidein 1.5s forwards;
-  font-size: 1.3rem;
   position: absolute;
   bottom: 10%;
   left: 18%;
@@ -2102,6 +2099,7 @@ i.fa-envelope {
 .twitter__follow-btn a {
   color: #fff;
   background-color: #1b95e0;
+  font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
   -webkit-user-select: none;
@@ -2111,9 +2109,6 @@ i.fa-envelope {
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-animation: slidein 1.5s forwards;
-          animation: slidein 1.5s forwards;
-  font-size: 1.3rem;
   display: inline-block;
   line-height: 2;
   height: auto;
@@ -2180,6 +2175,24 @@ i.fa-envelope {
 }
 
 .article__item {
+  margin-bottom: 50px;
+}
+
+.article__button {
+  color: #fff;
+  background-color: #1b95e0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
   margin-bottom: 50px;
 }
 

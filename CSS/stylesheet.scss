@@ -29,12 +29,12 @@ $sp: 480px; // スマホ
 @mixin btn {
   color: #fff;
   background-color: #1b95e0;
+  font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
   user-select: none;
   border-radius: 3px;
   box-sizing: border-box;
-  animation: slidein 1.5s forwards;
 }
 
 @mixin btn-hover {
@@ -282,6 +282,7 @@ $sp: 480px; // スマホ
     position: absolute;
     bottom: 20%;
     left: 30%;
+    animation: slidein 1.5s forwards;
   }
 
   &__twitter-follow-btn a {
@@ -859,7 +860,6 @@ section {
 
   &__pro-btn {
     @include btn;
-    font-size: 1.3rem;
     padding: 10px;
     bottom: 15%;
     left: 19%;
@@ -1021,7 +1021,6 @@ section {
 
   &__blog-btn {
     @include btn;
-    font-size: 1.3rem;
     position: absolute;
     bottom: 10%;
     left: 18%;
@@ -1701,7 +1700,6 @@ i.fa-envelope {
 
   & a {
     @include btn;
-    font-size: 1.3rem;
     display: inline-block;
     line-height: 2;
     height: auto;
@@ -1768,6 +1766,13 @@ i.fa-envelope {
   }
 
   &__item {
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    @include btn;
+    width: 100%;
+    padding: 10px;
     margin-bottom: 50px;
   }
 }

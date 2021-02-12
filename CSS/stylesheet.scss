@@ -35,6 +35,8 @@ $sp: 480px; // スマホ
   user-select: none;
   border-radius: 3px;
   box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
 }
 
 @mixin btn-hover {
@@ -1793,15 +1795,12 @@ i.fa-envelope {
     @include btn-hover;
   }
 
-  &__button-txt_hover {
-    display: none;
+  &__button:after {
+    content: "サイトへ飛ぶ";
   }
 
-  &__button-txt_normal:hover {
-    display: none;
-  }
-  &__button-txt_hover:hover {
-    display: inline;
+  &__button:hover:after {
+    content: "https://";
   }
 }
 

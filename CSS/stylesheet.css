@@ -443,6 +443,8 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
+  text-align: center;
+  display: inline-block;
   height: 25px;
   padding: 1px 8px 1px 6px;
   margin-top: 25px;
@@ -1139,6 +1141,8 @@ section {
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
   padding: 10px;
   bottom: 15%;
   left: 19%;
@@ -1337,6 +1341,8 @@ section {
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
   position: absolute;
   bottom: 10%;
   left: 18%;
@@ -2110,6 +2116,8 @@ i.fa-envelope {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
+  text-align: center;
+  display: inline-block;
   line-height: 2;
   height: auto;
   padding: 1px 8px 1px 6px;
@@ -2204,6 +2212,8 @@ i.fa-envelope {
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
   width: 100%;
   padding: 15px;
   margin-bottom: 50px;
@@ -2219,16 +2229,12 @@ i.fa-envelope {
   cursor: pointer;
 }
 
-.article__button-txt_hover {
-  display: none;
+.article__button:after {
+  content: "サイトへ飛ぶ";
 }
 
-.article__button-txt_normal:hover {
-  display: none;
-}
-
-.article__button-txt_hover:hover {
-  display: inline;
+.article__button:hover:after {
+  content: "https://";
 }
 
 /*TOP*/

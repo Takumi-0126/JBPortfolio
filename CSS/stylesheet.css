@@ -2233,7 +2233,15 @@ i.fa-envelope {
   content: "サイトへ飛ぶ";
 }
 
-.article__button:hover:after {
+.article__button-lp:hover:after {
+  content: "https://";
+}
+
+.article__button-hp:hover:after {
+  content: "https://";
+}
+
+.article__button-ec:hover:after {
   content: "https://";
 }
 

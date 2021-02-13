@@ -1799,7 +1799,13 @@ i.fa-envelope {
     content: "サイトへ飛ぶ";
   }
 
-  &__button:hover:after {
+  &__button-lp:hover:after {
+    content: "https://";
+  }
+  &__button-hp:hover:after {
+    content: "https://";
+  }
+  &__button-ec:hover:after {
     content: "https://";
   }
 }

@@ -746,635 +746,339 @@ section {
       height: unset;
     }
   }
-
-  &__pro-list {
-    font-size: 2rem;
-    position: absolute;
-    top: 13%;
-    left: 3%;
-
-    @include sp {
-      width: 100vw;
-      font-size: 1rem;
-      text-align: center;
-      z-index: 2;
-      background: #fff;
-      top: 25%;
-      left: 0%;
-      padding: 10px;
-      border-radius: 5px;
-    }
-  }
-
-  &__name {
-    font-size: 6rem;
-    display: inline-block;
-    z-index: 2;
-    position: absolute;
-    color: #f4f4f4;
-    text-shadow: black 3px 3px 5px;
-
-    @include sp {
-      font-size: 2rem;
-    }
-  }
-  /*programming part*/
-  &__name-pro {
-    right: 4%;
-    top: 25%;
-
-    @include sp {
-      font-size: 2rem;
-      top: 0%;
-      right: 24%;
-    }
-  }
-
-  &__name-blog {
-    top: 25%;
-    right: 17%;
-    @include sp {
-      top: 0;
-      right: 41%;
-    }
-  }
-
-  &__txt {
-    color: #3594cb;
-  }
-
-  &__txt-pro01 {
-    padding-left: 118px;
-    padding-bottom: 20px;
-    font-weight: bold;
-
-    @include sp {
-      padding-left: 0;
-      padding-bottom: 10px;
-    }
-  }
-
-  &__txt-pro02 {
-    font-size: 1.5rem;
-    padding-left: 160px;
-
-    @include sp {
-      padding-left: 0px;
-      font-size: 1rem;
-    }
-  }
-
-  &__txt-pro03 {
-    font-size: 1.5rem;
-    padding-left: 230px;
-    @include sp {
-      font-size: 1rem;
-      padding-left: 0;
-    }
-  }
-
-  &__txt-pro04 {
-    font-size: 1.5rem;
-    padding-left: 100px;
-
-    @include sp {
-      font-size: 1rem;
-      padding-left: 0;
-    }
-  }
-
-  &__btn {
-    z-index: 2;
-    padding: 10px;
-    font-size: 1.2rem;
-    border-radius: 15px;
-    position: absolute;
-    transition: 0.3s ease;
-  }
-
-  &__btn:hover {
-    @include btn-hover();
-  }
-
-  &__btn-pro {
-    left: 18%;
-  }
-
-  &__pro-btn {
-    @include btn;
-    padding: 10px;
-    bottom: 15%;
-    left: 19%;
-    position: absolute;
-
-    @include sp {
-      font-size: 1.5rem;
-      left: 27%;
-      z-index: 2;
-      bottom: 8%;
-    }
-  }
-
-  &__pro-btn:hover {
-    @include btn-hover();
-  }
-
-  /*Marketing part*/
-  &__item-market {
-    @include sp {
-      height: 320px;
-    }
-  }
-  &__item-market::before {
-    @include sp {
-      height: 320px;
-    }
-  }
-
-  &__name-market {
-    left: 10%;
-    top: 25%;
-
-    @include sp {
-      font-size: 2rem;
-      top: 0;
-      left: 31%;
-    }
-  }
-
-  &__market-txt_ttl {
-    position: absolute;
-    top: 10%;
-    right: 18%;
-    font-size: 2rem;
-    color: #3594cb;
-
-    @include sp {
-      font-size: 1rem;
-      background: #ffffff;
-      top: 18%;
-      right: 38%;
-      z-index: 2;
-    }
-  }
-
-  &__market-list {
-    display: flex;
-    width: 100%;
-    max-width: 200px;
-  }
-
-  &__market-item img {
-    position: absolute;
-
-    @include sp {
-      z-index: 2;
-      background: #ffffff;
-    }
-  }
-
-  &__market-item_expert {
-    width: 100%;
-    max-width: 150px;
-    top: 33%;
-    right: 35%;
-
-    @include sp {
-      max-width: 100px;
-      top: 53%;
-      left: 11%;
-    }
-  }
-
-  &__market-item_analytics {
-    width: 100%;
-    max-width: 270px;
-    top: 48%;
-    right: 15%;
-
-    @include sp {
-      max-width: 250px;
-      top: 30%;
-      right: 10%;
-    }
-  }
-
-  &__market-item_riskmanagement {
-    width: 100%;
-    max-width: 150px;
-    top: 33%;
-    right: 3%;
-
-    @include sp {
-      max-width: 100px;
-      top: 53%;
-      right: 10%;
-    }
-  }
-
-  /*blog part*/
-  &__blog-txt {
-    position: absolute;
-    font-size: 1.5rem;
-    top: 15%;
-    left: 4%;
-    display: block;
-    text-align: center;
-
-    @include sp {
-      background: #ffffff;
-      border-radius: 5px;
-      font-size: 1rem;
-      left: 0;
-      padding: 0.5em;
-      z-index: 2;
-    }
-  }
-
-  &__blog-txt p:first-child {
-    font-size: 2rem;
-    font-weight: bold;
-
-    @include sp {
-      font-size: 1rem;
-    }
-  }
-
-  &__blog-txt_web {
-    font-size: 1.5rem;
-    padding-top: 10px;
-
-    @include sp {
-      text-align: center;
-      padding: 5px;
-      font-size: 1rem;
-    }
-  }
-
-  &__blog-txt_web a {
-    font-weight: bold;
-    border-bottom: 1px solid #3594cb;
-  }
-
-  &__blog-txt_web a:hover {
-    color: #20a1f1;
-    border-bottom-color: #fff;
-  }
-
-  &__blog-btn {
-    @include btn;
-    position: absolute;
-    bottom: 10%;
-    left: 18%;
-
-    @include sp {
-      font-size: 1.5rem;
-      left: 18%;
-      bottom: 8%;
-    }
-  }
-
-  &__blog-btn::after {
-    content: "";
-    background: url(../img/skill/blog.jpg);
-    width: 100%;
-    max-width: 10px;
-  }
 }
 
-#programming {
-  position: relative;
-  @include sp {
-  }
-  &::before {
-    opacity: 0.7;
-    background-image: url(../img/skill/mainimg/programming.jpg);
-    clip-path: polygon(
-      18% 0%,
-      70% 0,
-      100% 0,
-      100% 100%,
-      40% 100%,
-      70% 100%,
-      0 100%
-    );
+// &__pro-list {
+//   font-size: 2rem;
 
-    @include sp {
-      clip-path: polygon(
-        0% 0%,
-        70% 0,
-        100% 0,
-        100% 100%,
-        40% 100%,
-        70% 100%,
-        0 100%
-      );
-    }
-  }
+//   @include sp {
+//     width: 100vw;
+//     font-size: 1rem;
+//     text-align: center;
+//     z-index: 2;
+//     background: #fff;
+//     padding: 10px;
+//     border-radius: 5px;
+//   }
+// }
 
-  &::after {
-    background: #f4f4f4;
-    z-index: -999;
-  }
-}
+// &__name {
+//   font-size: 6rem;
+//   display: inline-block;
+//   z-index: 2;
+//   color: #f4f4f4;
+//   text-shadow: black 3px 3px 5px;
 
-#marketing {
-  position: relative;
+//   @include sp {
+//     font-size: 2rem;
+//   }
+// }
+//   /*programming part*/
+//   &__name-pro {
 
-  &::before {
-    left: 0;
-    opacity: 0.7;
-    background-image: url(../img/skill/mainimg/marketing.jpg);
-    clip-path: polygon(
-      0 0,
-      30% 0,
-      82% 0,
-      100% 100%,
-      70% 100%,
-      30% 100%,
-      0 100%
-    );
+//     @include sp {
+//       font-size: 2rem;
 
-    @include sp {
-      clip-path: polygon(
-        0 0,
-        30% 0,
-        100% 0,
-        100% 100%,
-        70% 100%,
-        30% 100%,
-        0 100%
-      );
-    }
-  }
+//     }
+//   }
 
-  &::after {
-    background: #fff;
-    z-index: -999;
-  }
-}
+//   &__txt {
+//     color: #3594cb;
+//   }
 
-#blog {
-  position: relative;
+//   &__txt-pro01 {
+//     padding-left: 118px;
+//     padding-bottom: 20px;
+//     font-weight: bold;
 
-  &::before {
-    opacity: 0.7;
-    background-image: url(../img/skill/mainimg/blog.jpg);
-    clip-path: polygon(
-      18% 0%,
-      70% 0,
-      100% 0,
-      100% 100%,
-      40% 100%,
-      70% 100%,
-      0 100%
-    );
+//     @include sp {
+//       padding-left: 0;
+//       padding-bottom: 10px;
+//     }
+//   }
 
-    @include sp {
-      clip-path: polygon(
-        0% 0%,
-        70% 0,
-        100% 0,
-        100% 100%,
-        40% 100%,
-        70% 100%,
-        0 100%
-      );
-    }
-  }
+//   &__txt-pro02 {
+//     font-size: 1.5rem;
+//     padding-left: 160px;
 
-  &::after {
-    background: #f4f4f4;
-    z-index: -999;
-  }
-}
+//     @include sp {
+//       padding-left: 0px;
+//       font-size: 1rem;
+//     }
+//   }
 
-/*モーダルここから*/
-.modal {
-  &__window-container {
-    width: 100%;
-    margin: 0 auto;
-  }
+//   &__txt-pro03 {
+//     font-size: 1.5rem;
+//     padding-left: 230px;
+//     @include sp {
+//       font-size: 1rem;
+//       padding-left: 0;
+//     }
+//   }
 
-  &__window-slide {
-    scroll-snap-type: x mandatory;
-    white-space: nowrap;
-    overflow: auto;
-  }
+//   &__txt-pro04 {
+//     font-size: 1.5rem;
+//     padding-left: 100px;
 
-  &__window-item {
-    scroll-snap-align: center;
-    display: inline-block;
-    white-space: normal;
-    width: 90%;
-    height: 710px;
-    margin: 20px 0 0 0;
-    background-color: #f4f4f4;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    overflow: hidden;
+//     @include sp {
+//       font-size: 1rem;
+//       padding-left: 0;
+//     }
+//   }
 
-    @include sp {
-      height: 88vh;
-      overflow: auto;
-      padding: 0 5px;
-    }
-  }
+//   &__btn {
+//     z-index: 2;
+//     padding: 10px;
+//     font-size: 1.2rem;
+//     border-radius: 15px;
+//     transition: 0.3s ease;
+//   }
 
-  &__window-item h2 {
-    font-size: 2.5rem;
+//   &__btn:hover {
+//     @include btn-hover();
+//   }
+//   &__pro-btn {
+//     @include btn;
+//     padding: 10px;
+//     @include sp {
+//       font-size: 1.5rem;
+//       z-index: 2;
+//   }
 
-    @include sp {
-      font-size: 1.5rem;
-    }
-  }
+//   &__pro-btn:hover {
+//     @include btn-hover();
+//   }
 
-  &__scroll-down {
-    display: inline-block;
-    position: absolute;
-    right: 40px;
-    bottom: 0;
-    z-index: 2;
-    padding: 10px 10px 110px;
-    overflow: hidden;
-    color: #111;
-    font-size: 14px;
-    font-family: "Josefin Sans", sans-serif;
-    line-height: 1;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    writing-mode: vertical-lr;
-    transform: rotate(-90deg);
-  }
+//   /*Marketing part*/
+//   &__item-market {
+//     @include sp {
+//       height: 320px;
+//     }
+//   }
+//   &__item-market::before {
+//     @include sp {
+//       height: 320px;
+//     }
+//   }
+//   &__market-txt_ttl {
+//     font-size: 2rem;
+//     color: #3594cb;
 
-  &__scroll-down::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 1px;
-    height: 100px;
-    background: #111;
-  }
+//     @include sp {
+//       font-size: 1rem;
+//       background: #ffffff;
+//       z-index: 2;
+//     }
+//   }
 
-  &__scroll-down::after {
-    animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
-  }
-  @keyframes sdl {
-    0% {
-      transform: scale(1, 0);
-      transform-origin: 0 0;
-    }
-    50% {
-      transform: scale(1, 1);
-      transform-origin: 0 0;
-    }
-    50.1% {
-      transform: scale(1, 1);
-      transform-origin: 0 100%;
-    }
-    100% {
-      transform: scale(1, 0);
-      transform-origin: 0 100%;
-    }
-  }
+//   &__market-list {
+//     display: flex;
+//     width: 100%;
+//     max-width: 200px;
+//   }
 
-  &-content {
-    display: flex;
-    justify-content: space-evenly;
-  }
+//   &__market-item img {
+//     @include sp {
+//       z-index: 2;
+//       background: #ffffff;
+//     }
+//   }
 
-  &__txt {
-    font-size: 1.2rem;
-    width: 70%;
-    text-align: left;
+//   &__market-item_expert {
+//     width: 100%;
+//     max-width: 150px;
+//     @include sp {
+//       max-width: 100px;
+//     }
+//   }
 
-    @include sp {
-      font-size: 0.7rem;
-      width: 100%;
-    }
-  }
+//   &__market-item_analytics {
+//     width: 100%;
+//     max-width: 270px;
+//     @include sp {
+//       max-width: 250px;
+//     }
+//   }
 
-  &__txt > ul > li {
-    padding-bottom: 15px;
-  }
+//   &__market-item_riskmanagement {
+//     width: 100%;
+//     max-width: 150px;
+//     @include sp {
+//       max-width: 100px;
+//     }
+//   }
 
-  &__txt > ul > li span {
-    color: red;
-    font-weight: bold;
-    border-bottom: 2px solid #111;
-    cursor: pointer;
-  }
+//   /*blog part*/
+//   &__blog-txt {
+//     position: absolute;
+//     font-size: 1.5rem;
+//     top: 15%;
+//     left: 4%;
+//     display: block;
+//     text-align: center;
+//     @include sp {
+//       background: #ffffff;
+//       border-radius: 5px;
+//       font-size: 1rem;
+//       left: 0;
+//       padding: 0.5em;
+//       z-index: 2;
+//     }
+//   }
 
-  &__txt > ul > li > h3 {
-    @include sp {
-      font-size: 0.8rem;
-    }
-  }
+//   &__blog-txt p:first-child {
+//     font-size: 2rem;
+//     font-weight: bold;
+//     @include sp {
+//       font-size: 1rem;
+//     }
+//   }
 
-  &__window-img img {
-    display: block;
-    width: 100%;
-    max-width: 150px;
-    object-fit: contain;
-  }
+//   &__blog-txt_web {
+//     font-size: 1.5rem;
+//     padding-top: 10px;
+//     @include sp {
+//       text-align: center;
+//       padding: 5px;
+//       font-size: 1rem;
+//     }
+//   }
 
-  &__window-img_01 img {
-    max-width: 135px;
-  }
+//   &__blog-txt_web a {
+//     font-weight: bold;
+//     border-bottom: 1px solid #3594cb;
+//   }
 
-  &__window-img_03 img {
-    max-width: 190px;
-  }
+//   &__blog-txt_web a:hover {
+//     color: #20a1f1;
+//     border-bottom-color: #fff;
+//   }
 
-  &__window-img img:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }
+//   &__blog-btn {
+//     @include btn;
+//     position: absolute;
+//     bottom: 10%;
+//     left: 18%;
+//     @include sp {
+//       font-size: 1.5rem;
+//       left: 18%;
+//       bottom: 8%;
+//     }
+//   }
 
-  &__btn-close {
-    font-size: 2rem;
-    border-radius: 50%;
-    border: 1px solid #111;
-    padding: 0 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  &__btn-close:hover {
-    background: #20a1f1;
-    color: #fff;
-  }
-}
+//   &__blog-btn::after {
+//     content: "";
+//     background: url(../img/skill/blog.jpg);
+//     width: 100%;
+//     max-width: 10px;
+//   }
+// }
 
-/* === モーダル非表示（初期） ============================== */
-.modal__nodisp {
-  display: none;
-}
+// #programming {
+//   position: relative;
+//   @include sp {
+//   }
+//   &::before {
+//     opacity: 0.7;
+//     background-image: url(../img/skill/mainimg/programming.jpg);
+//     clip-path: polygon(
+//       18% 0%,
+//       70% 0,
+//       100% 0,
+//       100% 100%,
+//       40% 100%,
+//       70% 100%,
+//       0 100%
+//     );
+//     @include sp {
+//       clip-path: polygon(
+//         0% 0%,
+//         70% 0,
+//         100% 0,
+//         100% 100%,
+//         40% 100%,
+//         70% 100%,
+//         0 100%
+//       );
+//     }
+//   }
 
-/* === モーダルバックグランド ============================== */
-.modalBg {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.7)
-  );
-  z-index: 10;
-}
+//   &::after {
+//     background: #f4f4f4;
+//     z-index: -999;
+//   }
+// }
 
-/* === モーダルバックグランド：OPEN時のアニメーション ====== */
-.modalBgOpen {
-  animation: bgOpenAnime 0.3s ease;
-}
-@keyframes bgOpenAnime {
-  /* フェードイン */
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// #marketing {
+//   position: relative;
 
-/* === モーダルバックグランド：CLOSE時のアニメーション ===== */
-.modalBgClose {
-  bottom: 100%;
-  animation: bgCloseAnime 0.3s ease;
-}
-@keyframes bgCloseAnime {
-  /* フェードイン */
-  0% {
-    opacity: 1;
-    bottom: 0;
-  }
-  100% {
-    opacity: 0;
-    bottom: 0;
-  }
-}
+//   &::before {
+//     left: 0;
+//     opacity: 0.7;
+//     background-image: url(../img/skill/mainimg/marketing.jpg);
+//     clip-path: polygon(
+//       0 0,
+//       30% 0,
+//       82% 0,
+//       100% 100%,
+//       70% 100%,
+//       30% 100%,
+//       0 100%
+//     );
 
-/* === モーダルウインド ==================================== */
-.modalBg .modal__window {
-  /* モーダルウインドを中心に表示 */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 11;
-  /* ↓モーダルウインドウの見た目：変更してください */
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  font-size: 16pt;
-  text-align: center;
-}
-/*モーダルココまで*/
+//     @include sp {
+//       clip-path: polygon(
+//         0 0,
+//         30% 0,
+//         100% 0,
+//         100% 100%,
+//         70% 100%,
+//         30% 100%,
+//         0 100%
+//       );
+//     }
+//   }
+
+//   &::after {
+//     background: #fff;
+//     z-index: -999;
+//   }
+// }
+
+// #blog {
+//   position: relative;
+
+//   &::before {
+//     opacity: 0.7;
+//     background-image: url(../img/skill/mainimg/blog.jpg);
+//     clip-path: polygon(
+//       18% 0%,
+//       70% 0,
+//       100% 0,
+//       100% 100%,
+//       40% 100%,
+//       70% 100%,
+//       0 100%
+//     );
+
+//     @include sp {
+//       clip-path: polygon(
+//         0% 0%,
+//         70% 0,
+//         100% 0,
+//         100% 100%,
+//         40% 100%,
+//         70% 100%,
+//         0 100%
+//       );
+//     }
+//   }
+
+//   &::after {
+//     background: #f4f4f4;
+//     z-index: -999;
+//   }
+// }
 
 /*works*/
 .works {

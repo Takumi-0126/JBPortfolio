@@ -230,7 +230,7 @@ button {
 }
 
 .header__ttl {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #0f4c83;
 }
 
@@ -251,7 +251,7 @@ button {
 
 .nav__list a {
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #0f4c83;
   padding-bottom: 5px;
@@ -527,7 +527,7 @@ section {
 }
 
 .sect__inner {
-  width: clamp(320px, 75vw, 1024px);
+  width: clamp(320px, 75vw, 1250px);
   margin: 0 auto;
 }
 

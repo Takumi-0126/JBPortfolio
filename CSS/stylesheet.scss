@@ -123,7 +123,7 @@ h2 {
   }
 
   &__ttl {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #0f4c83;
   }
 }
@@ -141,7 +141,7 @@ h2 {
 
   &__list a {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #0f4c83;
     padding-bottom: 5px;
@@ -332,7 +332,7 @@ h2 {
   &__twitter-btn {
     @include btn;
     position: absolute;
-    bottom: 5%;
+    bottom: 25%;
     left: 30%;
     animation: slidein 1.5s forwards;
   }
@@ -381,10 +381,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bold;
     @include sp {
-      font-size: 1.5rem;
+      font-size: 3rem;
       padding-left: 10px;
     }
 
@@ -402,12 +402,13 @@ section {
     }
 
     &-sub {
-      font-size: 1.5rem;
+      font-size: 3.5rem;
       font-weight: bold;
-      line-height: 4.5;
+      line-height: 3;
       padding-left: 130px;
       position: relative;
       @include sp {
+        font-size: 1.5rem;
         padding-left: 10px;
         line-height: 2.5;
       }
@@ -461,7 +462,7 @@ section {
     }
   }
   &__cont-txt {
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     line-height: 2.5;
     padding: 1em 2em;
     font-weight: bold;
@@ -526,7 +527,7 @@ section {
     }
 
     &-l_txt {
-      font-size: 1.2rem;
+      font-size: 1.9rem;
       letter-spacing: 0.8em;
       writing-mode: vertical-rl;
       text-orientation: upright;
@@ -777,7 +778,7 @@ section {
     @include center;
     flex-direction: column;
     width: 50vw;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: bold;
   }
@@ -933,10 +934,8 @@ section {
 /*subskill*/
 .subskill {
   &__cont {
-    font-size: 1.5rem;
     background: #1b95e0;
     color: #fff;
-
     @include sp {
       width: 100%;
     }
@@ -992,9 +991,7 @@ section {
   }
 
   & dl {
-    width: 1000px;
     margin: 0 auto;
-
     @include sp {
       width: 100%;
       margin: 0 10px;
@@ -1005,8 +1002,7 @@ section {
     position: relative;
     margin: 0 0 1.5em 0;
     font-weight: bold;
-    font-size: 1.5rem;
-
+    font-size: 2rem;
     @include sp {
       font-size: 1rem;
     }
@@ -1016,7 +1012,7 @@ section {
     position: relative;
     margin: 0 0 2em 0;
     padding: 0 0 1.5em 2em;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     border-bottom: 1px dotted #23a1f0;
 
     @include sp {
@@ -1052,7 +1048,7 @@ section {
   &__cp-qa dt::after,
   &__cp-qa dd::after {
     position: absolute;
-    top: 0.5em;
+    top: 0.7em;
     display: inline-block;
     width: 0;
     height: 0;

@@ -92,46 +92,52 @@
 
     <div class="mv">
       <div class="mv__inner">
-        <div class="mv__l">
-          <img src="./img/myface/mv.png" class="mv__img" alt="" />
-          <p class="twitter__follow-btn mv__twitter-follow-btn">
-            <a href="https://twitter.com/Takumi190cm" class="mv__twitter-btn"
-              ><i class="fab fa-twitter"></i>たくみを見る
-            </a>
-          </p>
-        </div>
+        <figure class="mv__l">
+          <img
+            src="./img/myface/mv.png"
+            class="mv__img"
+            alt="たくみの見出し画像"
+            loading="lazy"
+          />
+          <a
+            class="twitter__follow-btn mv__twitter-btn"
+            href="https://twitter.com/Takumi190cm"
+            ><i class="fab fa-twitter"></i>たくみを見る
+          </a>
+        </figure>
         <div class="mv__r">
-          <h1 class="mv__txt mv__txt01">初めまして、</h1>
-          <h1 class="mv__txt mv__txt02">たくみです</h1>
+          <h2 class="mv__txt mv__txt01">初めまして、</h2>
+          <h2 class="mv__txt mv__txt02">たくみです</h2>
         </div>
       </div>
     </div>
     <!-- intro part -->
     <section class="introduction" id="introduction">
-      <div class="sect__inner intro__inner">
+      <div class="sect__inner">
         <div class="sect__ttl-cont">
           <h2 class="sect__ttl sect__ttl-intro">Introduction</h2>
           <span class="sect__ttl-sub">挨拶</span>
         </div>
-        <p class="intro__cont-txt_main">未経験からWebディレクターへ</p>
+        <p class="intro__main-ttl">未経験からWebディレクターへ</p>
         <div class="intro__cont">
-          <p class="intro__cont-txt_sub">
+          <p class="intro__cont-txt">
             初めまして。福井 琢生(28)です。
             フリーランスでサイト制作をしています。サイト制作を通じて、Webディレクターの業務に興味をもちました。現在未経験ながらもWebディレクターを志望して転職活動中です。<br />
             転職活動の一環として、今回このポートフォリオ兼自己紹介サイトを作りました。
             サイトを見て興味を持っていただけた企業様は、どうぞお気軽にご連絡ください。
           </p>
-
-          <div class="intro__cont-mv">
-            <p class="intro__cont-mv_txt">↓まずはこちらをご覧ください↓</p>
-            <iframe
-              width="640"
-              height="360"
-              src="https://www.youtube.com/embed/rquoCNQaxXQ"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="intro__mv">
+            <div class="intro__mv-inner">
+              <!-- <p class="intro__mv-txt">↓まずはこちらをご覧ください↓</p> -->
+              <iframe
+                src="https://www.youtube.com/embed/rquoCNQaxXQ"
+                width="560"
+                height="315"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -231,7 +237,8 @@
             <img
               class="career__cont-img"
               src="./img/myface/carrer.jpg"
-              alt=""
+              loading="lazy"
+              alt="全身画像"
             />
             <p class="career__cont-l_txt">
               身長は190cmの長身！初対面の人ともまずは身長の話になります。
@@ -254,13 +261,11 @@
             <p>Programming</p>
           </div>
           <div class="skill__list skill__pro-list">
-            <p class="skill__txt">【デザイン×コーディング】</p>
+            <p>【デザイン×コーディング】</p>
             <p class="skill__txt">LP・HP制作/ECサイト制作</p>
-            <p class="skill__txt">〈対応言語〉</p>
+            <p>〈対応言語〉</p>
             <p class="skill__txt">HTML/CSS/Sass/jQuery/JavaScript/PHP</p>
-            <button class="skill__pro-btn">
-              <a href="#works">制作物を見る</a>
-            </button>
+            <a class="skill__pro-btn" href="#works">制作物を見る</a>
           </div>
         </div>
         <div class="skill__item skill__item-market">
@@ -269,27 +274,31 @@
           </div>
           <div class="skill__list skill__market-list">
             <p class="skill__txt">【保有資格】</p>
-            <figure class="skill__market-item">
-              <img
-                class="skill__market-item_expert"
-                src="./img/skill/marketingskill/snsExpert.png"
-                alt=""
-              />
-            </figure>
-            <figure class="skill__market-item">
-              <img
-                class="skill__market-item_analytics"
-                src="./img/skill/marketingskill/webanalytics.png"
-                alt=""
-              />
-            </figure>
-            <figure class="skill__market-item">
-              <img
-                class="skill__market-item_riskmanagement"
-                src="./img/skill/marketingskill/snsrm.png"
-                alt=""
-              />
-            </figure>
+            <div class="skill__img-container">
+              <figure class="skill__market-item skill__market-item_expert">
+                <img
+                  src="./img/skill/marketingskill/snsExpert.png"
+                  alt="初級SNSエキスパートのロゴ画像"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="skill__market-item skill__market-item_analytics">
+                <img
+                  src="./img/skill/marketingskill/webanalytics.png"
+                  alt="ウェブ解析士のロゴ画像"
+                  loading="lazy"
+                />
+              </figure>
+              <figure
+                class="skill__market-item skill__market-item_riskmanagement"
+              >
+                <img
+                  src="./img/skill/marketingskill/snsrm.png"
+                  alt="SNSリスクマネジメント検定のロゴ画像"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
           </div>
         </div>
         <div class="skill__item skill__item-blog">
@@ -298,22 +307,22 @@
           </div>
           <div class="skill__list skill__txt skill__blog-txt">
             <p>【たくみウェブログ】運営</p>
-            <p>ビジネスとインタビュー記事メイン。PV数最多はこちら↓</p>
+            <p>ビジネスとインタビュー記事メイン<br />※PV数最多はこちら↓</p>
             <p class="skill__txt skill__blog-txt_web">
               <a
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://takumifp.com/roadtopasstheexamofwebanalytics/"
               >
-                ウェブ解析士試験の合格体験談<br />(SEO検索順位1位・ウェブ解析士協会公認)
+                『ウェブ解析士試験の合格体験談』<br />(SEO検索順位1位・ウェブ解析士協会公認)
               </a>
             </p>
-            <p>
-              <button class="skill__btn skill__blog-btn">
-                <a target="blank" href="https://takumifp.com"
-                  >ブログサイトへ行く
-                </a>
-              </button>
-            </p>
+            <a
+              class="skill__btn skill__blog-btn"
+              target="blank"
+              href="https://takumifp.com"
+              >ブログサイトへ行く
+            </a>
           </div>
         </div>
       </div>
@@ -327,8 +336,12 @@
       </div>
       <ul class="works__slick">
         <li class="works__item">
-          <img src="./img/works/lp_heading.png" alt="LPの見出し画像" />
-          <a href="lp.html">
+          <img
+            src="./img/works/lp_heading.png"
+            alt="LPの見出し画像"
+            　loading="lazy"
+          />
+          <a href="lp.html" target="_blank" rel="noopener noreferrer">
             <div class="works__mask">
               <div class="works__caption">
                 <p class="works__caption-ttl">LP</p>
@@ -340,8 +353,12 @@
           </a>
         </li>
         <li class="works__item">
-          <a href="hp.html">
-            <img src="./img/works/hp_heading.png" alt="HPの見出し画像" />
+          <a href="hp.html" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./img/works/hp_heading.png"
+              alt="HPの見出し画像"
+              　loading="lazy"
+            />
             <div class="works__mask">
               <div class="works__caption">
                 <p class="works__caption-ttl">HP</p>
@@ -351,10 +368,11 @@
           </a>
         </li>
         <li class="works__item">
-          <a href="ecsite.html">
+          <a href="ecsite.html" target="_blank" rel="noopener noreferrer">
             <img
               src="./img/works/ecsite_heading.png"
               alt="ECサイトの見出し画像"
+              loading="lazy"
             />
             <div class="works__mask">
               <div class="works__caption">
@@ -378,15 +396,19 @@
       <div class="subskill__cont">
         <ul class="subskill__list">
           <li class="subskill__item">
-            <img src="./img/Subskill/cook.png" alt="cook" />
+            <img src="./img/Subskill/cook.png" alt="cook" loading="lazy" />
             <p class="subskill__item-txt"><span>料理</span>(自炊歴5年)</p>
           </li>
           <li class="subskill__item">
-            <img src="./img/Subskill/english.png" alt="English" />
+            <img
+              src="./img/Subskill/english.png"
+              alt="English"
+              loading="lazy"
+            />
             <p class="subskill__item"><span>語学</span>(英語・ベトナム語)</p>
           </li>
           <li class="subskill__item">
-            <img src="./img/Subskill/swim.png" alt="swim" />
+            <img src="./img/Subskill/swim.png" alt="swim" loading="lazy" />
             <p class="subskill__item-txt">
               <span>マリンアクティビティ</span
               ><br />(水泳6年・ダイビングライセンス所持)
@@ -447,40 +469,39 @@
           <div class="form__cont-btn">
             <div class="form__cont-btn_interview">
               <p class="form__cont-btn_interview-text">
-                【お問い合わせは以下のどちらかの方法で<br />よろしくお願いいたします】
+                【お問い合わせは以下のどちらかの方法でよろしくお願いいたします】
               </p>
               <div class="form__cont-btn_interview-icon">
-                <p class="interview__icon-mail">
-                  <a
-                    href="https://forms.gle/KcCzGTC2gSpi9WAN8 "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="far fa-envelope icon-size"></i>
-                    <button><i>メールから</i></button>
-                  </a>
-                </p>
-                <p class="interview__icon-line">
-                  <a
-                    href="https://lin.ee/3FZGvzdOW "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
-                    />
-                    <button>LINEから</button>
-                  </a>
-                </p>
+                <a
+                  class="interview__icon-mail"
+                  href="https://forms.gle/KcCzGTC2gSpi9WAN8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="far fa-envelope icon-size"></i>
+                  <i>メールから</i>
+                </a>
+                <a
+                  class="interview__icon-line"
+                  href="https://lin.ee/3FZGvzdOW "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                    loading="lazy"
+                  />
+                  LINEから
+                </a>
               </div>
             </div>
-            <p class="twitter__follow-btn">
+            <div class="twitter__btn">
               <a
                 href="https://twitter.com/Takumi190cm"
-                class="details__twitter-share_button"
+                class="twitter__follow-btn"
                 ><i class="fab fa-twitter"></i>たくみをフォローする
               </a>
-            </p>
+            </div>
           </div>
         </div>
       </div>

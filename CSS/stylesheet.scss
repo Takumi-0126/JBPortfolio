@@ -29,11 +29,11 @@ $sp: 480px; // スマホ
 @mixin btn {
   color: #fff;
   background-color: #1b95e0;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: bold;
   cursor: pointer;
   user-select: none;
-  border-radius: 3px;
+  border-radius: 5px;
   box-sizing: border-box;
   display: inline-block;
   text-align: center;
@@ -51,6 +51,52 @@ $sp: 480px; // スマホ
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 1.6rem; /* 16px*/
+  line-height: 2;
+}
+
+h1 {
+  font-size: 36px;
+  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429)); /* 24px~36pxで可変*/
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 24px;
+  font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143)); /* 20px~24pxで可変*/
+  line-height: 1.3;
+}
+
+@media (min-width: 1200px) {
+  /* 1200px以上*/
+  h1 {
+    font-size: 3.6rem; /* 36px*/
+  }
+  h2 {
+    font-size: 2.4rem; /* 24px*/
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* 640px以下*/
+  body {
+    line-height: 2;
+  }
+  h1 {
+    font-size: 2.4rem; /* 24px*/
+  }
+  h2 {
+    font-size: 2rem; /* 20px*/
+  }
 }
 
 //*------------------*
@@ -261,73 +307,47 @@ $sp: 480px; // スマホ
 
 .mv {
   background: linear-gradient(to bottom, #0f4c83 95%, #fff);
-  height: 80vh;
   @include sp {
-    height: 34vh;
     margin-bottom: 30px;
   }
 
   &__inner {
     width: 100%;
-    max-width: 1280px;
     padding-top: 15px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+  }
+
+  &__l img {
     position: relative;
-    height: 600px;
-    @include sp {
-      height: 100%;
-    }
-  }
-
-  &__twitter-btn {
-    @include btn;
-    display: inline-block;
-    height: 25px;
-    padding: 1px 8px 1px 6px;
-    margin-top: 25px;
-    position: absolute;
-    bottom: 20%;
-    left: 30%;
-    animation: slidein 1.5s forwards;
-  }
-
-  &__twitter-follow-btn a {
-    font-size: 1rem !important;
-  }
-
-  &__img {
-    position: absolute;
-    width: 35%;
-    left: 16%;
-    right: 0;
-    @include sp {
-      width: 50%;
-      left: 2%;
-    }
   }
 
   &__r {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10em;
+  }
+
+  &__twitter-btn {
+    @include btn;
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    animation: slidein 1.5s forwards;
+  }
+
+  &__twitter-btn:hover {
+    @include btn-hover;
   }
 
   &__txt {
     font-size: 5rem;
-    content: "";
-    // align-items: center;
     animation: slidein 2s ease forwards;
     opacity: 0;
     color: #fff;
-
     @include sp {
-      width: unset;
       font-size: 1.7rem;
-      right: 0.3em;
-      top: 10px;
     }
   }
 
@@ -342,7 +362,6 @@ $sp: 480px; // スマホ
 
 section {
   padding: 80px 0;
-
   @include sp {
     padding: 0;
     margin-bottom: 30px;
@@ -351,9 +370,8 @@ section {
 
 .sect {
   &__inner {
-    width: clamp(320px, 75vw, 1250px);
+    width: clamp(320px, 85vw, 1250px);
     margin: 0 auto;
-
     @include sp {
       margin: 0;
     }
@@ -365,7 +383,6 @@ section {
     align-items: center;
     font-size: 4rem;
     font-weight: bold;
-
     @include sp {
       font-size: 1.5rem;
       padding-left: 10px;
@@ -377,7 +394,6 @@ section {
       text-align-last: left;
       padding-bottom: 50px;
       color: #0f4c83;
-
       @include sp {
         padding: 0;
         font-size: 1rem;
@@ -391,7 +407,6 @@ section {
       line-height: 4.5;
       padding-left: 130px;
       position: relative;
-
       @include sp {
         padding-left: 10px;
         line-height: 2.5;
@@ -408,7 +423,6 @@ section {
       left: 0;
       transform: translateY(-50%);
       margin-left: 20px;
-
       @include sp {
         display: none;
       }
@@ -425,13 +439,8 @@ section {
   }
 }
 
-.intro__cont {
-  display: flex;
-  @include sp {
-    flex-direction: column-reverse;
-  }
-
-  &-txt_main {
+.intro {
+  &__main-ttl {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
@@ -445,14 +454,19 @@ section {
     }
   }
 
-  &-txt_sub {
+  &__cont {
+    display: flex;
+    @include sp {
+      flex-direction: column-reverse;
+    }
+  }
+  &__cont-txt {
     font-size: 1.125rem;
     line-height: 2.5;
     padding: 1em 2em;
     font-weight: bold;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
-
     @include sp {
       font-size: 1rem;
       margin: 0 0.5em;
@@ -460,14 +474,22 @@ section {
     }
   }
 
-  &-mv_txt {
+  &__mv {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__mv-inner {
+    position: relative;
+    padding-top: 56.25%;
+  }
+
+  &__mv-txt {
     font-size: 1.4rem;
     font-weight: bold;
-    animation-delay: 4s;
     color: #0f4c83;
     text-align: center;
     letter-spacing: 0.8em;
-
     @include sp {
       right: 1.5em;
       top: 8px;
@@ -475,21 +497,12 @@ section {
     }
   }
 
-  @keyframes slidein {
-    0% {
-      opacity: 0;
-      transform: translateX(64px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  &-mv iframe {
-    @include sp {
-      max-width: 100%;
-    }
+  &__mv iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -733,12 +746,13 @@ section {
     background-position: center;
     background-size: cover;
     @include center;
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   &__name p {
     font-weight: bold;
     color: #ffffff;
+    text-shadow: 2px 2px 2px black;
   }
 
   /*プログラミングパート*/
@@ -763,19 +777,28 @@ section {
     @include center;
     flex-direction: column;
     width: 50vw;
+    font-size: 1.5rem;
     text-align: center;
+    font-weight: bold;
+  }
+
+  &__txt {
+    padding-bottom: 10px;
   }
 
   &__pro-btn {
     @include btn;
+    font-size: 1.8rem;
     padding: 10px;
+    box-shadow: 0px 2px 6px #0f4c83;
     @include sp {
       font-size: 1.5rem;
       z-index: 2;
     }
   }
   &__pro-btn:hover {
-    @include btn-hover();
+    @include btn-hover;
+    box-shadow: none;
   }
 
   /*Marketing Part*/
@@ -792,9 +815,17 @@ section {
       0 100%
     );
   }
+  &__img-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__market-item {
+    padding: 0 10px;
+  }
 
   &__market-item img {
-    width: 50px;
+    width: 13vw;
   }
 
   /*blog part*/
@@ -815,15 +846,24 @@ section {
     flex-direction: row-reverse;
   }
 
+  &__blog-txt_web {
+    color: #1b95e0;
+    border: 1px solid #1b95e0;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
   &__blog-btn {
     @include btn;
     padding: 10px;
+    box-shadow: 0px 2px 6px #0f4c83;
     @include sp {
       font-size: 1.5rem;
     }
   }
   &__blog-btn:hover {
     @include btn-hover;
+    box-shadow: none;
   }
 }
 
@@ -1126,11 +1166,8 @@ section {
     display: block;
     width: 100%;
     max-width: 200px;
-    padding-top: 23px;
-
     @include sp {
       max-width: 140px;
-      padding-top: 10px;
     }
   }
 }
@@ -1147,15 +1184,16 @@ i.fa-envelope {
   }
 }
 
-.twitter__follow-btn {
-  display: block;
-  text-align: center;
+.twitter {
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
 
-  & a {
+  &__follow-btn {
     @include btn;
     display: inline-block;
     line-height: 2;
-    height: auto;
     padding: 1px 8px 1px 6px;
     margin: 0 20px;
     @include sp {

@@ -938,10 +938,21 @@ section {
 /*skill*/
 .skill {
   /*共通パート*/
+  /*プログラミングパート*/
+  /*Marketing Part*/
+  /*blog part*/
+}
+
+.skill__container {
+  background: #f4f4f4;
+  z-index: -999;
 }
 
 .skill__item {
   height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 480px) {
@@ -952,110 +963,149 @@ section {
   }
 }
 
-.skill__item::before {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: calc(100% - 45%);
-  height: 320px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  content: "";
-  z-index: 2;
-}
-
-@media (max-width: 480px) {
-  .skill__item::before {
-    height: 260px;
-    width: 100%;
-  }
-}
-
-.skill__item::after {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 320px;
-  content: "";
-  z-index: 1;
-}
-
-@media (max-width: 480px) {
-  .skill__item::after {
-    height: unset;
-  }
-}
-
-.skill #programming {
-  position: relative;
-}
-
-.skill #programming::before {
+.skill__name {
+  text-align: center;
+  width: 61vw;
   opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 4rem;
+}
+
+.skill__name p {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.skill__item-pro {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.skill__name-pro {
   background-image: url(../img/skill/mainimg/programming.jpg);
   -webkit-clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
           clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
 }
 
+.skill__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  text-align: center;
+}
+
+.skill__pro-btn {
+  color: #fff;
+  background-color: #1b95e0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
 @media (max-width: 480px) {
-  .skill #programming::before {
-    -webkit-clip-path: polygon(0% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
-            clip-path: polygon(0% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+  .skill__pro-btn {
+    font-size: 1.5rem;
+    z-index: 2;
   }
 }
 
-.skill #programming::after {
-  background: #f4f4f4;
-  z-index: -999;
+.skill__pro-btn:hover {
+  color: #20a1f1;
+  background: #ffffff;
+  border: 1px solid #20a1f1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
-.skill #marketing {
-  position: relative;
-}
-
-.skill #marketing::before {
-  left: 0;
+.skill__name-market {
   opacity: 0.7;
   background-image: url(../img/skill/mainimg/marketing.jpg);
   -webkit-clip-path: polygon(0 0, 30% 0, 82% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
           clip-path: polygon(0 0, 30% 0, 82% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
 }
 
-@media (max-width: 480px) {
-  .skill #marketing::before {
-    -webkit-clip-path: polygon(0 0, 30% 0, 100% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
-            clip-path: polygon(0 0, 30% 0, 100% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
-  }
+.skill__market-item img {
+  width: 50px;
 }
 
-.skill #marketing::after {
-  background: #fff;
-  z-index: -999;
-}
-
-.skill #blog {
-  position: relative;
-}
-
-.skill #blog::before {
-  opacity: 0.7;
+.skill__name-blog {
   background-image: url(../img/skill/mainimg/blog.jpg);
   -webkit-clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
           clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
 }
 
+.skill__item-blog {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.skill__blog-btn {
+  color: #fff;
+  background-color: #1b95e0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
 @media (max-width: 480px) {
-  .skill #blog::before {
-    -webkit-clip-path: polygon(0% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
-            clip-path: polygon(0% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+  .skill__blog-btn {
+    font-size: 1.5rem;
   }
 }
 
-.skill #blog::after {
-  background: #f4f4f4;
-  z-index: -999;
+.skill__blog-btn:hover {
+  color: #20a1f1;
+  background: #ffffff;
+  border: 1px solid #20a1f1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 /*works*/
@@ -1593,7 +1643,7 @@ i.fa-envelope {
   bottom: 12px;
   color: #fff;
   cursor: pointer;
-  background-color: #c4c4c4;
+  background-color: #46a4da;
   border-radius: 22px;
   padding: 20px;
   -webkit-transition: all 0.2s ease-in-out;

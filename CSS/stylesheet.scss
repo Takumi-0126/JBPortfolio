@@ -47,6 +47,12 @@ $sp: 480px; // スマホ
   cursor: pointer;
 }
 
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 //*------------------*
 //*  header
 //*------------------*
@@ -696,9 +702,14 @@ section {
 /*skill*/
 .skill {
   /*共通パート*/
+  &__container {
+    background: #f4f4f4;
+    z-index: -999;
+  }
+
   &__item {
     height: 320px;
-
+    display: flex;
     @include sp {
       height: 260px;
       padding-bottom: 7px;
@@ -715,369 +726,106 @@ section {
     }
   }
 
-  &__item::before {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: calc(100% - 45%);
-    height: 320px;
-    background-size: cover;
+  &__name {
+    text-align: center;
+    width: 61vw;
+    opacity: 0.7;
     background-position: center;
-    background-repeat: no-repeat;
-    content: "";
-    z-index: 2;
+    background-size: cover;
+    @include center;
+    font-size: 4rem;
+  }
 
+  &__name p {
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  /*プログラミングパート*/
+  &__item-pro {
+    flex-direction: row-reverse;
+  }
+
+  &__name-pro {
+    background-image: url(../img/skill/mainimg/programming.jpg);
+    clip-path: polygon(
+      18% 0%,
+      70% 0,
+      100% 0,
+      100% 100%,
+      40% 100%,
+      70% 100%,
+      0 100%
+    );
+  }
+
+  &__list {
+    @include center;
+    flex-direction: column;
+    width: 50vw;
+    text-align: center;
+  }
+
+  &__pro-btn {
+    @include btn;
+    padding: 10px;
     @include sp {
-      height: 260px;
-      width: 100%;
+      font-size: 1.5rem;
+      z-index: 2;
     }
   }
+  &__pro-btn:hover {
+    @include btn-hover();
+  }
 
-  &__item::after {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 320px;
-    content: "";
-    z-index: 1;
+  /*Marketing Part*/
+  &__name-market {
+    opacity: 0.7;
+    background-image: url(../img/skill/mainimg/marketing.jpg);
+    clip-path: polygon(
+      0 0,
+      30% 0,
+      82% 0,
+      100% 100%,
+      70% 100%,
+      30% 100%,
+      0 100%
+    );
+  }
 
+  &__market-item img {
+    width: 50px;
+  }
+
+  /*blog part*/
+  &__name-blog {
+    background-image: url(../img/skill/mainimg/blog.jpg);
+    clip-path: polygon(
+      18% 0%,
+      70% 0,
+      100% 0,
+      100% 100%,
+      40% 100%,
+      70% 100%,
+      0 100%
+    );
+  }
+
+  &__item-blog {
+    flex-direction: row-reverse;
+  }
+
+  &__blog-btn {
+    @include btn;
+    padding: 10px;
     @include sp {
-      height: unset;
+      font-size: 1.5rem;
     }
   }
-  #programming {
-    position: relative;
-    @include sp {
-    }
-    &::before {
-      opacity: 0.7;
-      background-image: url(../img/skill/mainimg/programming.jpg);
-      clip-path: polygon(
-        18% 0%,
-        70% 0,
-        100% 0,
-        100% 100%,
-        40% 100%,
-        70% 100%,
-        0 100%
-      );
-      @include sp {
-        clip-path: polygon(
-          0% 0%,
-          70% 0,
-          100% 0,
-          100% 100%,
-          40% 100%,
-          70% 100%,
-          0 100%
-        );
-      }
-    }
-
-    &::after {
-      background: #f4f4f4;
-      z-index: -999;
-    }
-  }
-
-  #marketing {
-    position: relative;
-
-    &::before {
-      left: 0;
-      opacity: 0.7;
-      background-image: url(../img/skill/mainimg/marketing.jpg);
-      clip-path: polygon(
-        0 0,
-        30% 0,
-        82% 0,
-        100% 100%,
-        70% 100%,
-        30% 100%,
-        0 100%
-      );
-
-      @include sp {
-        clip-path: polygon(
-          0 0,
-          30% 0,
-          100% 0,
-          100% 100%,
-          70% 100%,
-          30% 100%,
-          0 100%
-        );
-      }
-    }
-
-    &::after {
-      background: #fff;
-      z-index: -999;
-    }
-  }
-
-  #blog {
-    position: relative;
-
-    &::before {
-      opacity: 0.7;
-      background-image: url(../img/skill/mainimg/blog.jpg);
-      clip-path: polygon(
-        18% 0%,
-        70% 0,
-        100% 0,
-        100% 100%,
-        40% 100%,
-        70% 100%,
-        0 100%
-      );
-
-      @include sp {
-        clip-path: polygon(
-          0% 0%,
-          70% 0,
-          100% 0,
-          100% 100%,
-          40% 100%,
-          70% 100%,
-          0 100%
-        );
-      }
-    }
-
-    &::after {
-      background: #f4f4f4;
-      z-index: -999;
-    }
+  &__blog-btn:hover {
+    @include btn-hover;
   }
 }
-
-// &__pro-list {
-//   font-size: 2rem;
-
-//   @include sp {
-//     width: 100vw;
-//     font-size: 1rem;
-//     text-align: center;
-//     z-index: 2;
-//     background: #fff;
-//     padding: 10px;
-//     border-radius: 5px;
-//   }
-// }
-
-// &__name {
-//   font-size: 6rem;
-//   display: inline-block;
-//   z-index: 2;
-//   color: #f4f4f4;
-//   text-shadow: black 3px 3px 5px;
-
-//   @include sp {
-//     font-size: 2rem;
-//   }
-// }
-//   /*programming part*/
-//   &__name-pro {
-
-//     @include sp {
-//       font-size: 2rem;
-
-//     }
-//   }
-
-//   &__txt {
-//     color: #3594cb;
-//   }
-
-//   &__txt-pro01 {
-//     padding-left: 118px;
-//     padding-bottom: 20px;
-//     font-weight: bold;
-
-//     @include sp {
-//       padding-left: 0;
-//       padding-bottom: 10px;
-//     }
-//   }
-
-//   &__txt-pro02 {
-//     font-size: 1.5rem;
-//     padding-left: 160px;
-
-//     @include sp {
-//       padding-left: 0px;
-//       font-size: 1rem;
-//     }
-//   }
-
-//   &__txt-pro03 {
-//     font-size: 1.5rem;
-//     padding-left: 230px;
-//     @include sp {
-//       font-size: 1rem;
-//       padding-left: 0;
-//     }
-//   }
-
-//   &__txt-pro04 {
-//     font-size: 1.5rem;
-//     padding-left: 100px;
-
-//     @include sp {
-//       font-size: 1rem;
-//       padding-left: 0;
-//     }
-//   }
-
-//   &__btn {
-//     z-index: 2;
-//     padding: 10px;
-//     font-size: 1.2rem;
-//     border-radius: 15px;
-//     transition: 0.3s ease;
-//   }
-
-//   &__btn:hover {
-//     @include btn-hover();
-//   }
-//   &__pro-btn {
-//     @include btn;
-//     padding: 10px;
-//     @include sp {
-//       font-size: 1.5rem;
-//       z-index: 2;
-//   }
-
-//   &__pro-btn:hover {
-//     @include btn-hover();
-//   }
-
-//   /*Marketing part*/
-//   &__item-market {
-//     @include sp {
-//       height: 320px;
-//     }
-//   }
-//   &__item-market::before {
-//     @include sp {
-//       height: 320px;
-//     }
-//   }
-//   &__market-txt_ttl {
-//     font-size: 2rem;
-//     color: #3594cb;
-
-//     @include sp {
-//       font-size: 1rem;
-//       background: #ffffff;
-//       z-index: 2;
-//     }
-//   }
-
-//   &__market-list {
-//     display: flex;
-//     width: 100%;
-//     max-width: 200px;
-//   }
-
-//   &__market-item img {
-//     @include sp {
-//       z-index: 2;
-//       background: #ffffff;
-//     }
-//   }
-
-//   &__market-item_expert {
-//     width: 100%;
-//     max-width: 150px;
-//     @include sp {
-//       max-width: 100px;
-//     }
-//   }
-
-//   &__market-item_analytics {
-//     width: 100%;
-//     max-width: 270px;
-//     @include sp {
-//       max-width: 250px;
-//     }
-//   }
-
-//   &__market-item_riskmanagement {
-//     width: 100%;
-//     max-width: 150px;
-//     @include sp {
-//       max-width: 100px;
-//     }
-//   }
-
-//   /*blog part*/
-//   &__blog-txt {
-//     position: absolute;
-//     font-size: 1.5rem;
-//     top: 15%;
-//     left: 4%;
-//     display: block;
-//     text-align: center;
-//     @include sp {
-//       background: #ffffff;
-//       border-radius: 5px;
-//       font-size: 1rem;
-//       left: 0;
-//       padding: 0.5em;
-//       z-index: 2;
-//     }
-//   }
-
-//   &__blog-txt p:first-child {
-//     font-size: 2rem;
-//     font-weight: bold;
-//     @include sp {
-//       font-size: 1rem;
-//     }
-//   }
-
-//   &__blog-txt_web {
-//     font-size: 1.5rem;
-//     padding-top: 10px;
-//     @include sp {
-//       text-align: center;
-//       padding: 5px;
-//       font-size: 1rem;
-//     }
-//   }
-
-//   &__blog-txt_web a {
-//     font-weight: bold;
-//     border-bottom: 1px solid #3594cb;
-//   }
-
-//   &__blog-txt_web a:hover {
-//     color: #20a1f1;
-//     border-bottom-color: #fff;
-//   }
-
-//   &__blog-btn {
-//     @include btn;
-//     position: absolute;
-//     bottom: 10%;
-//     left: 18%;
-//     @include sp {
-//       font-size: 1.5rem;
-//       left: 18%;
-//       bottom: 8%;
-//     }
-//   }
-
-//   &__blog-btn::after {
-//     content: "";
-//     background: url(../img/skill/blog.jpg);
-//     width: 100%;
-//     max-width: 10px;
-//   }
-// }
 
 /*works*/
 .works {
@@ -1534,7 +1282,7 @@ i.fa-envelope {
   bottom: 12px;
   color: #fff;
   cursor: pointer;
-  background-color: #c4c4c4;
+  background-color: #46a4da;
   border-radius: 22px;
   padding: 20px;
   transition: all 0.2s ease-in-out;

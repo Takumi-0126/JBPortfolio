@@ -746,6 +746,111 @@ section {
       height: unset;
     }
   }
+  #programming {
+    position: relative;
+    @include sp {
+    }
+    &::before {
+      opacity: 0.7;
+      background-image: url(../img/skill/mainimg/programming.jpg);
+      clip-path: polygon(
+        18% 0%,
+        70% 0,
+        100% 0,
+        100% 100%,
+        40% 100%,
+        70% 100%,
+        0 100%
+      );
+      @include sp {
+        clip-path: polygon(
+          0% 0%,
+          70% 0,
+          100% 0,
+          100% 100%,
+          40% 100%,
+          70% 100%,
+          0 100%
+        );
+      }
+    }
+
+    &::after {
+      background: #f4f4f4;
+      z-index: -999;
+    }
+  }
+
+  #marketing {
+    position: relative;
+
+    &::before {
+      left: 0;
+      opacity: 0.7;
+      background-image: url(../img/skill/mainimg/marketing.jpg);
+      clip-path: polygon(
+        0 0,
+        30% 0,
+        82% 0,
+        100% 100%,
+        70% 100%,
+        30% 100%,
+        0 100%
+      );
+
+      @include sp {
+        clip-path: polygon(
+          0 0,
+          30% 0,
+          100% 0,
+          100% 100%,
+          70% 100%,
+          30% 100%,
+          0 100%
+        );
+      }
+    }
+
+    &::after {
+      background: #fff;
+      z-index: -999;
+    }
+  }
+
+  #blog {
+    position: relative;
+
+    &::before {
+      opacity: 0.7;
+      background-image: url(../img/skill/mainimg/blog.jpg);
+      clip-path: polygon(
+        18% 0%,
+        70% 0,
+        100% 0,
+        100% 100%,
+        40% 100%,
+        70% 100%,
+        0 100%
+      );
+
+      @include sp {
+        clip-path: polygon(
+          0% 0%,
+          70% 0,
+          100% 0,
+          100% 100%,
+          40% 100%,
+          70% 100%,
+          0 100%
+        );
+      }
+    }
+
+    &::after {
+      background: #f4f4f4;
+      z-index: -999;
+    }
+  }
 }
 
 // &__pro-list {
@@ -971,112 +1076,6 @@ section {
 //     background: url(../img/skill/blog.jpg);
 //     width: 100%;
 //     max-width: 10px;
-//   }
-// }
-
-// #programming {
-//   position: relative;
-//   @include sp {
-//   }
-//   &::before {
-//     opacity: 0.7;
-//     background-image: url(../img/skill/mainimg/programming.jpg);
-//     clip-path: polygon(
-//       18% 0%,
-//       70% 0,
-//       100% 0,
-//       100% 100%,
-//       40% 100%,
-//       70% 100%,
-//       0 100%
-//     );
-//     @include sp {
-//       clip-path: polygon(
-//         0% 0%,
-//         70% 0,
-//         100% 0,
-//         100% 100%,
-//         40% 100%,
-//         70% 100%,
-//         0 100%
-//       );
-//     }
-//   }
-
-//   &::after {
-//     background: #f4f4f4;
-//     z-index: -999;
-//   }
-// }
-
-// #marketing {
-//   position: relative;
-
-//   &::before {
-//     left: 0;
-//     opacity: 0.7;
-//     background-image: url(../img/skill/mainimg/marketing.jpg);
-//     clip-path: polygon(
-//       0 0,
-//       30% 0,
-//       82% 0,
-//       100% 100%,
-//       70% 100%,
-//       30% 100%,
-//       0 100%
-//     );
-
-//     @include sp {
-//       clip-path: polygon(
-//         0 0,
-//         30% 0,
-//         100% 0,
-//         100% 100%,
-//         70% 100%,
-//         30% 100%,
-//         0 100%
-//       );
-//     }
-//   }
-
-//   &::after {
-//     background: #fff;
-//     z-index: -999;
-//   }
-// }
-
-// #blog {
-//   position: relative;
-
-//   &::before {
-//     opacity: 0.7;
-//     background-image: url(../img/skill/mainimg/blog.jpg);
-//     clip-path: polygon(
-//       18% 0%,
-//       70% 0,
-//       100% 0,
-//       100% 100%,
-//       40% 100%,
-//       70% 100%,
-//       0 100%
-//     );
-
-//     @include sp {
-//       clip-path: polygon(
-//         0% 0%,
-//         70% 0,
-//         100% 0,
-//         100% 100%,
-//         40% 100%,
-//         70% 100%,
-//         0 100%
-//       );
-//     }
-//   }
-
-//   &::after {
-//     background: #f4f4f4;
-//     z-index: -999;
 //   }
 // }
 

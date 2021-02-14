@@ -988,6 +988,76 @@ section {
   }
 }
 
+.skill #programming {
+  position: relative;
+}
+
+.skill #programming::before {
+  opacity: 0.7;
+  background-image: url(../img/skill/mainimg/programming.jpg);
+  -webkit-clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+          clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+}
+
+@media (max-width: 480px) {
+  .skill #programming::before {
+    -webkit-clip-path: polygon(0% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+            clip-path: polygon(0% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+  }
+}
+
+.skill #programming::after {
+  background: #f4f4f4;
+  z-index: -999;
+}
+
+.skill #marketing {
+  position: relative;
+}
+
+.skill #marketing::before {
+  left: 0;
+  opacity: 0.7;
+  background-image: url(../img/skill/mainimg/marketing.jpg);
+  -webkit-clip-path: polygon(0 0, 30% 0, 82% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
+          clip-path: polygon(0 0, 30% 0, 82% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
+}
+
+@media (max-width: 480px) {
+  .skill #marketing::before {
+    -webkit-clip-path: polygon(0 0, 30% 0, 100% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
+            clip-path: polygon(0 0, 30% 0, 100% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
+  }
+}
+
+.skill #marketing::after {
+  background: #fff;
+  z-index: -999;
+}
+
+.skill #blog {
+  position: relative;
+}
+
+.skill #blog::before {
+  opacity: 0.7;
+  background-image: url(../img/skill/mainimg/blog.jpg);
+  -webkit-clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+          clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+}
+
+@media (max-width: 480px) {
+  .skill #blog::before {
+    -webkit-clip-path: polygon(0% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+            clip-path: polygon(0% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+  }
+}
+
+.skill #blog::after {
+  background: #f4f4f4;
+  z-index: -999;
+}
+
 /*works*/
 .works__item {
   position: relative;

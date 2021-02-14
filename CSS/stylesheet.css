@@ -468,14 +468,15 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .mv__l img {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .mv__r {
@@ -495,8 +496,8 @@ h2 {
   position: absolute;
   bottom: 30%;
   left: 30%;
-  -webkit-animation: slidein 1.5s forwards;
-          animation: slidein 1.5s forwards;
+  -webkit-animation: SlideIn 1.5s ease forwards;
+          animation: SlideIn 1.5s ease forwards;
 }
 
 .mv__twitter-btn:hover {
@@ -509,7 +510,7 @@ h2 {
 }
 
 .mv__txt {
-  font-size: 5rem;
+  font-size: 8rem;
   -webkit-animation: SlideIn 2s ease forwards;
           animation: SlideIn 2s ease forwards;
   color: #fff;
@@ -670,7 +671,7 @@ section {
 }
 
 .intro__main-ttl {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
   padding-bottom: 30px;
@@ -1008,7 +1009,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 5rem;
+  font-size: 7rem;
 }
 
 .skill__name p {
@@ -1131,10 +1132,13 @@ section {
 }
 
 .skill__blog-txt_web {
-  color: #1b95e0;
   border: 1px solid #1b95e0;
   padding: 5px;
   margin-bottom: 10px;
+}
+
+.skill__blog-link {
+  color: #1b95e0;
 }
 
 .skill__blog-btn {

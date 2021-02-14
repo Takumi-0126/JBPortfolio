@@ -317,13 +317,13 @@ h2 {
     padding-top: 15px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   &__l img {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
   }
 
   &__r {
@@ -336,7 +336,7 @@ h2 {
     position: absolute;
     bottom: 30%;
     left: 30%;
-    animation: slidein 1.5s forwards;
+    animation: SlideIn 1.5s ease forwards;
   }
 
   &__twitter-btn:hover {
@@ -344,7 +344,7 @@ h2 {
   }
 
   &__txt {
-    font-size: 5rem;
+    font-size: 8rem;
     animation: SlideIn 2s ease forwards;
     color: #fff;
     opacity: 0;
@@ -456,7 +456,7 @@ section {
 
 .intro {
   &__main-ttl {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     text-align: center;
     padding-bottom: 30px;
@@ -761,7 +761,7 @@ section {
     background-position: center;
     background-size: cover;
     @include center;
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   &__name p {
@@ -862,10 +862,13 @@ section {
   }
 
   &__blog-txt_web {
-    color: #1b95e0;
     border: 1px solid #1b95e0;
     padding: 5px;
     margin-bottom: 10px;
+  }
+
+  &__blog-link {
+    color: #1b95e0;
   }
 
   &__blog-btn {

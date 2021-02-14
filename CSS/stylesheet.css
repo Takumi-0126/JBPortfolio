@@ -197,6 +197,7 @@ button {
           appearance: none;
 }
 
+/*文字の大きさ*/
 html {
   font-size: 62.5%;
   width: 100%;
@@ -473,6 +474,8 @@ h2 {
 
 .mv__l img {
   position: relative;
+  width: 100%;
+  max-width: 400px;
 }
 
 .mv__r {
@@ -1444,14 +1447,14 @@ section {
   }
 }
 
-.form__cont-btn_interview-text {
-  font-size: 2rem;
+.form__cont-btn_interview-txt {
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 50px;
 }
 
 @media (max-width: 480px) {
-  .form__cont-btn_interview-text {
+  .form__cont-btn_interview-txt {
     font-size: 1rem;
   }
 }

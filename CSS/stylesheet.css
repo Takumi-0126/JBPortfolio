@@ -492,22 +492,8 @@ h2 {
 }
 
 .mv__twitter-btn {
-  color: #fff;
-  background-color: #1b95e0;
-  font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: inline-block;
-  text-align: center;
   position: absolute;
-  bottom: 25%;
+  bottom: 30%;
   left: 30%;
   -webkit-animation: slidein 1.5s forwards;
           animation: slidein 1.5s forwards;
@@ -524,10 +510,10 @@ h2 {
 
 .mv__txt {
   font-size: 5rem;
-  -webkit-animation: slidein 2s ease forwards;
-          animation: slidein 2s ease forwards;
-  opacity: 0;
+  -webkit-animation: SlideIn 2s ease forwards;
+          animation: SlideIn 2s ease forwards;
   color: #fff;
+  opacity: 0;
 }
 
 @media (max-width: 480px) {
@@ -544,6 +530,34 @@ h2 {
 .mv__txt02 {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
+}
+
+@-webkit-keyframes SlideIn {
+  0% {
+    opacity: 0;
+    /*初期状態では透明に*/
+    -webkit-transform: translateX(64px);
+            transform: translateX(64px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    /*初期状態では透明に*/
+    -webkit-transform: translateX(64px);
+            transform: translateX(64px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 section {

@@ -333,9 +333,8 @@ h2 {
   }
 
   &__twitter-btn {
-    @include btn;
     position: absolute;
-    bottom: 25%;
+    bottom: 30%;
     left: 30%;
     animation: slidein 1.5s forwards;
   }
@@ -346,9 +345,10 @@ h2 {
 
   &__txt {
     font-size: 5rem;
-    animation: slidein 2s ease forwards;
-    opacity: 0;
+    animation: SlideIn 2s ease forwards;
     color: #fff;
+    opacity: 0;
+
     @include sp {
       font-size: 1.7rem;
     }
@@ -360,6 +360,17 @@ h2 {
 
   &__txt02 {
     animation-delay: 2.5s;
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0; /*初期状態では透明に*/
+    transform: translateX(64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 

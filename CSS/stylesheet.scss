@@ -5,7 +5,12 @@ $pc: 1024px; // PC
 $tab: 680px; // タブレット
 $sp: 480px; // スマホ
 
-@mixin lpc {
+@mixin lpc-min {
+  @media (min-width: ($lpc)) {
+    @content;
+  }
+}
+@mixin lpc-max {
   @media (max-width: ($lpc)) {
     @content;
   }
@@ -307,13 +312,14 @@ h2 {
 }
 
 .mv {
+  min-height: 500px;
   background: linear-gradient(to bottom, #0f4c83 95%, #fff);
   @include sp {
     margin-bottom: 30px;
   }
 
   &__inner {
-    width: 100%;
+    width: 85%;
     padding-top: 15px;
     margin: 0 auto;
     display: flex;
@@ -321,7 +327,17 @@ h2 {
   }
 
   &__l {
-    background-image: ;
+    width: 33%;
+    height: 500px;
+    background-image: url(../img/myface/mv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    @include lpc-min {
+      width: 30%;
+    }
   }
 
   &__l img {
@@ -336,6 +352,7 @@ h2 {
   }
 
   &__twitter-btn {
+    margin: 0 0 50px 50px;
     animation: SlideIn 1.5s ease forwards;
   }
 
@@ -1121,6 +1138,9 @@ section {
 /*form*/
 
 .form__cont {
+  width: 60vw;
+  margin: 0 auto;
+
   &-img {
     position: relative;
     display: flex;
@@ -1236,7 +1256,6 @@ i.fa-envelope {
     display: inline-block;
     line-height: 2;
     padding: 1px 8px 1px 6px;
-    margin: 0 20px;
     @include sp {
       display: none;
     }

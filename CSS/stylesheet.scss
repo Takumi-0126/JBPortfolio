@@ -882,7 +882,15 @@ section {
 
   &__blog-link {
     color: #1b95e0;
+    border-bottom: 2px dashed #1b95e0;
     position: relative;
+  }
+
+  &__blog-link:hover {
+    border: none;
+    background-color: #1b95e0;
+    color: #fff;
+    padding: 0 3px;
   }
 
   &__blog-link:hover + &__fukidashi {
@@ -920,6 +928,7 @@ section {
   &__blog-btn {
     @include btn;
     padding: 10px;
+    margin-top: 20px;
     box-shadow: 0px 2px 6px #0f4c83;
     @include sp {
       font-size: 1.5rem;
@@ -964,6 +973,7 @@ section {
     background-color: rgba(0, 0, 0, 0.7);
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
+    border-radius: 5px;
   }
   &__mask:hover {
     opacity: 1;
@@ -1269,6 +1279,7 @@ i.fa-envelope {
 .article {
   &__ttl {
     font-size: 3rem;
+    margin-bottom: 50px;
   }
 
   &__inner {

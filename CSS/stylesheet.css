@@ -1183,7 +1183,15 @@ section {
 
 .skill__blog-link {
   color: #1b95e0;
+  border-bottom: 2px dashed #1b95e0;
   position: relative;
+}
+
+.skill__blog-link:hover {
+  border: none;
+  background-color: #1b95e0;
+  color: #fff;
+  padding: 0 3px;
 }
 
 .skill__blog-link:hover + .skill__fukidashi {
@@ -1234,6 +1242,7 @@ section {
   display: inline-block;
   text-align: center;
   padding: 10px;
+  margin-top: 20px;
   -webkit-box-shadow: 0px 2px 6px #0f4c83;
           box-shadow: 0px 2px 6px #0f4c83;
 }
@@ -1287,6 +1296,7 @@ section {
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  border-radius: 5px;
 }
 
 .works__mask:hover {
@@ -1663,6 +1673,7 @@ i.fa-envelope {
 
 .article__ttl {
   font-size: 3rem;
+  margin-bottom: 50px;
 }
 
 .article__inner {

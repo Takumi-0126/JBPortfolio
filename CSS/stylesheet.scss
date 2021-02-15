@@ -320,8 +320,11 @@ h2 {
     justify-content: space-evenly;
   }
 
+  &__l {
+    background-image: ;
+  }
+
   &__l img {
-    position: relative;
     width: 100%;
     max-width: 450px;
   }
@@ -333,9 +336,6 @@ h2 {
   }
 
   &__twitter-btn {
-    position: absolute;
-    bottom: 30%;
-    left: 30%;
     animation: SlideIn 1.5s ease forwards;
   }
 
@@ -386,9 +386,6 @@ section {
   &__inner {
     width: clamp(320px, 85vw, 1250px);
     margin: 0 auto;
-    @include sp {
-      margin: 0;
-    }
   }
 
   &__ttl {
@@ -739,18 +736,8 @@ section {
     height: 320px;
     display: flex;
     @include sp {
-      height: 260px;
-      padding-bottom: 7px;
-      background: linear-gradient(
-          -45deg,
-          transparent 25%,
-          #aaa 25%,
-          #aaa 50%,
-          transparent 50%,
-          transparent 75%,
-          #aaa 75%
-        )
-        left bottom/7px 7px repeat-X;
+      height: unset;
+      display: block;
     }
   }
 
@@ -761,7 +748,7 @@ section {
     background-position: center;
     background-size: cover;
     @include center;
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   &__name p {
@@ -786,6 +773,10 @@ section {
       70% 100%,
       0 100%
     );
+    @include sp {
+      width: 100%;
+      clip-path: none;
+    }
   }
 
   &__list {
@@ -795,6 +786,9 @@ section {
     font-size: 2rem;
     text-align: center;
     font-weight: bold;
+    @include sp {
+      width: 100%;
+    }
   }
 
   &__txt {
@@ -829,10 +823,14 @@ section {
       30% 100%,
       0 100%
     );
+    @include sp {
+      width: 100%;
+      clip-path: none;
+    }
   }
   &__img-container {
-    display: flex;
-    align-items: center;
+    @include center;
+    flex-wrap: wrap;
   }
 
   &__market-item {
@@ -840,7 +838,7 @@ section {
   }
 
   &__market-item img {
-    width: 13vw;
+    width: 9vw;
   }
 
   /*blog part*/
@@ -855,20 +853,51 @@ section {
       70% 100%,
       0 100%
     );
+    @include sp {
+      width: 100%;
+      clip-path: none;
+    }
   }
 
   &__item-blog {
     flex-direction: row-reverse;
   }
 
-  &__blog-txt_web {
-    border: 1px solid #1b95e0;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-
   &__blog-link {
     color: #1b95e0;
+    position: relative;
+  }
+
+  &__blog-link:hover + &__fukidashi {
+    display: block;
+  }
+
+  &__fukidashi {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1b95e0;
+    top: 0;
+    left: 250px;
+    padding: 16px;
+    font-weight: bold;
+    width: 200px;
+  }
+
+  &__fukidashi::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: -19px;
+    margin-left: 10px;
+    border: solid transparent;
+    border-color: rgba(51, 204, 153, 0);
+    border-top-color: #1b95e0;
+    border-width: 10px;
+    pointer-events: none;
+    content: " ";
   }
 
   &__blog-btn {

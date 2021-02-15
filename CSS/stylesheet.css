@@ -1567,6 +1567,9 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1609,7 +1612,7 @@ i.fa-envelope {
 }
 
 .icon-size {
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
 @media (max-width: 480px) {

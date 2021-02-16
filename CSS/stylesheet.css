@@ -205,8 +205,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  /* 16px*/
+  font-size: 2rem;
+  /* 20px*/
   line-height: 2;
 }
 
@@ -1080,6 +1080,11 @@ section {
   }
 }
 
+.skill__ttl {
+  font-size: 4rem;
+  color: #0f4c83;
+}
+
 .skill__txt {
   padding-bottom: 10px;
 }
@@ -1150,6 +1155,7 @@ section {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 45vw;
 }
 
 .skill__market-item {
@@ -1158,6 +1164,10 @@ section {
 
 .skill__market-item img {
   width: 9vw;
+}
+
+.skill__market-item_analytics img {
+  width: 12vw;
 }
 
 .skill__name-blog {
@@ -1379,7 +1389,7 @@ section {
 .subskill__item span {
   font-weight: bold;
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 @media (max-width: 480px) {
@@ -1427,7 +1437,7 @@ section {
   position: relative;
   margin: 0 0 1.5em 0;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 480px) {
@@ -1438,9 +1448,9 @@ section {
 
 .question__cp-qa dd {
   position: relative;
-  margin: 0 0 2em 0;
-  padding: 0 0 1.5em 2em;
-  font-size: 1.7rem;
+  margin: 0 0 1em 0;
+  padding: 0 0 1em 2em;
+  font-size: 2rem;
   border-bottom: 1px dotted #23a1f0;
 }
 
@@ -1470,7 +1480,7 @@ section {
 }
 
 .question__cp-qa dd::before {
-  padding: 0.08em 0.27em;
+  padding: 0 0.28em;
   content: "A";
   background: #23a1f0;
 }
@@ -1478,7 +1488,7 @@ section {
 .question__cp-qa dt::after,
 .question__cp-qa dd::after {
   position: absolute;
-  top: 0.7em;
+  top: 0.8em;
   display: inline-block;
   width: 0;
   height: 0;
@@ -1587,14 +1597,19 @@ section {
   margin-bottom: 50px;
 }
 
-.interview__icon-mail button,
-.interview__icon-line button {
-  font-size: 1.5rem;
-}
-
 .interview__icon-mail:hover,
 .interview__icon-line:hover {
   opacity: 0.7;
+}
+
+.interview__icon-mail:after {
+  content: "メールから";
+  font-size: 3rem;
+}
+
+.interview__icon-line:after {
+  content: "LINEから";
+  font-size: 3rem;
 }
 
 .interview__icon-line {
@@ -1609,6 +1624,7 @@ section {
   display: block;
   width: 100%;
   max-width: 200px;
+  padding: 18px 0;
 }
 
 @media (max-width: 480px) {
@@ -1622,7 +1638,7 @@ i.fa-envelope {
 }
 
 .icon-size {
-  font-size: 7rem;
+  font-size: 10rem;
 }
 
 @media (max-width: 480px) {

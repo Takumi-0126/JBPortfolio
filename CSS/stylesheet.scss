@@ -66,7 +66,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem; /* 16px*/
+  font-size: 2rem; /* 20px*/
   line-height: 2;
 }
 
@@ -808,6 +808,11 @@ section {
     }
   }
 
+  &__ttl {
+    font-size: 4rem;
+    color: #0f4c83;
+  }
+
   &__txt {
     padding-bottom: 10px;
   }
@@ -848,6 +853,7 @@ section {
   &__img-container {
     @include center;
     flex-wrap: wrap;
+    width: 45vw;
   }
 
   &__market-item {
@@ -856,6 +862,10 @@ section {
 
   &__market-item img {
     width: 9vw;
+  }
+
+  &__market-item_analytics img {
+    width: 12vw;
   }
 
   /*blog part*/
@@ -1034,7 +1044,7 @@ section {
   &__item span {
     font-weight: bold;
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     @include sp {
       font-size: 1.5rem;
     }
@@ -1075,7 +1085,7 @@ section {
     position: relative;
     margin: 0 0 1.5em 0;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     @include sp {
       font-size: 1rem;
     }
@@ -1083,9 +1093,9 @@ section {
 
   &__cp-qa dd {
     position: relative;
-    margin: 0 0 2em 0;
-    padding: 0 0 1.5em 2em;
-    font-size: 1.7rem;
+    margin: 0 0 1em 0;
+    padding: 0 0 1em 2em;
+    font-size: 2rem;
     border-bottom: 1px dotted #23a1f0;
 
     @include sp {
@@ -1113,7 +1123,7 @@ section {
   }
 
   &__cp-qa dd::before {
-    padding: 0.08em 0.27em;
+    padding: 0 0.28em;
     content: "A";
     background: #23a1f0;
   }
@@ -1121,7 +1131,7 @@ section {
   &__cp-qa dt::after,
   &__cp-qa dd::after {
     position: absolute;
-    top: 0.7em;
+    top: 0.8em;
     display: inline-block;
     width: 0;
     height: 0;
@@ -1215,27 +1225,30 @@ section {
   }
 }
 
-.interview__icon-mail button,
-.interview__icon-line button {
-  font-size: 1.5rem;
-}
-
 .interview__icon-mail:hover,
 .interview__icon-line:hover {
   opacity: 0.7;
 }
 
+.interview__icon-mail:after {
+  content: "メールから";
+  font-size: 3rem;
+}
+.interview__icon-line:after {
+  content: "LINEから";
+  font-size: 3rem;
+}
+
 .interview__icon-line {
   margin-left: 12%;
-
   & button {
     line-height: 1.8;
   }
-
   & img {
     display: block;
     width: 100%;
     max-width: 200px;
+    padding: 18px 0;
     @include sp {
       max-width: 140px;
     }
@@ -1247,7 +1260,7 @@ i.fa-envelope {
 }
 
 .icon-size {
-  font-size: 7rem;
+  font-size: 10rem;
 
   @include sp {
     font-size: 4rem;

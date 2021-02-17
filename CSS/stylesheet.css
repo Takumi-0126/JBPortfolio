@@ -306,7 +306,7 @@ h2 {
   margin-left: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .nav {
     display: none;
   }
@@ -331,6 +331,12 @@ h2 {
   padding-bottom: 5px;
   margin-right: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__list a {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -365,7 +371,7 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .hamburger-btn {
     display: block;
     position: relative;
@@ -420,7 +426,7 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .hamburger {
     display: block;
     position: fixed;
@@ -457,7 +463,7 @@ h2 {
     text-align: center;
   }
   .hamburger__list + .hamburger__list {
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .hamburger__link {
     text-decoration: none;
@@ -467,7 +473,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 480px) and (max-width: 480px) {
+@media screen and (max-width: 680px) and (max-width: 480px) {
   .hamburger__link {
     font-size: 2rem;
   }
@@ -488,9 +494,15 @@ h2 {
   background: linear-gradient(to bottom, #0f4c83 95%, #fff);
 }
 
+@media screen and (max-width: 1024px) {
+  .mv {
+    height: 320px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .mv {
-    height: 300px;
+    height: 280px;
     margin-bottom: 30px;
   }
 }
@@ -505,6 +517,12 @@ h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1024px) {
+  .mv__inner {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -534,6 +552,12 @@ h2 {
 @media screen and (min-width: 1680px) {
   .mv__l {
     width: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mv__l {
+    height: 320px;
   }
 }
 
@@ -591,6 +615,12 @@ h2 {
   opacity: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .mv__txt {
+    font-size: 6rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .mv__txt {
     font-size: 2.5rem;
@@ -637,6 +667,12 @@ h2 {
 
 section {
   padding: 80px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 50px 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -765,6 +801,15 @@ section {
   display: flex;
 }
 
+@media screen and (max-width: 1024px) {
+  .intro__cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .intro__cont {
     -webkit-box-orient: vertical;
@@ -781,6 +826,13 @@ section {
   font-weight: bold;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro__cont-txt {
+    font-size: 3rem;
+    padding: 1em 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -807,6 +859,12 @@ section {
   color: #0f4c83;
   text-align: center;
   letter-spacing: 0.5em;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro__mv-txt {
+    font-size: 1.4em;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -841,6 +899,12 @@ section {
   display: flex;
 }
 
+@media screen and (max-width: 1024px) {
+  .career__cont-l {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .career__cont-l {
     display: none;
@@ -857,7 +921,7 @@ section {
   color: #3594cb;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1024px) {
   .career__cont-l_txt {
     display: none;
   }
@@ -883,6 +947,12 @@ section {
   /* Right content */
   /* The triangle */
   /* The icons */
+}
+
+@media screen and (max-width: 1024px) {
+  .cbp_tmtimeline {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1062,6 +1132,13 @@ section {
   display: flex;
 }
 
+@media screen and (max-width: 1024px) {
+  .skill__item {
+    height: unset;
+    display: block;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .skill__item {
     height: unset;
@@ -1087,6 +1164,13 @@ section {
   font-size: 5rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .skill__name {
+    width: 100%;
+    height: 250px;
+  }
+}
+
 .skill__name p {
   font-weight: bold;
   color: #ffffff;
@@ -1104,6 +1188,13 @@ section {
   background-image: url(../img/skill/mainimg/programming.jpg);
   -webkit-clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
           clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+}
+
+@media screen and (max-width: 1024px) {
+  .skill__name-pro {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1136,6 +1227,13 @@ section {
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .skill__list {
+    width: 100vw;
+    padding: 1em 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1212,6 +1310,13 @@ section {
           clip-path: polygon(0 0, 30% 0, 82% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
 }
 
+@media screen and (max-width: 1024px) {
+  .skill__name-market {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .skill__name-market {
     width: 100%;
@@ -1235,6 +1340,12 @@ section {
   width: 45vw;
 }
 
+@media screen and (max-width: 1024px) {
+  .skill__img-container {
+    width: unset;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .skill__img-container {
     width: unset;
@@ -1249,6 +1360,12 @@ section {
   width: 9vw;
 }
 
+@media screen and (max-width: 1024px) {
+  .skill__market-item img {
+    width: 150px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .skill__market-item img {
     width: 140px;
@@ -1257,6 +1374,12 @@ section {
 
 .skill__market-item_analytics img {
   width: 12vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .skill__market-item_analytics img {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1269,6 +1392,13 @@ section {
   background-image: url(../img/skill/mainimg/blog.jpg);
   -webkit-clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
           clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
+}
+
+@media screen and (max-width: 1024px) {
+  .skill__name-blog {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1398,6 +1528,12 @@ section {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .works__item img {
+    width: 90vw;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .works__item img {
     width: 90vw;
@@ -1415,6 +1551,13 @@ section {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .works__mask {
+    width: 90vw;
+    left: 5%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1671,6 +1814,12 @@ section {
 .form__cont {
   width: 60vw;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .form__cont {
+    width: 85vw;
+  }
 }
 
 @media screen and (max-width: 480px) {

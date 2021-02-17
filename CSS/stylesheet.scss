@@ -133,7 +133,7 @@ h2 {
   }
 
   &__ttl {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #0f4c83;
   }
 }
@@ -291,34 +291,15 @@ h2 {
 
 //------------//ここまでhamburgerメニュー------------------>
 
-// .details {
-//   display: flex;
-//   justify-content: space-around;
-
-//   &__l {
-//     display: flex;
-//   }
-
-//   &__img {
-//     width: 60px;
-//   }
-
-//   &__ttl {
-//     font-size: 20px;
-//     line-height: 3em;
-//     margin-left: 10px;
-//     font-weight: 600;
-//   }
-// }
-
 .fa-twitter:before {
   padding: 0 3px;
 }
 
 .mv {
-  min-height: 500px;
+  height: 500px;
   background: linear-gradient(to bottom, #0f4c83 95%, #fff);
   @include sp {
+    height: 300px;
     margin-bottom: 30px;
   }
 
@@ -341,6 +322,10 @@ h2 {
     align-items: center;
     @include lpc-min {
       width: 30%;
+    }
+    @include sp {
+      width: 57%;
+      height: 300px;
     }
   }
 
@@ -371,7 +356,7 @@ h2 {
     opacity: 0;
 
     @include sp {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -427,9 +412,8 @@ section {
       padding-bottom: 50px;
       color: #0f4c83;
       @include sp {
-        padding: 0;
         font-size: 1rem;
-        padding-bottom: 0;
+        padding-bottom: 10px;
       }
     }
 
@@ -441,7 +425,7 @@ section {
       position: relative;
       @include sp {
         font-size: 1.5rem;
-        padding-left: 10px;
+        padding: 5px 0 0 10px;
         line-height: 2.5;
       }
     }
@@ -481,7 +465,7 @@ section {
     color: #0f4c83;
 
     @include sp {
-      font-size: 1.3rem;
+      font-size: 2.5rem;
       padding: 10px 3px;
       text-align: center;
     }
@@ -501,7 +485,7 @@ section {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     @include sp {
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin: 0 0.5em;
       line-height: 2;
     }
@@ -524,9 +508,7 @@ section {
     text-align: center;
     letter-spacing: 0.5em;
     @include sp {
-      right: 1.5em;
-      top: 8px;
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -536,15 +518,12 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
+    border-radius: 5px;
   }
 }
 
 /*career*/
 .career {
-  @include sp {
-    height: 230vh;
-  }
-
   &__cont {
     display: flex;
     justify-content: center;
@@ -564,6 +543,9 @@ section {
     writing-mode: vertical-rl;
     text-orientation: upright;
     color: #3594cb;
+    @include sp {
+      display: none;
+    }
   }
 
   &__cont-l img {
@@ -799,6 +781,7 @@ section {
     @include sp {
       width: 100%;
       clip-path: none;
+      background-position: top 70% center;
     }
   }
 
@@ -812,12 +795,16 @@ section {
     font-weight: bold;
     @include sp {
       width: 100%;
+      padding: 20px 0;
     }
   }
 
   &__ttl {
     font-size: 4rem;
     color: #0f4c83;
+    @include sp {
+      font-size: 3rem;
+    }
   }
 
   &__txt {
@@ -860,6 +847,9 @@ section {
     @include center;
     flex-wrap: wrap;
     width: 45vw;
+    @include sp {
+      width: unset;
+    }
   }
 
   &__market-item {
@@ -868,10 +858,16 @@ section {
 
   &__market-item img {
     width: 9vw;
+    @include sp {
+      width: 140px;
+    }
   }
 
   &__market-item_analytics img {
     width: 12vw;
+    @include sp {
+      width: 160px;
+    }
   }
 
   /*blog part*/
@@ -901,6 +897,9 @@ section {
     border-bottom: 2px dashed #1b95e0;
     position: relative;
     display: inline-block;
+    @include sp {
+      display: inline;
+    }
   }
 
   &__blog-link:hover {
@@ -934,31 +933,6 @@ section {
     top: 5%;
     content: "";
     position: absolute;
-  }
-
-  .balloonoya {
-    position: relative; /* 指定した分だけ相対的に移動 */
-  }
-  .balloonoya:hover .balloon {
-    display: inline; /* インライン要素として表示 */
-  }
-  .balloon {
-    position: absolute; /* 親要素を基準 */
-    display: none; /* 要素を非表示 */
-    padding: 2px; /* テキストの前後の余白 */
-    background-color: rgba(102, 102, 255, 0.5); /* 背景色（透明度） */
-    width: 180px; /* 吹き出し全体の幅 */
-    left: -1%; /* 表示位置 */
-    font-size: 80%; /* 文字サイズ */
-  }
-  .balloon:after {
-    border-left: 12px solid rgba(102, 102, 255, 0.5); /* 吹き出し口の幅・色 */
-    border-top: 10px solid transparent; /* 吹き出し口の高さ１／２ */
-    border-bottom: 10px solid transparent; /* 吹き出し口の高さ１／２ */
-    right: -12px; /* 吹き出し口の位置調整 */
-    top: 5%; /* 吹き出し口の縦位置 */
-    content: ""; /* コンテンツの挿入 */
-    position: absolute; /* 親要素を基準 */
   }
 
   &__blog-btn {
@@ -997,6 +971,9 @@ section {
   &__item img {
     width: 50vw;
     margin: 0 auto;
+    @include sp {
+      width: 80vw;
+    }
   }
 
   &__mask {
@@ -1010,6 +987,10 @@ section {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     border-radius: 5px;
+    @include sp {
+      width: 80vw;
+      left: 10%;
+    }
   }
   &__mask:hover {
     opacity: 1;
@@ -1028,7 +1009,7 @@ section {
   &__caption-ttl {
     font-size: 7rem;
     @include sp {
-      font-size: 2rem;
+      font-size: 6rem;
     }
   }
 
@@ -1036,7 +1017,9 @@ section {
     font-size: 3rem;
     padding: 0 55px;
     @include sp {
-      font-size: 0.8rem;
+      font-size: 2rem;
+      line-height: 1.5;
+      padding: 0 25px;
     }
   }
 }
@@ -1057,7 +1040,8 @@ section {
     padding: 30px 0;
 
     @include sp {
-      grid-template-columns: 1fr;
+      @include center;
+      grid-template-columns: unset;
       font-size: 1rem;
       padding: 15px 0;
       text-align: center;
@@ -1079,6 +1063,10 @@ section {
   &__item img {
     width: 100%;
     max-width: 150px;
+    @include sp {
+      width: 100px;
+      padding: 0 10px;
+    }
   }
 }
 
@@ -1187,6 +1175,9 @@ section {
 .form__cont {
   width: 60vw;
   margin: 0 auto;
+  @include sp {
+    width: 85vw;
+  }
 
   &-img {
     position: relative;
@@ -1228,7 +1219,7 @@ section {
     border: 10px dashed #0f4c83;
 
     @include sp {
-      margin: 0 10px;
+      margin: 0 10px 30px;
     }
   }
 
@@ -1237,7 +1228,7 @@ section {
     text-align: center;
     margin-bottom: 50px;
     @include sp {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -1260,10 +1251,16 @@ section {
 .interview__icon-mail:after {
   content: "メールから";
   font-size: 3rem;
+  @include sp {
+    font-size: 2rem;
+  }
 }
 .interview__icon-line:after {
   content: "LINEから";
   font-size: 3rem;
+  @include sp {
+    font-size: 2rem;
+  }
 }
 
 .interview__icon-line {
@@ -1278,6 +1275,7 @@ section {
     padding: 18px 0;
     @include sp {
       max-width: 140px;
+      padding: 0;
     }
   }
 }
@@ -1306,7 +1304,7 @@ i.fa-envelope {
     line-height: 2;
     padding: 1px 8px 1px 6px;
     @include sp {
-      display: none;
+      font-size: 2rem;
     }
   }
 }
@@ -1321,11 +1319,17 @@ i.fa-envelope {
     color: #0f4c83;
     font-size: 2.5rem;
     font-weight: bold;
+    @include sp {
+      font-size: 1.5rem;
+    }
   }
 
   &__guideline small {
     padding: 0 10px;
     font-weight: bold;
+    @include sp {
+      font-size: 1rem;
+    }
   }
 
   &__guideline small:hover {

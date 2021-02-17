@@ -288,7 +288,7 @@ h2 {
 }
 
 .header__ttl {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #0f4c83;
 }
 
@@ -455,13 +455,14 @@ h2 {
 }
 
 .mv {
-  min-height: 500px;
+  height: 500px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #0f4c83), to(#fff));
   background: linear-gradient(to bottom, #0f4c83 95%, #fff);
 }
 
 @media (max-width: 480px) {
   .mv {
+    height: 300px;
     margin-bottom: 30px;
   }
 }
@@ -499,6 +500,13 @@ h2 {
 @media (min-width: 1680px) {
   .mv__l {
     width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mv__l {
+    width: 57%;
+    height: 300px;
   }
 }
 
@@ -545,7 +553,7 @@ h2 {
 
 @media (max-width: 480px) {
   .mv__txt {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -638,9 +646,8 @@ section {
 
 @media (max-width: 480px) {
   .sect__ttl-cont {
-    padding: 0;
     font-size: 1rem;
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
 }
 
@@ -655,7 +662,7 @@ section {
 @media (max-width: 480px) {
   .sect__ttl-sub {
     font-size: 1.5rem;
-    padding-left: 10px;
+    padding: 5px 0 0 10px;
     line-height: 2.5;
   }
 }
@@ -700,7 +707,7 @@ section {
 
 @media (max-width: 480px) {
   .intro__main-ttl {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     padding: 10px 3px;
     text-align: center;
   }
@@ -732,7 +739,7 @@ section {
 
 @media (max-width: 480px) {
   .intro__cont-txt {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0 0.5em;
     line-height: 2;
   }
@@ -758,9 +765,7 @@ section {
 
 @media (max-width: 480px) {
   .intro__mv-txt {
-    right: 1.5em;
-    top: 8px;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -770,15 +775,10 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
 /*career*/
-@media (max-width: 480px) {
-  .career {
-    height: 230vh;
-  }
-}
-
 .career__cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,6 +809,12 @@ section {
           writing-mode: vertical-rl;
   text-orientation: upright;
   color: #3594cb;
+}
+
+@media (max-width: 480px) {
+  .career__cont-l_txt {
+    display: none;
+  }
 }
 
 .career__cont-l img {
@@ -1059,6 +1065,7 @@ section {
     width: 100%;
     -webkit-clip-path: none;
             clip-path: none;
+    background-position: top 70% center;
   }
 }
 
@@ -1088,12 +1095,19 @@ section {
 @media (max-width: 480px) {
   .skill__list {
     width: 100%;
+    padding: 20px 0;
   }
 }
 
 .skill__ttl {
   font-size: 4rem;
   color: #0f4c83;
+}
+
+@media (max-width: 480px) {
+  .skill__ttl {
+    font-size: 3rem;
+  }
 }
 
 .skill__txt {
@@ -1168,6 +1182,12 @@ section {
   width: 45vw;
 }
 
+@media (max-width: 480px) {
+  .skill__img-container {
+    width: unset;
+  }
+}
+
 .skill__market-item {
   padding: 10px;
 }
@@ -1176,8 +1196,20 @@ section {
   width: 9vw;
 }
 
+@media (max-width: 480px) {
+  .skill__market-item img {
+    width: 140px;
+  }
+}
+
 .skill__market-item_analytics img {
   width: 12vw;
+}
+
+@media (max-width: 480px) {
+  .skill__market-item_analytics img {
+    width: 160px;
+  }
 }
 
 .skill__name-blog {
@@ -1206,6 +1238,12 @@ section {
   border-bottom: 2px dashed #1b95e0;
   position: relative;
   display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .skill__blog-link {
+    display: inline;
+  }
 }
 
 .skill__blog-link:hover {
@@ -1239,50 +1277,6 @@ section {
   top: 5%;
   content: "";
   position: absolute;
-}
-
-.skill .balloonoya {
-  position: relative;
-  /* 指定した分だけ相対的に移動 */
-}
-
-.skill .balloonoya:hover .balloon {
-  display: inline;
-  /* インライン要素として表示 */
-}
-
-.skill .balloon {
-  position: absolute;
-  /* 親要素を基準 */
-  display: none;
-  /* 要素を非表示 */
-  padding: 2px;
-  /* テキストの前後の余白 */
-  background-color: rgba(102, 102, 255, 0.5);
-  /* 背景色（透明度） */
-  width: 180px;
-  /* 吹き出し全体の幅 */
-  left: -1%;
-  /* 表示位置 */
-  font-size: 80%;
-  /* 文字サイズ */
-}
-
-.skill .balloon:after {
-  border-left: 12px solid rgba(102, 102, 255, 0.5);
-  /* 吹き出し口の幅・色 */
-  border-top: 10px solid transparent;
-  /* 吹き出し口の高さ１／２ */
-  border-bottom: 10px solid transparent;
-  /* 吹き出し口の高さ１／２ */
-  right: -12px;
-  /* 吹き出し口の位置調整 */
-  top: 5%;
-  /* 吹き出し口の縦位置 */
-  content: "";
-  /* コンテンツの挿入 */
-  position: absolute;
-  /* 親要素を基準 */
 }
 
 .skill__blog-btn {
@@ -1345,6 +1339,12 @@ section {
   margin: 0 auto;
 }
 
+@media (max-width: 480px) {
+  .works__item img {
+    width: 80vw;
+  }
+}
+
 .works__mask {
   width: 50vw;
   height: 100%;
@@ -1356,6 +1356,13 @@ section {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .works__mask {
+    width: 80vw;
+    left: 10%;
+  }
 }
 
 .works__mask:hover {
@@ -1387,7 +1394,7 @@ section {
 
 @media (max-width: 480px) {
   .works__caption-ttl {
-    font-size: 2rem;
+    font-size: 6rem;
   }
 }
 
@@ -1398,7 +1405,9 @@ section {
 
 @media (max-width: 480px) {
   .works__caption-txt {
-    font-size: 0.8rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 0 25px;
   }
 }
 
@@ -1424,8 +1433,17 @@ section {
 
 @media (max-width: 480px) {
   .subskill__list {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
     font-size: 1rem;
     padding: 15px 0;
     text-align: center;
@@ -1451,6 +1469,13 @@ section {
 .subskill__item img {
   width: 100%;
   max-width: 150px;
+}
+
+@media (max-width: 480px) {
+  .subskill__item img {
+    width: 100px;
+    padding: 0 10px;
+  }
 }
 
 /*Q&A*/
@@ -1569,6 +1594,12 @@ section {
   margin: 0 auto;
 }
 
+@media (max-width: 480px) {
+  .form__cont {
+    width: 85vw;
+  }
+}
+
 .form__cont-img {
   position: relative;
   display: -webkit-box;
@@ -1613,7 +1644,7 @@ section {
 
 @media (max-width: 480px) {
   .form__cont-btn_interview {
-    margin: 0 10px;
+    margin: 0 10px 30px;
   }
 }
 
@@ -1625,7 +1656,7 @@ section {
 
 @media (max-width: 480px) {
   .form__cont-btn_interview-txt {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1657,9 +1688,21 @@ section {
   font-size: 3rem;
 }
 
+@media (max-width: 480px) {
+  .interview__icon-mail:after {
+    font-size: 2rem;
+  }
+}
+
 .interview__icon-line:after {
   content: "LINEから";
   font-size: 3rem;
+}
+
+@media (max-width: 480px) {
+  .interview__icon-line:after {
+    font-size: 2rem;
+  }
 }
 
 .interview__icon-line {
@@ -1680,6 +1723,7 @@ section {
 @media (max-width: 480px) {
   .interview__icon-line img {
     max-width: 140px;
+    padding: 0;
   }
 }
 
@@ -1728,7 +1772,7 @@ i.fa-envelope {
 
 @media (max-width: 480px) {
   .twitter__follow-btn {
-    display: none;
+    font-size: 2rem;
   }
 }
 
@@ -1745,9 +1789,21 @@ i.fa-envelope {
   font-weight: bold;
 }
 
+@media (max-width: 480px) {
+  .footer__ttl {
+    font-size: 1.5rem;
+  }
+}
+
 .footer__guideline small {
   padding: 0 10px;
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .footer__guideline small {
+    font-size: 1rem;
+  }
 }
 
 .footer__guideline small:hover {

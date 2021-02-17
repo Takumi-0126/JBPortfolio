@@ -445,6 +445,12 @@ h2 {
   }
 }
 
+@media screen and (max-width: 480px) and (max-width: 480px) {
+  .hamburger__link {
+    font-size: 2rem;
+  }
+}
+
 .hamburger.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -479,6 +485,12 @@ h2 {
           justify-content: space-evenly;
 }
 
+@media screen and (max-width: 480px) {
+  .mv__inner {
+    width: 100%;
+  }
+}
+
 .mv__l {
   width: 33%;
   height: 500px;
@@ -505,8 +517,8 @@ h2 {
 
 @media screen and (max-width: 480px) {
   .mv__l {
-    width: 57%;
-    height: 300px;
+    width: 53%;
+    height: 255px;
   }
 }
 
@@ -532,6 +544,12 @@ h2 {
   margin: 0 0 50px 50px;
   -webkit-animation: SlideIn 1.5s ease forwards;
           animation: SlideIn 1.5s ease forwards;
+}
+
+@media screen and (max-width: 480px) {
+  .mv__twitter-btn {
+    margin: 0 0 30px 50px;
+  }
 }
 
 .mv__twitter-btn:hover {
@@ -609,6 +627,12 @@ section {
 .sect__inner {
   width: clamp(320px, 85vw, 1250px);
   margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .sect__inner {
+    width: clamp(320px, 95vw, 1250px);
+  }
 }
 
 .sect__ttl {
@@ -707,7 +731,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .intro__main-ttl {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 10px 3px;
     text-align: center;
   }
@@ -1114,6 +1138,12 @@ section {
   font-size: 2.5rem;
 }
 
+@media screen and (max-width: 480px) {
+  .skill__txt {
+    font-size: 1.5rem;
+  }
+}
+
 .skill__pro-btn {
   color: #fff;
   background-color: #1b95e0;
@@ -1138,6 +1168,7 @@ section {
   .skill__pro-btn {
     font-size: 1.5rem;
     z-index: 2;
+    margin-top: 15px;
   }
 }
 
@@ -1347,7 +1378,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .works__item img {
-    width: 80vw;
+    width: 90vw;
   }
 }
 
@@ -1523,7 +1554,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .question__cp-qa dt {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1537,7 +1568,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .question__cp-qa dd {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 0 0 1.5em 0;
   }
 }
@@ -1566,6 +1597,12 @@ section {
   background: #23a1f0;
 }
 
+@media screen and (max-width: 480px) {
+  .question__cp-qa dd::before {
+    padding: 0.11em 0.2em;
+  }
+}
+
 .question__cp-qa dt::after,
 .question__cp-qa dd::after {
   position: absolute;
@@ -1578,8 +1615,15 @@ section {
   border-style: solid;
 }
 
+@media screen and (max-width: 480px) {
+  .question__cp-qa dt::after,
+  .question__cp-qa dd::after {
+    border-width: 3px 0 3px 3px;
+  }
+}
+
 .question__cp-qa dt::after {
-  left: 1.5em;
+  left: 1.4em;
   border-color: transparent transparent transparent #8bd157;
 }
 
@@ -1590,6 +1634,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .question__cp-qa dd::after {
+    top: 0.7em;
     left: 1.4em;
   }
 }
@@ -1602,7 +1647,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .form__cont {
-    width: 85vw;
+    width: 95vw;
   }
 }
 
@@ -1662,7 +1707,8 @@ section {
 
 @media screen and (max-width: 480px) {
   .form__cont-btn_interview-txt {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
 }
 
@@ -1682,6 +1728,12 @@ section {
           justify-content: center;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .form__cont-btn_interview-icon {
+    margin-bottom: 20px;
+  }
 }
 
 .interview__icon-mail:hover,
@@ -1977,9 +2029,20 @@ i.fa-envelope {
   opacity: 1;
 }
 
-/*--------------------------------
-  arrow
---------------------------------*/
+/*slick*/
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #46a4da !important;
+}
+
+/*arrow-*/
 .arrow {
   position: fixed;
   right: 12px;

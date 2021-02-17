@@ -1907,6 +1907,10 @@ i.fa-envelope {
   }
 }
 
+.article__nakano {
+  font-size: 2.5rem;
+}
+
 .article__inner {
   padding: 70px 0;
   text-align: center;
@@ -1921,6 +1925,7 @@ i.fa-envelope {
 .article__heading img {
   width: 75vw;
   margin-bottom: 50px;
+  border-radius: 5px;
   -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
 }
@@ -2020,6 +2025,7 @@ i.fa-envelope {
 }
 
 .article__table td:nth-child(odd) {
+  width: 25%;
   text-align: center;
   background: #23a1f0;
   color: #fff;
@@ -2091,11 +2097,11 @@ i.fa-envelope {
 }
 
 .article__button-hp:hover:after {
-  content: "https://";
+  content: "https://nakano-company.co.jp/";
 }
 
 .article__button-ec:hover:after {
-  content: "https://";
+  content: "https://takumi-0126.github.io/ecsite__example/";
 }
 
 /*TOP*/

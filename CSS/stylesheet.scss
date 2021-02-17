@@ -1393,6 +1393,10 @@ i.fa-envelope {
     }
   }
 
+  &__nakano {
+    font-size: 2.5rem;
+  }
+
   &__inner {
     padding: 70px 0;
     text-align: center;
@@ -1405,6 +1409,7 @@ i.fa-envelope {
     img {
       width: 75vw;
       margin-bottom: 50px;
+      border-radius: 5px;
       box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
       @include sp {
         width: 95vw;
@@ -1499,6 +1504,7 @@ i.fa-envelope {
   }
 
   &__table td:nth-child(odd) {
+    width: 25%;
     text-align: center;
     background: #23a1f0;
     color: #fff;
@@ -1542,10 +1548,10 @@ i.fa-envelope {
     content: "https://";
   }
   &__button-hp:hover:after {
-    content: "https://";
+    content: "https://nakano-company.co.jp/";
   }
   &__button-ec:hover:after {
-    content: "https://";
+    content: "https://takumi-0126.github.io/ecsite__example/";
   }
 }
 

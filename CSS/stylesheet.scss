@@ -124,6 +124,9 @@ h2 {
     width: 90%;
     display: flex;
     justify-content: center;
+    @include sp {
+      width: 100%;
+    }
   }
 
   &__inner {
@@ -136,6 +139,10 @@ h2 {
     font-size: 2rem;
     color: #0f4c83;
   }
+
+  &__ttl-sp {
+    font-size: 1.5rem;
+  }
 }
 
 //ナビゲーション
@@ -147,6 +154,9 @@ h2 {
   &__list {
     display: inline-block;
     margin-right: 1vw;
+    @include sp {
+      margin: 0;
+    }
   }
 
   &__list a {
@@ -157,6 +167,9 @@ h2 {
     padding-bottom: 5px;
     margin-right: 20px;
     cursor: pointer;
+    @include sp {
+      margin: 0;
+    }
   }
 
   &__list a::before {
@@ -477,7 +490,7 @@ section {
     color: #0f4c83;
 
     @include sp {
-      font-size: 2.2rem;
+      font-size: 2rem;
       padding: 10px 3px;
       text-align: center;
     }
@@ -765,7 +778,7 @@ section {
     background-position: center;
     background-size: cover;
     @include center;
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   &__name p {
@@ -815,7 +828,7 @@ section {
     font-size: 4rem;
     color: #0f4c83;
     @include sp {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -1008,8 +1021,9 @@ section {
     transition: all 0.2s ease;
     border-radius: 5px;
     @include sp {
-      width: 80vw;
-      left: 10%;
+      width: 90vw;
+      left: 5%;
+      opacity: 1;
     }
   }
   &__mask:hover {
@@ -1024,12 +1038,17 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include sp {
+      width: 80vw;
+      left: 5%;
+      margin: 0 auto;
+    }
   }
 
   &__caption-ttl {
     font-size: 7rem;
     @include sp {
-      font-size: 6rem;
+      font-size: 3rem;
     }
   }
 
@@ -1037,9 +1056,7 @@ section {
     font-size: 3rem;
     padding: 0 55px;
     @include sp {
-      font-size: 2rem;
-      line-height: 1.5;
-      padding: 0 25px;
+      display: none;
     }
   }
 }
@@ -1112,7 +1129,6 @@ section {
     margin: 0 auto;
     @include sp {
       width: 100%;
-      margin: 0 10px;
     }
   }
 
@@ -1372,11 +1388,17 @@ i.fa-envelope {
   &__ttl {
     font-size: 4rem;
     margin-bottom: 50px;
+    @include sp {
+      font-size: 3rem;
+    }
   }
 
   &__inner {
     padding: 70px 0;
     text-align: center;
+    @include sp {
+      padding: 70px 0 50px;
+    }
   }
 
   &__heading {
@@ -1384,6 +1406,9 @@ i.fa-envelope {
       width: 75vw;
       margin-bottom: 50px;
       box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+      @include sp {
+        width: 95vw;
+      }
     }
   }
   &__container {
@@ -1391,6 +1416,9 @@ i.fa-envelope {
     margin: 0 auto;
     font-weight: bold;
     text-align: left;
+    @include sp {
+      width: 95vw;
+    }
   }
 
   &__space {
@@ -1422,6 +1450,10 @@ i.fa-envelope {
     line-height: 2;
     border: solid 2px #23a1f0;
     border-radius: 5px;
+
+    @include sp {
+      margin: 0;
+    }
   }
 
   &__txt-main a {
@@ -1448,6 +1480,10 @@ i.fa-envelope {
     text-align: left;
     font-weight: bold;
     border-collapse: collapse;
+    @include sp {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
   }
 
   &__table tr,
@@ -1457,6 +1493,9 @@ i.fa-envelope {
 
   &__table td {
     padding: 10px;
+    @include sp {
+      padding: 5px;
+    }
   }
 
   &__table td:nth-child(odd) {
@@ -1469,10 +1508,16 @@ i.fa-envelope {
     width: 40vw;
     margin: 0 auto 50px;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+    @include sp {
+      width: unset;
+    }
   }
 
   &__item img {
     width: 40vw;
+    @include sp {
+      width: 95vw;
+    }
   }
 
   &__button {

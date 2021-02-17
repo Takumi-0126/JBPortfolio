@@ -6,27 +6,27 @@ $tab: 680px; // タブレット
 $sp: 480px; // スマホ
 
 @mixin lpc-min {
-  @media (min-width: ($lpc)) {
+  @media screen and (min-width: ($lpc)) {
     @content;
   }
 }
 @mixin lpc-max {
-  @media (max-width: ($lpc)) {
+  @media screen and (max-width: ($lpc)) {
     @content;
   }
 }
 @mixin pc {
-  @media (max-width: ($pc)) {
+  @media screen and (max-width: ($pc)) {
     @content;
   }
 }
 @mixin tab {
-  @media (max-width: ($tab)) {
+  @media screen and (max-width: ($tab)) {
     @content;
   }
 }
 @mixin sp {
-  @media (max-width: ($sp)) {
+  @media screen and (max-width: ($sp)) {
     @content;
   }
 }
@@ -543,7 +543,7 @@ section {
     writing-mode: vertical-rl;
     text-orientation: upright;
     color: #3594cb;
-    @include sp {
+    @include tab {
       display: none;
     }
   }
@@ -912,6 +912,10 @@ section {
 
   &__blog-link:hover + &__fukidashi {
     display: inline;
+
+    @include sp {
+      display: none;
+    }
   }
 
   &__fukidashi {

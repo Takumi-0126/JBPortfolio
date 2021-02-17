@@ -296,7 +296,7 @@ h2 {
   margin-left: auto;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .nav {
     display: none;
   }
@@ -343,7 +343,7 @@ h2 {
   display: none;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .hamburger-btn {
     display: block;
     position: relative;
@@ -398,7 +398,7 @@ h2 {
   display: none;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .hamburger {
     display: block;
     position: fixed;
@@ -460,7 +460,7 @@ h2 {
   background: linear-gradient(to bottom, #0f4c83 95%, #fff);
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .mv {
     height: 300px;
     margin-bottom: 30px;
@@ -497,13 +497,13 @@ h2 {
           align-items: center;
 }
 
-@media (min-width: 1680px) {
+@media screen and (min-width: 1680px) {
   .mv__l {
     width: 30%;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .mv__l {
     width: 57%;
     height: 300px;
@@ -551,7 +551,7 @@ h2 {
   opacity: 0;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .mv__txt {
     font-size: 2.5rem;
   }
@@ -599,7 +599,7 @@ section {
   padding: 80px 0;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   section {
     padding: 0;
     margin-bottom: 30px;
@@ -627,7 +627,7 @@ section {
   /*見出し横線ここまで*/
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .sect__ttl {
     font-size: 3rem;
     padding-left: 10px;
@@ -644,7 +644,7 @@ section {
   color: #0f4c83;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .sect__ttl-cont {
     font-size: 1rem;
     padding-bottom: 10px;
@@ -659,7 +659,7 @@ section {
   position: relative;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .sect__ttl-sub {
     font-size: 1.5rem;
     padding: 5px 0 0 10px;
@@ -680,7 +680,7 @@ section {
   margin-left: 20px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .sect__ttl-sub::after {
     display: none;
   }
@@ -691,7 +691,7 @@ section {
   padding: 50px 0;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .introduction {
     padding: 0;
   }
@@ -705,7 +705,7 @@ section {
   color: #0f4c83;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .intro__main-ttl {
     font-size: 2.5rem;
     padding: 10px 3px;
@@ -719,7 +719,7 @@ section {
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .intro__cont {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -737,7 +737,7 @@ section {
   border-radius: 15px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .intro__cont-txt {
     font-size: 1.5rem;
     margin: 0 0.5em;
@@ -763,7 +763,7 @@ section {
   letter-spacing: 0.5em;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .intro__mv-txt {
     font-size: 1.5rem;
   }
@@ -795,7 +795,7 @@ section {
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .career__cont-l {
     display: none;
   }
@@ -811,7 +811,7 @@ section {
   color: #3594cb;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .career__cont-l_txt {
     display: none;
   }
@@ -839,7 +839,7 @@ section {
   /* The icons */
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .cbp_tmtimeline {
     margin: 0;
   }
@@ -1016,7 +1016,7 @@ section {
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__item {
     height: unset;
     display: block;
@@ -1060,7 +1060,7 @@ section {
           clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__name-pro {
     width: 100%;
     -webkit-clip-path: none;
@@ -1092,7 +1092,7 @@ section {
   font-weight: bold;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__list {
     width: 100%;
     padding: 20px 0;
@@ -1104,7 +1104,7 @@ section {
   color: #0f4c83;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__ttl {
     font-size: 3rem;
   }
@@ -1134,7 +1134,7 @@ section {
           box-shadow: 0px 2px 6px #0f4c83;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__pro-btn {
     font-size: 1.5rem;
     z-index: 2;
@@ -1159,7 +1159,7 @@ section {
           clip-path: polygon(0 0, 30% 0, 82% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%);
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__name-market {
     width: 100%;
     -webkit-clip-path: none;
@@ -1182,7 +1182,7 @@ section {
   width: 45vw;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__img-container {
     width: unset;
   }
@@ -1196,7 +1196,7 @@ section {
   width: 9vw;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__market-item img {
     width: 140px;
   }
@@ -1206,7 +1206,7 @@ section {
   width: 12vw;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__market-item_analytics img {
     width: 160px;
   }
@@ -1218,7 +1218,7 @@ section {
           clip-path: polygon(18% 0%, 70% 0, 100% 0, 100% 100%, 40% 100%, 70% 100%, 0 100%);
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__name-blog {
     width: 100%;
     -webkit-clip-path: none;
@@ -1240,7 +1240,7 @@ section {
   display: inline-block;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__blog-link {
     display: inline;
   }
@@ -1256,6 +1256,12 @@ section {
 
 .skill__blog-link:hover + .skill__fukidashi {
   display: inline;
+}
+
+@media screen and (max-width: 480px) {
+  .skill__blog-link:hover + .skill__fukidashi {
+    display: none;
+  }
 }
 
 .skill__fukidashi {
@@ -1300,7 +1306,7 @@ section {
           box-shadow: 0px 2px 6px #0f4c83;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .skill__blog-btn {
     font-size: 1.5rem;
   }
@@ -1339,7 +1345,7 @@ section {
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .works__item img {
     width: 80vw;
   }
@@ -1358,7 +1364,7 @@ section {
   border-radius: 5px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .works__mask {
     width: 80vw;
     left: 10%;
@@ -1392,7 +1398,7 @@ section {
   font-size: 7rem;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .works__caption-ttl {
     font-size: 6rem;
   }
@@ -1403,7 +1409,7 @@ section {
   padding: 0 55px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .works__caption-txt {
     font-size: 2rem;
     line-height: 1.5;
@@ -1417,7 +1423,7 @@ section {
   color: #fff;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .subskill__cont {
     width: 100%;
   }
@@ -1431,7 +1437,7 @@ section {
   padding: 30px 0;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .subskill__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1460,7 +1466,7 @@ section {
   font-size: 3rem;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .subskill__item span {
     font-size: 1.5rem;
   }
@@ -1471,7 +1477,7 @@ section {
   max-width: 150px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .subskill__item img {
     width: 100px;
     padding: 0 10px;
@@ -1491,7 +1497,7 @@ section {
   box-sizing: border-box;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .question__cp-qa {
     margin: 0 12px;
   }
@@ -1501,7 +1507,7 @@ section {
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .question dl {
     width: 100%;
     margin: 0 10px;
@@ -1515,7 +1521,7 @@ section {
   font-size: 2.5rem;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .question__cp-qa dt {
     font-size: 1rem;
   }
@@ -1529,7 +1535,7 @@ section {
   border-bottom: 1px dotted #23a1f0;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .question__cp-qa dd {
     font-size: 1rem;
     padding: 0 0 1.5em 0;
@@ -1582,7 +1588,7 @@ section {
   border-color: transparent transparent transparent #23a1f0;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .question__cp-qa dd::after {
     left: 1.4em;
   }
@@ -1594,7 +1600,7 @@ section {
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .form__cont {
     width: 85vw;
   }
@@ -1642,7 +1648,7 @@ section {
   border: 10px dashed #0f4c83;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .form__cont-btn_interview {
     margin: 0 10px 30px;
   }
@@ -1654,7 +1660,7 @@ section {
   margin-bottom: 50px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .form__cont-btn_interview-txt {
     font-size: 1.5rem;
   }
@@ -1688,7 +1694,7 @@ section {
   font-size: 3rem;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .interview__icon-mail:after {
     font-size: 2rem;
   }
@@ -1699,7 +1705,7 @@ section {
   font-size: 3rem;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .interview__icon-line:after {
     font-size: 2rem;
   }
@@ -1720,7 +1726,7 @@ section {
   padding: 18px 0;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .interview__icon-line img {
     max-width: 140px;
     padding: 0;
@@ -1735,7 +1741,7 @@ i.fa-envelope {
   font-size: 10rem;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .icon-size {
     font-size: 4rem;
   }
@@ -1770,7 +1776,7 @@ i.fa-envelope {
   padding: 1px 8px 1px 6px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .twitter__follow-btn {
     font-size: 1.5rem;
   }
@@ -1789,7 +1795,7 @@ i.fa-envelope {
   font-weight: bold;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .footer__ttl {
     font-size: 1.5rem;
   }
@@ -1800,7 +1806,7 @@ i.fa-envelope {
   font-weight: bold;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .footer__guideline small {
     font-size: 1rem;
   }

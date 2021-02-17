@@ -67,7 +67,7 @@ html {
 
 body {
   font-size: 2rem; /* 20px*/
-  line-height: 2;
+  line-height: 1.5;
 }
 
 h1 {
@@ -114,10 +114,14 @@ h2 {
   padding: 1% 2vw;
   box-sizing: border-box;
 
-  &__link {
-    width: 90%;
+  &__works {
+    background: #fff;
     position: fixed;
     z-index: 100;
+  }
+
+  &__link {
+    width: 90%;
     display: flex;
     justify-content: center;
   }
@@ -514,11 +518,11 @@ section {
   }
 
   &__mv-txt {
-    font-size: 1.4rem;
+    font-size: 1em;
     font-weight: bold;
     color: #0f4c83;
     text-align: center;
-    letter-spacing: 0.8em;
+    letter-spacing: 0.5em;
     @include sp {
       right: 1.5em;
       top: 8px;
@@ -545,42 +549,41 @@ section {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+  }
+  &__cont-l {
+    display: flex;
 
-    &-l {
-      display: flex;
-
-      @include sp {
-        display: none;
-      }
+    @include sp {
+      display: none;
     }
+  }
 
-    &-l_txt {
-      font-size: 1.9rem;
-      letter-spacing: 0.8em;
-      writing-mode: vertical-rl;
-      text-orientation: upright;
-      color: #3594cb;
-    }
+  &__cont-l_txt {
+    font-size: 2.6rem;
+    letter-spacing: 0.7em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: #3594cb;
+  }
 
-    &-img {
-      width: 100%;
-      max-width: 300px;
-      object-fit: cover;
-    }
+  &__cont-l img {
+    width: 100%;
+    max-width: 382px;
+    object-fit: cover;
   }
 }
 
 /*タイムラインここから*/
 .cbp_tmtimeline {
   width: 100%;
-  max-width: 600px;
-  margin: 0 50px 0 0;
+  max-width: 700px;
+  margin: 0 37px 0 0;
   padding: 0;
   list-style: none;
   position: relative;
 
   @include sp {
-    margin: 0 50px;
+    margin: 0;
   }
 
   /* The line */
@@ -652,6 +655,9 @@ section {
     margin-top: 0px;
     padding: 0 0 5px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  & > li .cbp_tmlabel span {
+    font-weight: bold;
   }
 
   /* The triangle */
@@ -798,6 +804,7 @@ section {
 
   &__list {
     @include center;
+    justify-content: space-evenly;
     flex-direction: column;
     width: 50vw;
     font-size: 2rem;
@@ -814,12 +821,11 @@ section {
   }
 
   &__txt {
-    padding-bottom: 10px;
+    font-size: 2.5rem;
   }
 
   &__pro-btn {
     @include btn;
-    font-size: 1.8rem;
     padding: 10px;
     box-shadow: 0px 2px 6px #0f4c83;
     @include sp {
@@ -894,45 +900,65 @@ section {
     color: #1b95e0;
     border-bottom: 2px dashed #1b95e0;
     position: relative;
+    display: inline-block;
   }
 
   &__blog-link:hover {
     border: none;
     background-color: #1b95e0;
+    border-radius: 5px;
     color: #fff;
     padding: 0 3px;
   }
 
   &__blog-link:hover + &__fukidashi {
-    display: block;
+    display: inline;
   }
 
   &__fukidashi {
-    display: none;
     position: absolute;
+    display: none;
+    padding: 2px;
+    margin-left: 15px;
+    background-color: rgba(27, 149, 224, 0.5);
     border-radius: 5px;
-    color: #fff;
-    background-color: #1b95e0;
-    top: 0;
-    left: 250px;
-    padding: 16px;
-    font-weight: bold;
-    width: 200px;
+    width: 210px;
+    font-size: 80%;
   }
 
   &__fukidashi::after {
+    border-right: 12px solid rgba(27, 149, 224, 0.5);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    left: -12px;
+    top: 5%;
+    content: "";
     position: absolute;
-    width: 0;
-    height: 0;
-    left: 0;
-    bottom: -19px;
-    margin-left: 10px;
-    border: solid transparent;
-    border-color: rgba(51, 204, 153, 0);
-    border-top-color: #1b95e0;
-    border-width: 10px;
-    pointer-events: none;
-    content: " ";
+  }
+
+  .balloonoya {
+    position: relative; /* 指定した分だけ相対的に移動 */
+  }
+  .balloonoya:hover .balloon {
+    display: inline; /* インライン要素として表示 */
+  }
+  .balloon {
+    position: absolute; /* 親要素を基準 */
+    display: none; /* 要素を非表示 */
+    padding: 2px; /* テキストの前後の余白 */
+    background-color: rgba(102, 102, 255, 0.5); /* 背景色（透明度） */
+    width: 180px; /* 吹き出し全体の幅 */
+    left: -1%; /* 表示位置 */
+    font-size: 80%; /* 文字サイズ */
+  }
+  .balloon:after {
+    border-left: 12px solid rgba(102, 102, 255, 0.5); /* 吹き出し口の幅・色 */
+    border-top: 10px solid transparent; /* 吹き出し口の高さ１／２ */
+    border-bottom: 10px solid transparent; /* 吹き出し口の高さ１／２ */
+    right: -12px; /* 吹き出し口の位置調整 */
+    top: 5%; /* 吹き出し口の縦位置 */
+    content: ""; /* コンテンツの挿入 */
+    position: absolute; /* 親要素を基準 */
   }
 
   &__blog-btn {
@@ -1000,14 +1026,15 @@ section {
   }
 
   &__caption-ttl {
-    font-size: 5rem;
+    font-size: 7rem;
     @include sp {
       font-size: 2rem;
     }
   }
 
   &__caption-txt {
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 0 55px;
     @include sp {
       font-size: 0.8rem;
     }
@@ -1296,7 +1323,7 @@ i.fa-envelope {
   }
 
   &__inner {
-    padding: 60px 0;
+    padding: 70px 0;
     text-align: center;
   }
 
@@ -1321,13 +1348,47 @@ i.fa-envelope {
   }
 
   &__txt-main {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 22px 8px 22px 8px;
+    margin: 2em 0;
+    background-color: #fff;
+    background-image: linear-gradient(
+        90deg,
+        rgba(237, 119, 128, 0) 0%,
+        rgba(237, 119, 128, 0) 50%,
+        #fff 0%,
+        #fff 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(237, 119, 128, 0) 0%,
+        rgba(237, 119, 128, 0) 95%,
+        #23a1f0 100%
+      );
+    background-size: 8px 100%, 100% 2em;
+    line-height: 2;
+    border: solid 2px #23a1f0;
+    border-radius: 5px;
   }
 
-  &__container p {
-    line-height: 2em;
+  &__txt-main a {
+    color: #23a1f0;
+  }
+
+  &__txt-ttl {
+    font-size: 1.2em;
+    background: #23a1f0;
+    padding: 0.6em;
+    margin: -22px -8px 22px -8px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+  }
+  &__txt-ttl p {
+    padding: 0;
+    margin: 0;
   }
 
   &__table {
@@ -1339,11 +1400,17 @@ i.fa-envelope {
 
   &__table tr,
   &__table td {
-    border: 1px solid black;
+    border: 2px solid black;
   }
 
   &__table td {
     padding: 10px;
+  }
+
+  &__table td:nth-child(odd) {
+    text-align: center;
+    background: #23a1f0;
+    color: #fff;
   }
 
   &__item {
@@ -1362,10 +1429,12 @@ i.fa-envelope {
     padding: 15px;
     margin-bottom: 50px;
     letter-spacing: 0.1em;
+    box-shadow: 0px 2px 6px #0f4c83;
   }
 
   &__button:hover {
     @include btn-hover;
+    box-shadow: none;
   }
 
   &__button:after {

@@ -306,7 +306,7 @@ h2 {
   margin-left: auto;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
   .nav {
     display: none;
   }
@@ -371,7 +371,7 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
   .hamburger-btn {
     display: block;
     position: relative;
@@ -426,7 +426,7 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
   .hamburger {
     display: block;
     position: fixed;
@@ -473,7 +473,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 680px) and (max-width: 480px) {
+@media screen and (max-width: 768px) and (max-width: 480px) {
   .hamburger__link {
     font-size: 2rem;
   }
@@ -1256,6 +1256,12 @@ section {
 
 .skill__txt {
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .skill__txt {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -2178,6 +2184,18 @@ i.fa-envelope {
   text-align: center;
   background: #23a1f0;
   color: #fff;
+}
+
+.article__table td a {
+  color: #23a1f0;
+}
+
+.article__table td a:hover {
+  color: black;
+}
+
+.article__table td a {
+  color: #23a1f0;
 }
 
 .article__item {

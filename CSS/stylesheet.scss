@@ -2,7 +2,7 @@
 
 $lpc: 1680px; //画面広いPC
 $pc: 1024px; // PC
-$tab: 680px; // タブレット
+$tab: 768px; // タブレット
 $sp: 480px; // スマホ
 
 @mixin lpc-min {
@@ -885,6 +885,9 @@ section {
 
   &__txt {
     font-size: 2.5rem;
+    @include tab {
+      margin-bottom: 20px;
+    }
     @include sp {
       font-size: 1.5rem;
     }
@@ -1584,6 +1587,17 @@ i.fa-envelope {
     text-align: center;
     background: #23a1f0;
     color: #fff;
+  }
+
+  &__table td a {
+    color: #23a1f0;
+  }
+
+  &__table td a:hover {
+    color: black;
+  }
+  &__table td a {
+    color: #23a1f0;
   }
 
   &__item {

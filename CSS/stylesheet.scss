@@ -2,7 +2,7 @@
 
 $lpc: 1680px; //画面広いPC
 $pc: 1024px; // PC
-$tab: 768px; // タブレット
+$tab: 800px; // タブレット
 $sp: 480px; // スマホ
 
 @mixin lpc-min {
@@ -353,7 +353,12 @@ h2 {
       width: 30%;
     }
     @include pc {
+      width: 36%;
       height: 320px;
+    }
+
+    @include tab {
+      width: 42%;
     }
     @include sp {
       width: 53%;
@@ -392,6 +397,10 @@ h2 {
 
     @include pc {
       font-size: 6rem;
+    }
+
+    @include tab {
+      font-size: 4rem;
     }
 
     @include sp {
@@ -445,6 +454,11 @@ section {
     align-items: center;
     font-size: 6rem;
     font-weight: bold;
+
+    @include tab {
+      font-size: 4rem;
+    }
+
     @include sp {
       font-size: 3rem;
       padding-left: 10px;
@@ -468,6 +482,9 @@ section {
       line-height: 3;
       padding-left: 130px;
       position: relative;
+      @include tab {
+        font-size: 2.5rem;
+      }
       @include sp {
         font-size: 1.5rem;
         padding: 5px 0 0 10px;
@@ -533,7 +550,7 @@ section {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     @include pc {
-      font-size: 3rem;
+      font-size: 2rem;
       padding: 1em 0;
     }
     @include sp {
@@ -1429,7 +1446,8 @@ i.fa-envelope {
     display: inline-block;
     line-height: 2;
     padding: 1px 8px 1px 6px;
-    @include sp {
+
+    @include tab {
       font-size: 1.5rem;
     }
   }

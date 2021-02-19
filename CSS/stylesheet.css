@@ -306,7 +306,7 @@ h2 {
   margin-left: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .nav {
     display: none;
   }
@@ -371,7 +371,7 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hamburger-btn {
     display: block;
     position: relative;
@@ -426,7 +426,7 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hamburger {
     display: block;
     position: fixed;
@@ -473,7 +473,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 768px) and (max-width: 480px) {
+@media screen and (max-width: 800px) and (max-width: 480px) {
   .hamburger__link {
     font-size: 2rem;
   }
@@ -557,7 +557,14 @@ h2 {
 
 @media screen and (max-width: 1024px) {
   .mv__l {
+    width: 36%;
     height: 320px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mv__l {
+    width: 42%;
   }
 }
 
@@ -618,6 +625,12 @@ h2 {
 @media screen and (max-width: 1024px) {
   .mv__txt {
     font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mv__txt {
+    font-size: 4rem;
   }
 }
 
@@ -709,6 +722,12 @@ section {
   /*見出し横線ここまで*/
 }
 
+@media screen and (max-width: 800px) {
+  .sect__ttl {
+    font-size: 4rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .sect__ttl {
     font-size: 3rem;
@@ -739,6 +758,12 @@ section {
   line-height: 3;
   padding-left: 130px;
   position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .sect__ttl-sub {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -830,7 +855,7 @@ section {
 
 @media screen and (max-width: 1024px) {
   .intro__cont-txt {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1em 0;
   }
 }
@@ -1258,7 +1283,7 @@ section {
   font-size: 2.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .skill__txt {
     margin-bottom: 20px;
   }
@@ -2011,7 +2036,7 @@ i.fa-envelope {
   padding: 1px 8px 1px 6px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   .twitter__follow-btn {
     font-size: 1.5rem;
   }

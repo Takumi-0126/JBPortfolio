@@ -900,7 +900,7 @@ section {
 
 .intro _::-webkit-full-page-media,
 .intro _:future,
-.intro :root .intro__cont-l_txt {
+.intro :root intro__cont-l_txt {
   font-weight: 600;
 }
 
@@ -967,13 +967,13 @@ section {
 
 _::-webkit-full-page-media,
 _:future,
-:root .career__cont-l_txt {
+:root career__cont-l_txt {
   font-size: 2.4rem;
 }
 
 _::-webkit-full-page-media,
 _:future,
-:root .career__cont-l img {
+:root career__cont-l img {
   height: 1250px;
 }
 

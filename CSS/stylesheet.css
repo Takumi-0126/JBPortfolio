@@ -691,7 +691,6 @@ section {
 @media screen and (max-width: 480px) {
   section {
     padding: 0;
-    margin-bottom: 30px;
   }
 }
 
@@ -1856,171 +1855,6 @@ _:future,
 }
 
 /*form*/
-.form__cont {
-  width: 60vw;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1024px) {
-  .form__cont {
-    width: 85vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .form__cont {
-    width: 95vw;
-  }
-}
-
-.form__cont-img {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.form__cont-img::before, .form__cont-img::after {
-  content: "";
-  position: absolute;
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
-  width: 200px;
-  height: 50px;
-  background-color: #fff;
-  z-index: 1;
-}
-
-.form__cont-img::before {
-  top: -20px;
-  left: 170px;
-  border-bottom: 1px solid #aaa;
-}
-
-.form__cont-img::after {
-  bottom: -20px;
-  right: 170px;
-  border-top: 1px solid #aaa;
-}
-
-.form__cont-img img {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.form__cont-btn_interview {
-  padding-top: 15px;
-  margin-bottom: 50px;
-  border: 10px dashed #0f4c83;
-}
-
-@media screen and (max-width: 480px) {
-  .form__cont-btn_interview {
-    margin: 0 10px 30px;
-  }
-}
-
-.form__cont-btn_interview-txt {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 480px) {
-  .form__cont-btn_interview-txt {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-}
-
-.form__cont-btn {
-  font-weight: bold;
-}
-
-.form__cont-btn_interview-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 480px) {
-  .form__cont-btn_interview-icon {
-    margin-bottom: 20px;
-  }
-}
-
-.interview__icon-mail:hover,
-.interview__icon-line:hover {
-  opacity: 0.7;
-}
-
-.interview__icon-mail:after {
-  content: "メールから";
-  font-size: 3rem;
-}
-
-@media screen and (max-width: 480px) {
-  .interview__icon-mail:after {
-    font-size: 2rem;
-  }
-}
-
-.interview__icon-line:after {
-  content: "LINEから";
-  font-size: 3rem;
-}
-
-@media screen and (max-width: 480px) {
-  .interview__icon-line:after {
-    font-size: 2rem;
-  }
-}
-
-.interview__icon-line {
-  margin-left: 12%;
-}
-
-.interview__icon-line button {
-  line-height: 1.8;
-}
-
-.interview__icon-line img {
-  display: block;
-  width: 100%;
-  max-width: 200px;
-  padding: 18px 0;
-}
-
-@media screen and (max-width: 480px) {
-  .interview__icon-line img {
-    max-width: 140px;
-    padding: 0;
-  }
-}
-
-i.fa-envelope {
-  display: block;
-}
-
-.icon-size {
-  font-size: 10rem;
-}
-
-@media screen and (max-width: 480px) {
-  .icon-size {
-    font-size: 4rem;
-  }
-}
-
 .twitter__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2028,6 +1862,13 @@ i.fa-envelope {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .twitter__btn {
+    margin: 0;
+  }
 }
 
 .twitter__follow-btn {
@@ -2056,10 +1897,15 @@ i.fa-envelope {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .twitter__follow-btn {
+    font-size: 1rem;
+  }
+}
+
 /*footer*/
 .footer {
   text-align: center;
-  background: #f4f4f4;
   padding-top: 10px;
 }
 

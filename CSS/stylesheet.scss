@@ -1347,6 +1347,10 @@ _:future,
   text-align: center;
   padding-top: 10px;
 
+  @include sp {
+    padding: 0;
+  }
+
   &__ttl {
     color: #0f4c83;
     font-size: 2.5rem;

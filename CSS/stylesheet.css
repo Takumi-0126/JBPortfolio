@@ -804,6 +804,10 @@ section {
   }
 }
 
+.intro {
+  /*safari崩れ対応*/
+}
+
 .intro__main-ttl {
   font-size: 4rem;
   font-weight: bold;
@@ -900,7 +904,7 @@ section {
 
 .intro _::-webkit-full-page-media,
 .intro _:future,
-.intro :root intro__cont-l_txt {
+.intro :root intro__cont-txt {
   font-weight: 600;
 }
 
@@ -965,6 +969,7 @@ section {
      object-fit: cover;
 }
 
+/*safari崩れ対応*/
 _::-webkit-full-page-media,
 _:future,
 :root career__cont-l_txt {

@@ -583,10 +583,10 @@ section {
       font-size: 1.5rem;
     }
   }
-
+  /*safari崩れ対応*/
   _::-webkit-full-page-media,
   _:future,
-  :root intro__cont-l_txt {
+  :root intro__cont-txt {
     font-weight: 600;
   }
 
@@ -635,6 +635,7 @@ section {
     object-fit: cover;
   }
 }
+/*safari崩れ対応*/
 _::-webkit-full-page-media,
 _:future,
 :root career__cont-l_txt {

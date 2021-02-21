@@ -564,7 +564,7 @@ h2 {
 
 @media screen and (max-width: 800px) {
   .mv__l {
-    width: 42%;
+    width: 32%;
   }
 }
 
@@ -907,6 +907,13 @@ section {
   border-radius: 5px;
 }
 
+/*safari崩れ対応*/
+_::-webkit-full-page-media,
+_:future,
+:root .intro__cont-txt {
+  font-weight: 600;
+}
+
 /*career*/
 .career__cont {
   display: -webkit-box;
@@ -957,6 +964,13 @@ section {
   max-width: 382px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/*safari崩れ対応*/
+_::-webkit-full-page-media,
+_:future,
+:root .career__cont-l img {
+  height: 1450px;
 }
 
 /*タイムラインここから*/

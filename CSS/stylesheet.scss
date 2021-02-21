@@ -358,7 +358,7 @@ h2 {
     }
 
     @include tab {
-      width: 42%;
+      width: 32%;
     }
     @include sp {
       width: 53%;
@@ -593,6 +593,12 @@ section {
     border-radius: 5px;
   }
 }
+/*safari崩れ対応*/
+_::-webkit-full-page-media,
+_:future,
+:root .intro__cont-txt {
+  font-weight: 600;
+}
 
 /*career*/
 .career {
@@ -628,6 +634,12 @@ section {
     max-width: 382px;
     object-fit: cover;
   }
+}
+/*safari崩れ対応*/
+_::-webkit-full-page-media,
+_:future,
+:root .career__cont-l img {
+  height: 1450px;
 }
 
 /*タイムラインここから*/

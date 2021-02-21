@@ -959,6 +959,14 @@ section {
      object-fit: cover;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .career__cont-l img _::-webkit-full-page-media,
+  .career__cont-l img _:future,
+  .career__cont-l img :root body {
+    height: 1250px;
+  }
+}
+
 /*タイムラインここから*/
 .cbp_tmtimeline {
   width: 100%;

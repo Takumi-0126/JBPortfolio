@@ -583,12 +583,6 @@ section {
       font-size: 1.5rem;
     }
   }
-  /*safari崩れ対応*/
-  _::-webkit-full-page-media,
-  _:future,
-  :root .intro__cont-txt {
-    font-weight: 600;
-  }
 
   &__mv iframe {
     position: absolute;
@@ -598,6 +592,12 @@ section {
     height: 100%;
     border-radius: 5px;
   }
+}
+/*safari崩れ対応*/
+_::-webkit-full-page-media,
+_:future,
+:root .intro__cont-txt {
+  font-weight: 600;
 }
 
 /*career*/
@@ -645,7 +645,7 @@ _:future,
 _::-webkit-full-page-media,
 _:future,
 :root .career__cont-l img {
-  height: 1250px;
+  height: 1300px;
 }
 
 /*タイムラインここから*/

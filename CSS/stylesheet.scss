@@ -628,11 +628,11 @@ section {
     max-width: 382px;
     object-fit: cover;
   }
-  _::-webkit-full-page-media,
-  _:future,
-  :root &__cont-l img {
-    height: 1250px;
-  }
+}
+_::-webkit-full-page-media,
+_:future,
+:root career__cont-l img {
+  height: 1250px;
 }
 
 /*タイムラインここから*/

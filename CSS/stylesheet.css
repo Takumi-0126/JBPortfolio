@@ -959,9 +959,9 @@ section {
      object-fit: cover;
 }
 
-.career _::-webkit-full-page-media,
-.career _:future,
-:root .career__cont-l img {
+_::-webkit-full-page-media,
+_:future,
+:root career__cont-l img {
   height: 1250px;
 }
 

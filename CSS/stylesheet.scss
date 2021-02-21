@@ -627,13 +627,12 @@ section {
     width: 100%;
     max-width: 382px;
     object-fit: cover;
-    @media screen and (-webkit-min-device-pixel-ratio: 0) {
-      _::-webkit-full-page-media,
-      _:future,
-      :root body {
-        height: 1250px;
-      }
-    }
+  }
+
+  _::-webkit-full-page-media,
+  _:future,
+  :root &__cont-l img {
+    height: 1250px;
   }
 }
 

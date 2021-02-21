@@ -959,6 +959,12 @@ section {
      object-fit: cover;
 }
 
+.career__cont-l img _::-webkit-full-page-media,
+.career__cont-l img _:future,
+.career__cont-l img :root {
+  height: 1250px;
+}
+
 /*タイムラインここから*/
 .cbp_tmtimeline {
   width: 100%;

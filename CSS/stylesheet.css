@@ -691,7 +691,10 @@ section {
 @media screen and (max-width: 480px) {
   section {
     padding: 0;
+<<<<<<< HEAD
     margin-bottom: 20px;
+=======
+>>>>>>> 27806b5fd91f68459f0cde63126cd27581f8b414
   }
 }
 
@@ -1855,6 +1858,10 @@ _:future,
   }
 }
 
+<<<<<<< HEAD
+=======
+/*form*/
+>>>>>>> 27806b5fd91f68459f0cde63126cd27581f8b414
 .twitter__btn {
   display: -webkit-box;
   display: -ms-flexbox;
